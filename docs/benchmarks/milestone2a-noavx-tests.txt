@@ -1,0 +1,106 @@
+Internal ctest changing into directory: E:/Project VectorPulse/build-noavx
+Test project E:/Project VectorPulse/build-noavx
+      Start  1: AVX2Support.ConstructionHonorsAvailability
+ 1/37 Test  #1: AVX2Support.ConstructionHonorsAvailability ...........................   Passed    0.01 sec
+      Start  2: AVX2Backend.StoreContractAndTies
+ 2/37 Test  #2: AVX2Backend.StoreContractAndTies .....................................***Skipped   0.01 sec
+      Start  3: AVX2Backend.ExtremeFiniteValuesRetainDoublePrecisionRange
+ 3/37 Test  #3: AVX2Backend.ExtremeFiniteValuesRetainDoublePrecisionRange ............***Skipped   0.01 sec
+      Start  4: CosineSimilarityTest.ComputesKnownSimilarities
+ 4/37 Test  #4: CosineSimilarityTest.ComputesKnownSimilarities .......................   Passed    0.01 sec
+      Start  5: CosineSimilarityTest.DefinesZeroMagnitudeSimilarityAsZero
+ 5/37 Test  #5: CosineSimilarityTest.DefinesZeroMagnitudeSimilarityAsZero ............   Passed    0.01 sec
+      Start  6: CosineSimilarityTest.RejectsMismatchedDimensions
+ 6/37 Test  #6: CosineSimilarityTest.RejectsMismatchedDimensions .....................   Passed    0.01 sec
+      Start  7: CosineSimilarityTest.RejectsEmptyVectors
+ 7/37 Test  #7: CosineSimilarityTest.RejectsEmptyVectors .............................   Passed    0.01 sec
+      Start  8: VectorStoreTest.InsertsAndRetrievesVectors
+ 8/37 Test  #8: VectorStoreTest.InsertsAndRetrievesVectors ...........................   Passed    0.01 sec
+      Start  9: VectorStoreTest.RejectsInvalidDimensions
+ 9/37 Test  #9: VectorStoreTest.RejectsInvalidDimensions .............................   Passed    0.01 sec
+      Start 10: VectorStoreTest.RejectsDuplicateIdsWithoutReplacingOriginal
+10/37 Test #10: VectorStoreTest.RejectsDuplicateIdsWithoutReplacingOriginal ..........   Passed    0.01 sec
+      Start 11: VectorStoreTest.FindsTopOneResult
+11/37 Test #11: VectorStoreTest.FindsTopOneResult ....................................   Passed    0.01 sec
+      Start 12: VectorStoreTest.ReturnsTopKInDescendingSimilarityOrder
+12/37 Test #12: VectorStoreTest.ReturnsTopKInDescendingSimilarityOrder ...............   Passed    0.01 sec
+      Start 13: VectorStoreTest.ReturnsAllVectorsWhenKExceedsDatabaseSize
+13/37 Test #13: VectorStoreTest.ReturnsAllVectorsWhenKExceedsDatabaseSize ............   Passed    0.01 sec
+      Start 14: VectorStoreTest.HandlesEmptyDatabaseAndZeroK
+14/37 Test #14: VectorStoreTest.HandlesEmptyDatabaseAndZeroK .........................   Passed    0.01 sec
+      Start 15: VectorStoreTest.SearchesZeroVectorsWithoutNan
+15/37 Test #15: VectorStoreTest.SearchesZeroVectorsWithoutNan ........................   Passed    0.01 sec
+      Start 16: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/1
+16/37 Test #16: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/1 .....***Skipped   0.01 sec
+      Start 17: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/2
+17/37 Test #17: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/2 .....***Skipped   0.01 sec
+      Start 18: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/3
+18/37 Test #18: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/3 .....***Skipped   0.01 sec
+      Start 19: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/4
+19/37 Test #19: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/4 .....***Skipped   0.01 sec
+      Start 20: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/5
+20/37 Test #20: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/5 .....***Skipped   0.01 sec
+      Start 21: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/6
+21/37 Test #21: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/6 .....***Skipped   0.01 sec
+      Start 22: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/7
+22/37 Test #22: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/7 .....***Skipped   0.01 sec
+      Start 23: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/8
+23/37 Test #23: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/8 .....***Skipped   0.01 sec
+      Start 24: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/9
+24/37 Test #24: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/9 .....***Skipped   0.01 sec
+      Start 25: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/10
+25/37 Test #25: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/10 ....***Skipped   0.01 sec
+      Start 26: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/11
+26/37 Test #26: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/11 ....***Skipped   0.01 sec
+      Start 27: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/12
+27/37 Test #27: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/12 ....***Skipped   0.01 sec
+      Start 28: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/13
+28/37 Test #28: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/13 ....***Skipped   0.01 sec
+      Start 29: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/14
+29/37 Test #29: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/14 ....***Skipped   0.01 sec
+      Start 30: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/15
+30/37 Test #30: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/15 ....***Skipped   0.01 sec
+      Start 31: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/16
+31/37 Test #31: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/16 ....***Skipped   0.01 sec
+      Start 32: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/17
+32/37 Test #32: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/17 ....***Skipped   0.01 sec
+      Start 33: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/31
+33/37 Test #33: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/31 ....***Skipped   0.01 sec
+      Start 34: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/384
+34/37 Test #34: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/384 ...***Skipped   0.01 sec
+      Start 35: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/767
+35/37 Test #35: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/767 ...***Skipped   0.01 sec
+      Start 36: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/768
+36/37 Test #36: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/768 ...***Skipped   0.01 sec
+      Start 37: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/769
+37/37 Test #37: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/769 ...***Skipped   0.01 sec
+
+100% tests passed, 0 tests failed out of 37
+
+Total Test time (real) =   0.32 sec
+
+The following tests did not run:
+	  2 - AVX2Backend.StoreContractAndTies (Skipped)
+	  3 - AVX2Backend.ExtremeFiniteValuesRetainDoublePrecisionRange (Skipped)
+	 16 - Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/1 (Skipped)
+	 17 - Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/2 (Skipped)
+	 18 - Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/3 (Skipped)
+	 19 - Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/4 (Skipped)
+	 20 - Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/5 (Skipped)
+	 21 - Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/6 (Skipped)
+	 22 - Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/7 (Skipped)
+	 23 - Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/8 (Skipped)
+	 24 - Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/9 (Skipped)
+	 25 - Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/10 (Skipped)
+	 26 - Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/11 (Skipped)
+	 27 - Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/12 (Skipped)
+	 28 - Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/13 (Skipped)
+	 29 - Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/14 (Skipped)
+	 30 - Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/15 (Skipped)
+	 31 - Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/16 (Skipped)
+	 32 - Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/17 (Skipped)
+	 33 - Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/31 (Skipped)
+	 34 - Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/384 (Skipped)
+	 35 - Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/767 (Skipped)
+	 36 - Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/768 (Skipped)
+	 37 - Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/769 (Skipped)

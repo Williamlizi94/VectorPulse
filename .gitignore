@@ -1,0 +1,5 @@
+/build/
+/build-noavx/
+/out/
+/.vs/
+*.user

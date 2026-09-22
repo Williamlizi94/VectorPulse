@@ -1,0 +1,36 @@
+#pragma once
+
+#include "vectorpulse/search_backend.h"
+
+#include <cstddef>
+#include <string>
+#include <unordered_map>
+#include <vector>
+
+namespace vectorpulse {
+
+class ScalarSearchBackend final : public SearchBackend {
+public:
+    explicit ScalarSearchBackend(std::size_t dimension);
+
+    [[nodiscard]] std::size_t dimension() const noexcept override;
+    [[nodiscard]] std::size_t size() const noexcept override;
+
+    void add(std::string id, std::vector<float> values) override;
+    [[nodiscard]] const std::vector<float>& get(std::string_view id) const override;
+    [[nodiscard]] std::vector<SearchResult> search(
+        std::span<const float> query,
+        std::size_t k) const override;
+
+private:
+    struct Entry {
+        std::string id;
+        std::vector<float> values;
+    };
+
+    std::size_t dimension_;
+    std::vector<Entry> entries_;
+    std::unordered_map<std::string, std::size_t> index_by_id_;
+};
+
+}  // namespace vectorpulse

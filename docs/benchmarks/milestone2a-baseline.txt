@@ -1,0 +1,7 @@
+Pre-change Milestone 1 baseline (Release, Intel Core i9-14900F)
+Existing build succeeded; 12/12 tests passed.
+10,000 vectors / 128 dimensions / 100 queries / K=10:
+114.946 ms total; 1.149 ms average; 869.977 QPS; checksum 33.259.
+100,000 vectors / 768 dimensions / 100 queries / K=10:
+6124.167 ms total; 61.242 ms average; 16.329 QPS; checksum 15.846.
+Original benchmark, seed 42, no source modifications before measurement.
