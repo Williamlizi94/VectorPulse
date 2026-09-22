@@ -1,0 +1,1125 @@
+{
+  "benchmark": {
+    "10k": {
+      "Scalar": {
+        "latencies": [
+          8.773,
+          6.159,
+          5.703,
+          29.107
+        ],
+        "error": 0.0,
+        "id_checksum": "6942403294749163753",
+        "score_checksum": "360.302542560"
+      },
+      "CUDA-Persistent": {
+        "latencies": [
+          1.196,
+          0.758,
+          0.647,
+          10.777
+        ],
+        "error": 0.0,
+        "id_checksum": "6942403294749163753",
+        "score_checksum": "360.302542560",
+        "kernel": [
+          0.287295,
+          0.28296,
+          0.277504,
+          0.427808
+        ]
+      },
+      "CUDA-BlockParallel": {
+        "latencies": [
+          1.194,
+          0.74,
+          0.539,
+          10.335
+        ],
+        "error": 0.0,
+        "id_checksum": "6942403294749163753",
+        "score_checksum": "360.302542560",
+        "kernel": [
+          0.206243,
+          0.195584,
+          0.185344,
+          1.950368
+        ]
+      },
+      "CUDA-NaiveFP32": {
+        "latencies": [
+          1.054,
+          0.611,
+          0.431,
+          7.29
+        ],
+        "error": 2.086162567e-07,
+        "id_checksum": "6942403294749163753",
+        "score_checksum": "360.302550428",
+        "kernel": [
+          0.099319,
+          0.098256,
+          0.088064,
+          0.182272
+        ]
+      },
+      "CUDA-BlockParallelFP32": {
+        "latencies": [
+          0.586,
+          0.548,
+          0.415,
+          2.417
+        ],
+        "error": 2.235174179e-08,
+        "id_checksum": "6942403294749163753",
+        "score_checksum": "360.302542783",
+        "kernel": [
+          0.055711,
+          0.054272,
+          0.04592,
+          0.108736
+        ]
+      }
+    },
+    "100k": {
+      "Scalar": {
+        "latencies": [
+          118.652,
+          115.673,
+          78.717,
+          335.401
+        ],
+        "error": 0.0,
+        "id_checksum": "4652264718457849833",
+        "score_checksum": "425.896235436"
+      },
+      "CUDA-Persistent": {
+        "latencies": [
+          5.377,
+          3.526,
+          2.957,
+          33.931
+        ],
+        "error": 0.0,
+        "id_checksum": "4652264718457849833",
+        "score_checksum": "425.896235436",
+        "kernel": [
+          2.407305,
+          1.482752,
+          1.410112,
+          24.292353
+        ]
+      },
+      "CUDA-BlockParallel": {
+        "latencies": [
+          4.069,
+          3.6,
+          3.255,
+          9.802
+        ],
+        "error": 0.0,
+        "id_checksum": "4652264718457849833",
+        "score_checksum": "425.896235436",
+        "kernel": [
+          1.756359,
+          1.711968,
+          1.672192,
+          2.08384
+        ]
+      },
+      "CUDA-NaiveFP32": {
+        "latencies": [
+          5.292,
+          3.356,
+          2.904,
+          31.701
+        ],
+        "error": 2.384185791e-07,
+        "id_checksum": "4652264718457849833",
+        "score_checksum": "425.896234632",
+        "kernel": [
+          2.583606,
+          1.396768,
+          1.373184,
+          22.806528
+        ]
+      },
+      "CUDA-BlockParallelFP32": {
+        "latencies": [
+          3.009,
+          2.433,
+          2.003,
+          11.537
+        ],
+        "error": 2.980232239e-08,
+        "id_checksum": "4652264718457849833",
+        "score_checksum": "425.896234721",
+        "kernel": [
+          0.495563,
+          0.49128,
+          0.470016,
+          0.791104
+        ]
+      }
+    },
+    "1m": {
+      "Scalar": {
+        "latencies": [
+          1142.884,
+          1166.264,
+          596.969,
+          1374.787
+        ],
+        "error": 0.0,
+        "id_checksum": "10511493593234606401",
+        "score_checksum": "48.008113995"
+      },
+      "CUDA-Persistent": {
+        "latencies": [
+          51.821,
+          42.488,
+          31.759,
+          300.534
+        ],
+        "error": 0.0,
+        "id_checksum": "10511493593234606401",
+        "score_checksum": "48.008113995",
+        "kernel": [
+          20.984103,
+          13.908304,
+          13.86048,
+          215.431168
+        ]
+      },
+      "CUDA-BlockParallel": {
+        "latencies": [
+          46.265,
+          44.552,
+          33.626,
+          66.031
+        ],
+        "error": 0.0,
+        "id_checksum": "10511493593234606401",
+        "score_checksum": "48.008113995",
+        "kernel": [
+          18.401401,
+          18.944,
+          16.633856,
+          19.558399
+        ]
+      },
+      "CUDA-NaiveFP32": {
+        "latencies": [
+          57.255,
+          38.864,
+          30.026,
+          339.741
+        ],
+        "error": 2.086162567e-07,
+        "id_checksum": "10511493593234606401",
+        "score_checksum": "48.008112699",
+        "kernel": [
+          31.319831,
+          13.709728,
+          13.674176,
+          318.855164
+        ]
+      },
+      "CUDA-BlockParallelFP32": {
+        "latencies": [
+          32.407,
+          30.978,
+          19.976,
+          55.109
+        ],
+        "error": 2.980232239e-08,
+        "id_checksum": "10511493593234606401",
+        "score_checksum": "48.008114174",
+        "kernel": [
+          4.875732,
+          4.891136,
+          4.618208,
+          5.10976
+        ]
+      }
+    }
+  },
+  "nsight": {
+    "10000-naive": {
+      "gpu__time_duration.sum": {
+        "mean": 274965.3333333333,
+        "min": 274880.0,
+        "max": 275136.0,
+        "values": [
+          275136.0,
+          274880.0,
+          274880.0
+        ]
+      },
+      "sm__pipe_fma_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 0.12,
+        "min": 0.12,
+        "max": 0.12,
+        "values": [
+          0.12,
+          0.12,
+          0.12
+        ]
+      },
+      "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 84.89666666666668,
+        "min": 84.89,
+        "max": 84.9,
+        "values": [
+          84.89,
+          84.9,
+          84.9
+        ]
+      },
+      "sm__warps_active.avg.pct_of_peak_sustained_active": {
+        "mean": 16.446666666666665,
+        "min": 16.44,
+        "max": 16.45,
+        "values": [
+          16.44,
+          16.45,
+          16.45
+        ]
+      },
+      "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+        "mean": 16.273333333333333,
+        "min": 15.53,
+        "max": 17.75,
+        "values": [
+          15.53,
+          15.54,
+          17.75
+        ]
+      },
+      "launch__registers_per_thread": {
+        "mean": 38.0,
+        "min": 38.0,
+        "max": 38.0,
+        "values": [
+          38.0,
+          38.0,
+          38.0
+        ]
+      },
+      "launch__shared_mem_per_block_static": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "score_error": 0.0
+    },
+    "10000-block": {
+      "gpu__time_duration.sum": {
+        "mean": 183082.66666666666,
+        "min": 182976.0,
+        "max": 183200.0,
+        "values": [
+          183072.0,
+          182976.0,
+          183200.0
+        ]
+      },
+      "sm__pipe_fma_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 1.37,
+        "min": 1.37,
+        "max": 1.37,
+        "values": [
+          1.37,
+          1.37,
+          1.37
+        ]
+      },
+      "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 84.88333333333333,
+        "min": 84.88,
+        "max": 84.89,
+        "values": [
+          84.89,
+          84.88,
+          84.88
+        ]
+      },
+      "sm__warps_active.avg.pct_of_peak_sustained_active": {
+        "mean": 78.44,
+        "min": 78.43,
+        "max": 78.45,
+        "values": [
+          78.45,
+          78.44,
+          78.43
+        ]
+      },
+      "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+        "mean": 24.686666666666667,
+        "min": 23.35,
+        "max": 27.34,
+        "values": [
+          27.34,
+          23.35,
+          23.37
+        ]
+      },
+      "launch__registers_per_thread": {
+        "mean": 25.0,
+        "min": 25.0,
+        "max": 25.0,
+        "values": [
+          25.0,
+          25.0,
+          25.0
+        ]
+      },
+      "launch__shared_mem_per_block_static": {
+        "mean": 4096.0,
+        "min": 4096.0,
+        "max": 4096.0,
+        "values": [
+          4096.0,
+          4096.0,
+          4096.0
+        ]
+      },
+      "score_error": 0.0
+    },
+    "10000-naive32": {
+      "gpu__time_duration.sum": {
+        "mean": 149440.0,
+        "min": 149312.0,
+        "max": 149632.0,
+        "values": [
+          149376.0,
+          149632.0,
+          149312.0
+        ]
+      },
+      "sm__pipe_fma_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 1.82,
+        "min": 1.78,
+        "max": 1.84,
+        "values": [
+          1.84,
+          1.78,
+          1.84
+        ]
+      },
+      "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 0.7033333333333333,
+        "min": 0.69,
+        "max": 0.71,
+        "values": [
+          0.71,
+          0.69,
+          0.71
+        ]
+      },
+      "sm__warps_active.avg.pct_of_peak_sustained_active": {
+        "mean": 15.653333333333332,
+        "min": 15.32,
+        "max": 15.85,
+        "values": [
+          15.85,
+          15.32,
+          15.79
+        ]
+      },
+      "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+        "mean": 28.626666666666665,
+        "min": 28.61,
+        "max": 28.64,
+        "values": [
+          28.64,
+          28.61,
+          28.63
+        ]
+      },
+      "launch__registers_per_thread": {
+        "mean": 27.0,
+        "min": 27.0,
+        "max": 27.0,
+        "values": [
+          27.0,
+          27.0,
+          27.0
+        ]
+      },
+      "launch__shared_mem_per_block_static": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "score_error": 1.11759e-07
+    },
+    "10000-block32": {
+      "gpu__time_duration.sum": {
+        "mean": 52768.0,
+        "min": 51936.0,
+        "max": 53408.0,
+        "values": [
+          51936.0,
+          53408.0,
+          52960.0
+        ]
+      },
+      "sm__pipe_fma_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 8.753333333333334,
+        "min": 8.71,
+        "max": 8.78,
+        "values": [
+          8.78,
+          8.77,
+          8.71
+        ]
+      },
+      "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 44.31666666666666,
+        "min": 44.07,
+        "max": 44.47,
+        "values": [
+          44.47,
+          44.41,
+          44.07
+        ]
+      },
+      "sm__warps_active.avg.pct_of_peak_sustained_active": {
+        "mean": 80.16333333333333,
+        "min": 79.85,
+        "max": 80.32,
+        "values": [
+          80.32,
+          80.32,
+          79.85
+        ]
+      },
+      "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+        "mean": 83.69333333333333,
+        "min": 82.32,
+        "max": 84.69,
+        "values": [
+          82.32,
+          84.07,
+          84.69
+        ]
+      },
+      "launch__registers_per_thread": {
+        "mean": 25.0,
+        "min": 25.0,
+        "max": 25.0,
+        "values": [
+          25.0,
+          25.0,
+          25.0
+        ]
+      },
+      "launch__shared_mem_per_block_static": {
+        "mean": 2048.0,
+        "min": 2048.0,
+        "max": 2048.0,
+        "values": [
+          2048.0,
+          2048.0,
+          2048.0
+        ]
+      },
+      "score_error": 1.49012e-08
+    },
+    "100000-naive": {
+      "gpu__time_duration.sum": {
+        "mean": 1442026.6666666667,
+        "min": 1438304.0,
+        "max": 1444288.0,
+        "values": [
+          1444288.0,
+          1438304.0,
+          1443488.0
+        ]
+      },
+      "sm__pipe_fma_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 0.11333333333333333,
+        "min": 0.11,
+        "max": 0.12,
+        "values": [
+          0.12,
+          0.11,
+          0.11
+        ]
+      },
+      "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 80.64,
+        "min": 78.8,
+        "max": 84.1,
+        "values": [
+          84.1,
+          78.8,
+          79.02
+        ]
+      },
+      "sm__warps_active.avg.pct_of_peak_sustained_active": {
+        "mean": 68.35000000000001,
+        "min": 65.2,
+        "max": 71.26,
+        "values": [
+          65.2,
+          68.59,
+          71.26
+        ]
+      },
+      "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+        "mean": 30.14,
+        "min": 29.85,
+        "max": 30.53,
+        "values": [
+          30.04,
+          30.53,
+          29.85
+        ]
+      },
+      "launch__registers_per_thread": {
+        "mean": 38.0,
+        "min": 38.0,
+        "max": 38.0,
+        "values": [
+          38.0,
+          38.0,
+          38.0
+        ]
+      },
+      "launch__shared_mem_per_block_static": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "score_error": 0.0
+    },
+    "100000-block": {
+      "gpu__time_duration.sum": {
+        "mean": 1661248.0,
+        "min": 1655872.0,
+        "max": 1664032.0,
+        "values": [
+          1655872.0,
+          1663840.0,
+          1664032.0
+        ]
+      },
+      "sm__pipe_fma_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 1.38,
+        "min": 1.38,
+        "max": 1.38,
+        "values": [
+          1.38,
+          1.38,
+          1.38
+        ]
+      },
+      "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 85.24,
+        "min": 85.24,
+        "max": 85.24,
+        "values": [
+          85.24,
+          85.24,
+          85.24
+        ]
+      },
+      "sm__warps_active.avg.pct_of_peak_sustained_active": {
+        "mean": 78.90333333333334,
+        "min": 78.8,
+        "max": 78.96,
+        "values": [
+          78.96,
+          78.8,
+          78.95
+        ]
+      },
+      "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+        "mean": 26.12333333333333,
+        "min": 25.73,
+        "max": 26.58,
+        "values": [
+          26.58,
+          26.06,
+          25.73
+        ]
+      },
+      "launch__registers_per_thread": {
+        "mean": 25.0,
+        "min": 25.0,
+        "max": 25.0,
+        "values": [
+          25.0,
+          25.0,
+          25.0
+        ]
+      },
+      "launch__shared_mem_per_block_static": {
+        "mean": 4096.0,
+        "min": 4096.0,
+        "max": 4096.0,
+        "values": [
+          4096.0,
+          4096.0,
+          4096.0
+        ]
+      },
+      "score_error": 0.0
+    },
+    "100000-naive32": {
+      "gpu__time_duration.sum": {
+        "mean": 1373930.6666666667,
+        "min": 1367392.0,
+        "max": 1385120.0,
+        "values": [
+          1367392.0,
+          1385120.0,
+          1369280.0
+        ]
+      },
+      "sm__pipe_fma_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 1.0166666666666666,
+        "min": 1.0,
+        "max": 1.03,
+        "values": [
+          1.03,
+          1.0,
+          1.02
+        ]
+      },
+      "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 0.39666666666666667,
+        "min": 0.39,
+        "max": 0.4,
+        "values": [
+          0.4,
+          0.39,
+          0.4
+        ]
+      },
+      "sm__warps_active.avg.pct_of_peak_sustained_active": {
+        "mean": 65.25,
+        "min": 63.83,
+        "max": 66.01,
+        "values": [
+          66.01,
+          63.83,
+          65.91
+        ]
+      },
+      "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+        "mean": 31.683333333333334,
+        "min": 31.31,
+        "max": 32.36,
+        "values": [
+          31.38,
+          32.36,
+          31.31
+        ]
+      },
+      "launch__registers_per_thread": {
+        "mean": 27.0,
+        "min": 27.0,
+        "max": 27.0,
+        "values": [
+          27.0,
+          27.0,
+          27.0
+        ]
+      },
+      "launch__shared_mem_per_block_static": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "score_error": 1.93715e-07
+    },
+    "100000-block32": {
+      "gpu__time_duration.sum": {
+        "mean": 470784.0,
+        "min": 462880.0,
+        "max": 479424.0,
+        "values": [
+          479424.0,
+          470048.0,
+          462880.0
+        ]
+      },
+      "sm__pipe_fma_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 8.886666666666667,
+        "min": 8.74,
+        "max": 9.18,
+        "values": [
+          9.18,
+          8.74,
+          8.74
+        ]
+      },
+      "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 44.99666666666667,
+        "min": 44.24,
+        "max": 46.49,
+        "values": [
+          46.49,
+          44.24,
+          44.26
+        ]
+      },
+      "sm__warps_active.avg.pct_of_peak_sustained_active": {
+        "mean": 81.61333333333333,
+        "min": 79.88,
+        "max": 84.14,
+        "values": [
+          79.88,
+          84.14,
+          80.82
+        ]
+      },
+      "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+        "mean": 91.59,
+        "min": 89.99,
+        "max": 92.47,
+        "values": [
+          89.99,
+          92.31,
+          92.47
+        ]
+      },
+      "launch__registers_per_thread": {
+        "mean": 25.0,
+        "min": 25.0,
+        "max": 25.0,
+        "values": [
+          25.0,
+          25.0,
+          25.0
+        ]
+      },
+      "launch__shared_mem_per_block_static": {
+        "mean": 2048.0,
+        "min": 2048.0,
+        "max": 2048.0,
+        "values": [
+          2048.0,
+          2048.0,
+          2048.0
+        ]
+      },
+      "score_error": 1.49012e-08
+    },
+    "1000000-naive": {
+      "gpu__time_duration.sum": {
+        "mean": 14050240.0,
+        "min": 13697504.0,
+        "max": 14746688.0,
+        "values": [
+          13697504.0,
+          14746688.0,
+          13706528.0
+        ]
+      },
+      "sm__pipe_fma_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 0.11,
+        "min": 0.11,
+        "max": 0.11,
+        "values": [
+          0.11,
+          0.11,
+          0.11
+        ]
+      },
+      "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 77.52666666666667,
+        "min": 77.35,
+        "max": 77.76,
+        "values": [
+          77.47,
+          77.35,
+          77.76
+        ]
+      },
+      "sm__warps_active.avg.pct_of_peak_sustained_active": {
+        "mean": 95.47333333333333,
+        "min": 95.01,
+        "max": 95.91,
+        "values": [
+          95.91,
+          95.01,
+          95.5
+        ]
+      },
+      "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+        "mean": 31.46666666666667,
+        "min": 31.32,
+        "max": 31.55,
+        "values": [
+          31.55,
+          31.32,
+          31.53
+        ]
+      },
+      "launch__registers_per_thread": {
+        "mean": 38.0,
+        "min": 38.0,
+        "max": 38.0,
+        "values": [
+          38.0,
+          38.0,
+          38.0
+        ]
+      },
+      "launch__shared_mem_per_block_static": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "score_error": 0.0
+    },
+    "1000000-block": {
+      "gpu__time_duration.sum": {
+        "mean": 16670816.0,
+        "min": 16670272.0,
+        "max": 16671584.0,
+        "values": [
+          16670272.0,
+          16670592.0,
+          16671584.0
+        ]
+      },
+      "sm__pipe_fma_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 1.38,
+        "min": 1.38,
+        "max": 1.38,
+        "values": [
+          1.38,
+          1.38,
+          1.38
+        ]
+      },
+      "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 85.27,
+        "min": 85.27,
+        "max": 85.27,
+        "values": [
+          85.27,
+          85.27,
+          85.27
+        ]
+      },
+      "sm__warps_active.avg.pct_of_peak_sustained_active": {
+        "mean": 80.32666666666667,
+        "min": 80.27,
+        "max": 80.37,
+        "values": [
+          80.27,
+          80.37,
+          80.34
+        ]
+      },
+      "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+        "mean": 26.326666666666668,
+        "min": 26.21,
+        "max": 26.39,
+        "values": [
+          26.38,
+          26.39,
+          26.21
+        ]
+      },
+      "launch__registers_per_thread": {
+        "mean": 25.0,
+        "min": 25.0,
+        "max": 25.0,
+        "values": [
+          25.0,
+          25.0,
+          25.0
+        ]
+      },
+      "launch__shared_mem_per_block_static": {
+        "mean": 4096.0,
+        "min": 4096.0,
+        "max": 4096.0,
+        "values": [
+          4096.0,
+          4096.0,
+          4096.0
+        ]
+      },
+      "score_error": 0.0
+    },
+    "1000000-naive32": {
+      "gpu__time_duration.sum": {
+        "mean": 13984469.333333334,
+        "min": 13652512.0,
+        "max": 14636512.0,
+        "values": [
+          13664384.0,
+          14636512.0,
+          13652512.0
+        ]
+      },
+      "sm__pipe_fma_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 0.91,
+        "min": 0.9,
+        "max": 0.92,
+        "values": [
+          0.9,
+          0.91,
+          0.92
+        ]
+      },
+      "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 0.35,
+        "min": 0.35,
+        "max": 0.35,
+        "values": [
+          0.35,
+          0.35,
+          0.35
+        ]
+      },
+      "sm__warps_active.avg.pct_of_peak_sustained_active": {
+        "mean": 95.54333333333334,
+        "min": 94.88,
+        "max": 95.9,
+        "values": [
+          94.88,
+          95.85,
+          95.9
+        ]
+      },
+      "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+        "mean": 31.756666666666664,
+        "min": 31.65,
+        "max": 31.9,
+        "values": [
+          31.9,
+          31.72,
+          31.65
+        ]
+      },
+      "launch__registers_per_thread": {
+        "mean": 27.0,
+        "min": 27.0,
+        "max": 27.0,
+        "values": [
+          27.0,
+          27.0,
+          27.0
+        ]
+      },
+      "launch__shared_mem_per_block_static": {
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "score_error": 1.04308e-07
+    },
+    "1000000-block32": {
+      "gpu__time_duration.sum": {
+        "mean": 4773408.0,
+        "min": 4593664.0,
+        "max": 5101152.0,
+        "values": [
+          4625408.0,
+          4593664.0,
+          5101152.0
+        ]
+      },
+      "sm__pipe_fma_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 8.75,
+        "min": 8.73,
+        "max": 8.79,
+        "values": [
+          8.73,
+          8.79,
+          8.73
+        ]
+      },
+      "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active": {
+        "mean": 44.303333333333335,
+        "min": 44.19,
+        "max": 44.51,
+        "values": [
+          44.21,
+          44.51,
+          44.19
+        ]
+      },
+      "sm__warps_active.avg.pct_of_peak_sustained_active": {
+        "mean": 80.81666666666666,
+        "min": 80.2,
+        "max": 81.35,
+        "values": [
+          80.9,
+          81.35,
+          80.2
+        ]
+      },
+      "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+        "mean": 92.79,
+        "min": 91.93,
+        "max": 93.32,
+        "values": [
+          93.32,
+          93.12,
+          91.93
+        ]
+      },
+      "launch__registers_per_thread": {
+        "mean": 25.0,
+        "min": 25.0,
+        "max": 25.0,
+        "values": [
+          25.0,
+          25.0,
+          25.0
+        ]
+      },
+      "launch__shared_mem_per_block_static": {
+        "mean": 2048.0,
+        "min": 2048.0,
+        "max": 2048.0,
+        "values": [
+          2048.0,
+          2048.0,
+          2048.0
+        ]
+      },
+      "score_error": 2.98023e-08
+    }
+  }
+}

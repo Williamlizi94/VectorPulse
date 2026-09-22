@@ -1,0 +1,94 @@
+Milestone 3 environment and validation
+CPU: Intel(R) Core(TM) i9-14900F, 24 physical cores, 32 logical processors
+std::thread::hardware_concurrency(): 32
+GPU: NVIDIA GeForce RTX 4080 SUPER
+Compute capability: 8.9; global memory bytes: 17170956288 (16 GB class)
+NVIDIA driver: 610.60, WDDM, display-active shared GPU
+cudaDriverGetVersion: 13030 (driver API support 13.3)
+cudaRuntimeGetVersion: 12090 (runtime 12.9)
+CUDA Toolkit distribution: 12.9 Update 1 (redistrib_12.9.1.json)
+CUDA compiler: nvcc 12.9.86; runtime package cuda_cudart 12.9.79
+Compiler host: MSVC 19.44.35228.0; CMake 3.31.6-msvc6
+CPU generator: Visual Studio 17 2022; CUDA generator: Ninja
+CPU flags: /O2 /Ob2 /DNDEBUG /MD /std:c++20 /W4 /permissive-
+AVX2 kernel only: /arch:AVX2
+CUDA flags: -D_WINDOWS -DNDEBUG -std=c++20 --fmad=false; sm_89 and compute_89 PTX
+CUDA host flags: -Xcompiler=" /EHsc" -Xcompiler="-O2 -Ob2" -Xcompiler=-MD; no explicit nvcc -O3 flag
+CUDA runtime linkage: static
+No fast math, shared memory, warp operations, GPU Top-K, external math/search library,
+CUDA graphs, multi-GPU, or later-milestone optimization.
+No affinity, frequency controls, exclusive GPU reservation, or hardware counter profiling.
+
+Toolkit provisioning:
+No preinstalled nvcc was found. Official NVIDIA archives were downloaded and
+SHA-256 verified, then assembled under ignored out/cuda-12.9 without changing
+the system GPU driver or installing a global toolkit.
+Manifest: https://developer.download.nvidia.com/compute/cuda/redist/redistrib_12.9.1.json
+cuda_nvcc 12.9.86 SHA256: 227b109663b5e57d2718bcabb24a4ba0d9d4e52d958e327dc476f7c28691be85
+cuda_cudart 12.9.79 SHA256: 179e9c43b0735ffe67207b3da556eb5a0c50f3047961882b7657d3b822d34ef8
+cuda_cccl 12.9.27 SHA256: 17aaa7c6b8f94a417d8f3261780b7e34b9cbdfab7513bce86768623b06aa28b5
+The toolkit's header package is present, but no CCCL/Thrust algorithms implement search.
+
+CPU-only build commands:
+cmake --build build --config Release
+ctest --test-dir build -C Release --output-on-failure
+CUDA option defaults OFF; no CUDA compiler/toolkit discovery in this configuration.
+
+CUDA build (MSVC developer terminal with CMake/Ninja on PATH):
+cmake -S . -B out/build-cuda -G Ninja -DCMAKE_BUILD_TYPE=Release -DVECTORPULSE_ENABLE_CUDA=ON -DCMAKE_CUDA_ARCHITECTURES=89 -DCMAKE_CUDA_COMPILER="E:/Project VectorPulse/out/cuda-12.9/bin/nvcc.exe" -DCUDAToolkit_ROOT="E:/Project VectorPulse/out/cuda-12.9" -DFETCHCONTENT_SOURCE_DIR_GOOGLETEST="E:/Project VectorPulse/build/_deps/googletest-src"
+cmake --build out/build-cuda --parallel 4
+ctest --test-dir out/build-cuda --output-on-failure
+
+Prerequisite build passed before source modifications. All 242 original tests
+passed (3.56 seconds), then the existing five-repeat CPU benchmark completed.
+Pre-change means: scalar 124.340 ms, AVX2 73.564 ms, threaded scalar 12.888 ms
+at 16 threads, threaded AVX2 10.032 ms at 16 threads. All checksums matched.
+
+Final CPU-only Release build passed. Tests: 243 passed, 23 skipped, zero failed.
+Final CUDA-enabled Release build passed. Tests: 266 passed, zero skipped/failed.
+All 24 new CUDA tests pass with hardware available, including scalar/AVX2 parity.
+With CUDA_VISIBLE_DEVICES=-1: support test passes, 23 hardware tests skip;
+CUDA-enabled benchmark reports unavailable and CPU backends still run.
+CUDA-requested/no-compiler fallback: configured with CMAKE_CUDA_COMPILER=NOTFOUND;
+warning and CUDA compiled OFF reported; CPU library build succeeded.
+
+Baseline/full benchmark:
+vectorpulse_benchmark.exe --vectors 100000 --dimension 768 --queries 100 --top-k 10 --warmups 1 --repetitions 5 --threads 1,2,4,8,16,32
+Baseline executable: build/Release/vectorpulse_benchmark.exe (before changes).
+Final executable: out/build-cuda/vectorpulse_benchmark.exe.
+Small datasets: same final command with --vectors 1000 or 10000 --repetitions 3.
+Large dataset: --vectors 1000000 --dimension 768 --queries 10 --top-k 10 --warmups 1 --repetitions 3 --threads 16,32.
+15 compared stores at 1k/10k/100k; seven at 1M to bound host memory.
+All sizes: one complete warm-up round, seed-42 input, seed-2026 backend-order shuffle.
+Every warm-up/measured result compared with scalar outside the timed section.
+All variants at all sizes had identical score/ID checksums and zero score error.
+
+Launch and storage:
+FP32 row-major host flattening each query, full matrix/query H2D each query,
+fresh cudaMalloc/cudaFree buffers/events each query; no device-resident cache.
+CPU computes query squared norm once in double.
+One CUDA thread per vector, serial dimension loop, double dot/norm accumulation.
+256 threads/block; grids for 1k/10k/100k/1M: 4/40/391/3907 blocks.
+D2H copies all FP32 scores; CPU performs deterministic partial_sort/sort Top-K.
+
+Timing:
+Outer steady_clock measures end-to-end search and result retention.
+Host steady_clock phases measure flatten/norm, synchronized H2D, D2H, CPU Top-K.
+CUDA events measure the kernel interval; stop event synchronized and checked.
+End-to-end includes allocation, events, synchronization and scratch/resource cleanup.
+Phases do not include all overhead and need not sum to total.
+Warm-up/input generation/insertion/scalar checks/checksums are excluded.
+QPS and comparisons use end-to-end latency, never kernel-only latency.
+
+100k final means: scalar 121.072 ms / 8.260 QPS; AVX2 71.784 / 13.931;
+best threaded AVX2 16 threads 9.378 / 106.633; CUDA 207.770 / 4.813.
+CUDA kernel mean 11.108373 ms; flatten 101.431460; H2D 74.037183;
+D2H 0.322836; CPU Top-K 1.629793. CUDA about 22.16x slower than best CPU.
+No end-to-end CUDA crossover at 1k, 10k, 100k or 1M.
+Flattening plus H2D explain about 84.5% of the measured 100k CUDA latency.
+No optimization was attempted to hide these baseline costs.
+Large-run sample: only 30 measured queries per backend and two CPU thread counts.
+Detailed phase distributions, complete CPU tables and checksums: milestone3-results.md.
+No thread/memory-failure injection, race sanitizer, or non-Windows validation claimed.
+All 17 pre-existing library source/header files were hash-verified unchanged.
+Prior working-tree changes were retained; no commit was created.

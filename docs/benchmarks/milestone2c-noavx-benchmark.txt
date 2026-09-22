@@ -1,0 +1,97 @@
+VectorPulse CPU benchmark (input seed 42, order seed 2026)
+hardware_concurrency(): 32
+Vectors: 257
+Dimensions: 17
+Queries: 10
+Top-K: 10
+Warm-up rounds: 1
+Measured repetitions: 2
+AVX2 and MultithreadedAVX2 unsupported: requires built kernel, AVX2, FMA and OS YMM support.
+Untimed scalar reference complete.
+Warm-up round 1 complete.
+Measured round 1
+MultithreadedScalar[2] mean ms/query: 0.060
+MultithreadedScalar[8] mean ms/query: 0.500
+MultithreadedScalar[4] mean ms/query: 0.115
+MultithreadedScalar[16] mean ms/query: 0.621
+MultithreadedScalar[32] mean ms/query: 1.129
+Scalar mean ms/query: 0.007
+MultithreadedScalar[1] mean ms/query: 0.007
+Measured round 2
+MultithreadedScalar[16] mean ms/query: 0.437
+MultithreadedScalar[1] mean ms/query: 0.008
+MultithreadedScalar[8] mean ms/query: 0.249
+MultithreadedScalar[2] mean ms/query: 0.061
+MultithreadedScalar[32] mean ms/query: 0.831
+MultithreadedScalar[4] mean ms/query: 0.138
+Scalar mean ms/query: 0.007
+
+Backend: Scalar
+Measured queries: 20
+Latency ms/query (mean / median / min / max): 0.007 / 0.006 / 0.006 / 0.014
+Round mean ms/query (median / min / max): 0.007 / 0.007 / 0.007
+QPS: 148478.099
+Speedup vs Scalar: 1.000x
+Score checksum (all measured results): 99.954302549
+ID checksum (all measured results): 1073739188265601073
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: MultithreadedScalar[1]
+Measured queries: 20
+Latency ms/query (mean / median / min / max): 0.007 / 0.007 / 0.006 / 0.012
+Round mean ms/query (median / min / max): 0.007 / 0.007 / 0.008
+QPS: 139958.013
+Speedup vs Scalar: 0.943x
+Score checksum (all measured results): 99.954302549
+ID checksum (all measured results): 1073739188265601073
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: MultithreadedScalar[2]
+Measured queries: 20
+Latency ms/query (mean / median / min / max): 0.061 / 0.059 / 0.054 / 0.075
+Round mean ms/query (median / min / max): 0.061 / 0.060 / 0.061
+QPS: 16479.895
+Speedup vs Scalar: 0.111x
+Score checksum (all measured results): 99.954302549
+ID checksum (all measured results): 1073739188265601073
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: MultithreadedScalar[4]
+Measured queries: 20
+Latency ms/query (mean / median / min / max): 0.127 / 0.125 / 0.108 / 0.163
+Round mean ms/query (median / min / max): 0.127 / 0.115 / 0.138
+QPS: 7901.078
+Speedup vs Scalar: 0.053x
+Score checksum (all measured results): 99.954302549
+ID checksum (all measured results): 1073739188265601073
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: MultithreadedScalar[8]
+Measured queries: 20
+Latency ms/query (mean / median / min / max): 0.375 / 0.237 / 0.210 / 1.827
+Round mean ms/query (median / min / max): 0.375 / 0.249 / 0.500
+QPS: 2668.802
+Speedup vs Scalar: 0.018x
+Score checksum (all measured results): 99.954302549
+ID checksum (all measured results): 1073739188265601073
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: MultithreadedScalar[16]
+Measured queries: 20
+Latency ms/query (mean / median / min / max): 0.529 / 0.434 / 0.384 / 1.503
+Round mean ms/query (median / min / max): 0.529 / 0.437 / 0.621
+QPS: 1890.770
+Speedup vs Scalar: 0.013x
+Score checksum (all measured results): 99.954302549
+ID checksum (all measured results): 1073739188265601073
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: MultithreadedScalar[32]
+Measured queries: 20
+Latency ms/query (mean / median / min / max): 0.980 / 0.814 / 0.764 / 2.595
+Round mean ms/query (median / min / max): 0.980 / 0.831 / 1.129
+QPS: 1020.590
+Speedup vs Scalar: 0.007x
+Score checksum (all measured results): 99.954302549
+ID checksum (all measured results): 1073739188265601073
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)

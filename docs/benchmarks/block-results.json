@@ -1,0 +1,1030 @@
+{
+  "1k": {
+    "backends": {
+      "Scalar": {
+        "latencies": [
+          0.731,
+          0.613,
+          0.576,
+          1.153
+        ],
+        "qps": 1367.255,
+        "error": 0.0,
+        "score_checksum": "287.063861355",
+        "id_checksum": "11688052443322439949"
+      },
+      "AVX2": {
+        "latencies": [
+          0.396,
+          0.507,
+          0.121,
+          0.943
+        ],
+        "qps": 2524.706,
+        "error": 0.0,
+        "score_checksum": "287.063861355",
+        "id_checksum": "11688052443322439949"
+      },
+      "MultithreadedScalar[1]": {
+        "latencies": [
+          0.727,
+          0.598,
+          0.556,
+          2.35
+        ],
+        "qps": 1374.825,
+        "error": 0.0,
+        "score_checksum": "287.063861355",
+        "id_checksum": "11688052443322439949"
+      },
+      "MultithreadedScalar[2]": {
+        "latencies": [
+          0.587,
+          0.447,
+          0.371,
+          2.42
+        ],
+        "qps": 1704.146,
+        "error": 0.0,
+        "score_checksum": "287.063861355",
+        "id_checksum": "11688052443322439949"
+      },
+      "MultithreadedScalar[4]": {
+        "latencies": [
+          0.565,
+          0.527,
+          0.287,
+          4.62
+        ],
+        "qps": 1769.537,
+        "error": 0.0,
+        "score_checksum": "287.063861355",
+        "id_checksum": "11688052443322439949"
+      },
+      "MultithreadedScalar[8]": {
+        "latencies": [
+          0.736,
+          0.688,
+          0.345,
+          7.95
+        ],
+        "qps": 1359.257,
+        "error": 0.0,
+        "score_checksum": "287.063861355",
+        "id_checksum": "11688052443322439949"
+      },
+      "MultithreadedScalar[16]": {
+        "latencies": [
+          1.147,
+          1.211,
+          0.637,
+          2.207
+        ],
+        "qps": 871.693,
+        "error": 0.0,
+        "score_checksum": "287.063861355",
+        "id_checksum": "11688052443322439949"
+      },
+      "MultithreadedScalar[32]": {
+        "latencies": [
+          1.936,
+          1.735,
+          1.359,
+          4.503
+        ],
+        "qps": 516.531,
+        "error": 0.0,
+        "score_checksum": "287.063861355",
+        "id_checksum": "11688052443322439949"
+      },
+      "MultithreadedAVX2[1]": {
+        "latencies": [
+          0.412,
+          0.5,
+          0.13,
+          4.471
+        ],
+        "qps": 2427.291,
+        "error": 0.0,
+        "score_checksum": "287.063861355",
+        "id_checksum": "11688052443322439949"
+      },
+      "MultithreadedAVX2[2]": {
+        "latencies": [
+          0.335,
+          0.202,
+          0.125,
+          2.733
+        ],
+        "qps": 2985.485,
+        "error": 0.0,
+        "score_checksum": "287.063861355",
+        "id_checksum": "11688052443322439949"
+      },
+      "MultithreadedAVX2[4]": {
+        "latencies": [
+          0.486,
+          0.413,
+          0.168,
+          3.784
+        ],
+        "qps": 2058.559,
+        "error": 0.0,
+        "score_checksum": "287.063861355",
+        "id_checksum": "11688052443322439949"
+      },
+      "MultithreadedAVX2[8]": {
+        "latencies": [
+          0.578,
+          0.609,
+          0.34,
+          0.99
+        ],
+        "qps": 1729.367,
+        "error": 0.0,
+        "score_checksum": "287.063861355",
+        "id_checksum": "11688052443322439949"
+      },
+      "MultithreadedAVX2[16]": {
+        "latencies": [
+          1.219,
+          0.855,
+          0.621,
+          14.43
+        ],
+        "qps": 820.482,
+        "error": 0.0,
+        "score_checksum": "287.063861355",
+        "id_checksum": "11688052443322439949"
+      },
+      "MultithreadedAVX2[32]": {
+        "latencies": [
+          2.242,
+          2.286,
+          1.207,
+          6.585
+        ],
+        "qps": 446.12,
+        "error": 0.0,
+        "score_checksum": "287.063861355",
+        "id_checksum": "11688052443322439949"
+      },
+      "CUDA-Persistent": {
+        "latencies": [
+          0.695,
+          0.67,
+          0.556,
+          2.212
+        ],
+        "qps": 1439.313,
+        "error": 0.0,
+        "score_checksum": "287.063861355",
+        "id_checksum": "11688052443322439949",
+        "phases": {
+          "flatten + query norm (host)": [
+            0.000477,
+            0.0004,
+            0.0003,
+            0.0009
+          ],
+          "query-path H2D (host, synchronized)": [
+            0.164366,
+            0.14805,
+            0.1177,
+            1.3074
+          ],
+          "kernel-only (CUDA events)": [
+            0.289812,
+            0.288416,
+            0.275456,
+            0.676544
+          ],
+          "D2H scores (host)": [
+            0.024695,
+            0.02775,
+            0.0098,
+            0.1646
+          ],
+          "CPU Top-K": [
+            0.014631,
+            0.0128,
+            0.0107,
+            0.0231
+          ],
+          "profiled end-to-end": [
+            0.694527,
+            0.67005,
+            0.5561,
+            2.2116
+          ]
+        },
+        "bytes": [
+          "0",
+          "3072"
+        ]
+      },
+      "CUDA-BlockParallel": {
+        "latencies": [
+          0.658,
+          0.406,
+          0.307,
+          6.728
+        ],
+        "qps": 1519.748,
+        "error": 0.0,
+        "score_checksum": "287.063861355",
+        "id_checksum": "11688052443322439949",
+        "phases": {
+          "flatten + query norm (host)": [
+            0.000579,
+            0.0006,
+            0.0003,
+            0.0019
+          ],
+          "query-path H2D (host, synchronized)": [
+            0.158412,
+            0.1345,
+            0.0632,
+            1.1341
+          ],
+          "kernel-only (CUDA events)": [
+            0.039462,
+            0.038192,
+            0.023552,
+            0.228352
+          ],
+          "D2H scores (host)": [
+            0.02146,
+            0.0173,
+            0.0099,
+            0.2896
+          ],
+          "CPU Top-K": [
+            0.018646,
+            0.0159,
+            0.011,
+            0.1141
+          ],
+          "profiled end-to-end": [
+            0.657723,
+            0.4059,
+            0.307,
+            6.7275
+          ]
+        },
+        "bytes": [
+          "0",
+          "3072"
+        ]
+      }
+    },
+    "best_cpu": "MultithreadedAVX2[2]"
+  },
+  "10k": {
+    "backends": {
+      "Scalar": {
+        "latencies": [
+          11.393,
+          10.733,
+          7.001,
+          33.275
+        ],
+        "qps": 87.769,
+        "error": 0.0,
+        "score_checksum": "360.302542560",
+        "id_checksum": "6942403294749163753"
+      },
+      "AVX2": {
+        "latencies": [
+          7.012,
+          6.575,
+          5.835,
+          16.729
+        ],
+        "qps": 142.617,
+        "error": 0.0,
+        "score_checksum": "360.302542560",
+        "id_checksum": "6942403294749163753"
+      },
+      "MultithreadedScalar[1]": {
+        "latencies": [
+          11.41,
+          10.723,
+          9.547,
+          23.817
+        ],
+        "qps": 87.64,
+        "error": 0.0,
+        "score_checksum": "360.302542560",
+        "id_checksum": "6942403294749163753"
+      },
+      "MultithreadedScalar[2]": {
+        "latencies": [
+          6.546,
+          6.178,
+          5.175,
+          12.3
+        ],
+        "qps": 152.771,
+        "error": 0.0,
+        "score_checksum": "360.302542560",
+        "id_checksum": "6942403294749163753"
+      },
+      "MultithreadedScalar[4]": {
+        "latencies": [
+          3.618,
+          3.446,
+          2.907,
+          5.973
+        ],
+        "qps": 276.409,
+        "error": 0.0,
+        "score_checksum": "360.302542560",
+        "id_checksum": "6942403294749163753"
+      },
+      "MultithreadedScalar[8]": {
+        "latencies": [
+          2.687,
+          2.513,
+          1.807,
+          4.328
+        ],
+        "qps": 372.226,
+        "error": 0.0,
+        "score_checksum": "360.302542560",
+        "id_checksum": "6942403294749163753"
+      },
+      "MultithreadedScalar[16]": {
+        "latencies": [
+          2.296,
+          2.244,
+          1.59,
+          5.894
+        ],
+        "qps": 435.503,
+        "error": 0.0,
+        "score_checksum": "360.302542560",
+        "id_checksum": "6942403294749163753"
+      },
+      "MultithreadedScalar[32]": {
+        "latencies": [
+          3.03,
+          2.971,
+          2.397,
+          5.158
+        ],
+        "qps": 330.013,
+        "error": 0.0,
+        "score_checksum": "360.302542560",
+        "id_checksum": "6942403294749163753"
+      },
+      "MultithreadedAVX2[1]": {
+        "latencies": [
+          7.721,
+          6.652,
+          6.011,
+          124.32
+        ],
+        "qps": 129.518,
+        "error": 0.0,
+        "score_checksum": "360.302542560",
+        "id_checksum": "6942403294749163753"
+      },
+      "MultithreadedAVX2[2]": {
+        "latencies": [
+          4.32,
+          3.938,
+          3.317,
+          12.957
+        ],
+        "qps": 231.48,
+        "error": 0.0,
+        "score_checksum": "360.302542560",
+        "id_checksum": "6942403294749163753"
+      },
+      "MultithreadedAVX2[4]": {
+        "latencies": [
+          2.623,
+          2.417,
+          2.0,
+          15.853
+        ],
+        "qps": 381.218,
+        "error": 0.0,
+        "score_checksum": "360.302542560",
+        "id_checksum": "6942403294749163753"
+      },
+      "MultithreadedAVX2[8]": {
+        "latencies": [
+          1.968,
+          1.867,
+          1.399,
+          19.679
+        ],
+        "qps": 508.047,
+        "error": 0.0,
+        "score_checksum": "360.302542560",
+        "id_checksum": "6942403294749163753"
+      },
+      "MultithreadedAVX2[16]": {
+        "latencies": [
+          1.946,
+          1.877,
+          1.405,
+          6.145
+        ],
+        "qps": 513.971,
+        "error": 0.0,
+        "score_checksum": "360.302542560",
+        "id_checksum": "6942403294749163753"
+      },
+      "MultithreadedAVX2[32]": {
+        "latencies": [
+          3.208,
+          2.728,
+          2.355,
+          72.475
+        ],
+        "qps": 311.709,
+        "error": 0.0,
+        "score_checksum": "360.302542560",
+        "id_checksum": "6942403294749163753"
+      },
+      "CUDA-Persistent": {
+        "latencies": [
+          6.58,
+          6.936,
+          2.239,
+          13.624
+        ],
+        "qps": 151.97,
+        "error": 0.0,
+        "score_checksum": "360.302542560",
+        "id_checksum": "6942403294749163753",
+        "phases": {
+          "flatten + query norm (host)": [
+            0.000652,
+            0.0007,
+            0.0003,
+            0.0014
+          ],
+          "query-path H2D (host, synchronized)": [
+            1.771934,
+            1.776,
+            0.6291,
+            5.3191
+          ],
+          "kernel-only (CUDA events)": [
+            2.147835,
+            2.337792,
+            0.703488,
+            7.991296
+          ],
+          "D2H scores (host)": [
+            0.251543,
+            0.17275,
+            0.0636,
+            2.9015
+          ],
+          "CPU Top-K": [
+            0.249315,
+            0.2071,
+            0.125,
+            2.684
+          ],
+          "profiled end-to-end": [
+            6.579681,
+            6.9353,
+            2.2384,
+            13.6231
+          ]
+        },
+        "bytes": [
+          "0",
+          "3072"
+        ]
+      },
+      "CUDA-BlockParallel": {
+        "latencies": [
+          5.631,
+          5.637,
+          2.122,
+          17.416
+        ],
+        "qps": 177.598,
+        "error": 0.0,
+        "score_checksum": "360.302542560",
+        "id_checksum": "6942403294749163753",
+        "phases": {
+          "flatten + query norm (host)": [
+            0.001355,
+            0.0007,
+            0.0003,
+            0.1966
+          ],
+          "query-path H2D (host, synchronized)": [
+            1.730375,
+            1.65995,
+            0.6445,
+            5.1613
+          ],
+          "kernel-only (CUDA events)": [
+            1.44495,
+            1.400832,
+            0.41472,
+            12.183552
+          ],
+          "D2H scores (host)": [
+            0.214426,
+            0.1705,
+            0.0329,
+            1.5902
+          ],
+          "CPU Top-K": [
+            0.24253,
+            0.2104,
+            0.1256,
+            2.6343
+          ],
+          "profiled end-to-end": [
+            5.630121,
+            5.6366,
+            2.1218,
+            17.4149
+          ]
+        },
+        "bytes": [
+          "0",
+          "3072"
+        ]
+      }
+    },
+    "best_cpu": "MultithreadedAVX2[16]"
+  },
+  "100k": {
+    "backends": {
+      "Scalar": {
+        "latencies": [
+          109.385,
+          111.337,
+          58.095,
+          264.594
+        ],
+        "qps": 9.142,
+        "error": 0.0,
+        "score_checksum": "425.896235436",
+        "id_checksum": "4652264718457849833"
+      },
+      "AVX2": {
+        "latencies": [
+          68.655,
+          67.895,
+          25.697,
+          117.171
+        ],
+        "qps": 14.566,
+        "error": 0.0,
+        "score_checksum": "425.896235436",
+        "id_checksum": "4652264718457849833"
+      },
+      "MultithreadedScalar[1]": {
+        "latencies": [
+          121.901,
+          117.949,
+          85.944,
+          424.826
+        ],
+        "qps": 8.203,
+        "error": 0.0,
+        "score_checksum": "425.896235436",
+        "id_checksum": "4652264718457849833"
+      },
+      "MultithreadedScalar[2]": {
+        "latencies": [
+          55.423,
+          54.758,
+          41.544,
+          243.478
+        ],
+        "qps": 18.043,
+        "error": 0.0,
+        "score_checksum": "425.896235436",
+        "id_checksum": "4652264718457849833"
+      },
+      "MultithreadedScalar[4]": {
+        "latencies": [
+          29.328,
+          29.079,
+          24.419,
+          204.691
+        ],
+        "qps": 34.097,
+        "error": 0.0,
+        "score_checksum": "425.896235436",
+        "id_checksum": "4652264718457849833"
+      },
+      "MultithreadedScalar[8]": {
+        "latencies": [
+          17.362,
+          17.239,
+          13.603,
+          54.863
+        ],
+        "qps": 57.597,
+        "error": 0.0,
+        "score_checksum": "425.896235436",
+        "id_checksum": "4652264718457849833"
+      },
+      "MultithreadedScalar[16]": {
+        "latencies": [
+          12.117,
+          11.949,
+          9.796,
+          30.571
+        ],
+        "qps": 82.528,
+        "error": 0.0,
+        "score_checksum": "425.896235436",
+        "id_checksum": "4652264718457849833"
+      },
+      "MultithreadedScalar[32]": {
+        "latencies": [
+          12.869,
+          13.045,
+          10.334,
+          18.595
+        ],
+        "qps": 77.708,
+        "error": 0.0,
+        "score_checksum": "425.896235436",
+        "id_checksum": "4652264718457849833"
+      },
+      "MultithreadedAVX2[1]": {
+        "latencies": [
+          71.272,
+          68.23,
+          31.155,
+          238.222
+        ],
+        "qps": 14.031,
+        "error": 0.0,
+        "score_checksum": "425.896235436",
+        "id_checksum": "4652264718457849833"
+      },
+      "MultithreadedAVX2[2]": {
+        "latencies": [
+          34.588,
+          34.553,
+          24.567,
+          51.346
+        ],
+        "qps": 28.912,
+        "error": 0.0,
+        "score_checksum": "425.896235436",
+        "id_checksum": "4652264718457849833"
+      },
+      "MultithreadedAVX2[4]": {
+        "latencies": [
+          21.166,
+          19.398,
+          16.562,
+          233.679
+        ],
+        "qps": 47.245,
+        "error": 0.0,
+        "score_checksum": "425.896235436",
+        "id_checksum": "4652264718457849833"
+      },
+      "MultithreadedAVX2[8]": {
+        "latencies": [
+          13.636,
+          13.351,
+          10.864,
+          31.717
+        ],
+        "qps": 73.337,
+        "error": 0.0,
+        "score_checksum": "425.896235436",
+        "id_checksum": "4652264718457849833"
+      },
+      "MultithreadedAVX2[16]": {
+        "latencies": [
+          9.345,
+          9.267,
+          7.802,
+          12.994
+        ],
+        "qps": 107.014,
+        "error": 0.0,
+        "score_checksum": "425.896235436",
+        "id_checksum": "4652264718457849833"
+      },
+      "MultithreadedAVX2[32]": {
+        "latencies": [
+          9.897,
+          9.655,
+          8.501,
+          35.654
+        ],
+        "qps": 101.036,
+        "error": 0.0,
+        "score_checksum": "425.896235436",
+        "id_checksum": "4652264718457849833"
+      },
+      "CUDA-Persistent": {
+        "latencies": [
+          5.179,
+          4.109,
+          3.092,
+          32.864
+        ],
+        "qps": 193.1,
+        "error": 0.0,
+        "score_checksum": "425.896235436",
+        "id_checksum": "4652264718457849833",
+        "phases": {
+          "flatten + query norm (host)": [
+            0.000671,
+            0.0005,
+            0.0003,
+            0.0047
+          ],
+          "query-path H2D (host, synchronized)": [
+            0.270683,
+            0.19845,
+            0.0628,
+            3.2054
+          ],
+          "kernel-only (CUDA events)": [
+            2.40709,
+            1.455904,
+            1.404928,
+            27.87328
+          ],
+          "D2H scores (host)": [
+            0.132184,
+            0.1124,
+            0.0563,
+            1.1358
+          ],
+          "CPU Top-K": [
+            1.856549,
+            1.44155,
+            1.1103,
+            7.0295
+          ],
+          "profiled end-to-end": [
+            5.178185,
+            4.1087,
+            3.0918,
+            32.863
+          ]
+        },
+        "bytes": [
+          "0",
+          "3072"
+        ]
+      },
+      "CUDA-BlockParallel": {
+        "latencies": [
+          5.977,
+          3.874,
+          3.228,
+          49.523
+        ],
+        "qps": 167.314,
+        "error": 0.0,
+        "score_checksum": "425.896235436",
+        "id_checksum": "4652264718457849833",
+        "phases": {
+          "flatten + query norm (host)": [
+            0.000581,
+            0.0004,
+            0.0003,
+            0.0021
+          ],
+          "query-path H2D (host, synchronized)": [
+            0.328798,
+            0.1765,
+            0.0625,
+            3.781
+          ],
+          "kernel-only (CUDA events)": [
+            3.30291,
+            1.82272,
+            1.671168,
+            43.524097
+          ],
+          "D2H scores (host)": [
+            0.135737,
+            0.1047,
+            0.06,
+            1.6507
+          ],
+          "CPU Top-K": [
+            1.695208,
+            1.3108,
+            1.0992,
+            4.5745
+          ],
+          "profiled end-to-end": [
+            5.97633,
+            3.87335,
+            3.2282,
+            49.5228
+          ]
+        },
+        "bytes": [
+          "0",
+          "3072"
+        ]
+      }
+    },
+    "best_cpu": "MultithreadedAVX2[16]"
+  },
+  "1m": {
+    "backends": {
+      "Scalar": {
+        "latencies": [
+          1201.549,
+          1188.66,
+          1083.945,
+          1457.894
+        ],
+        "qps": 0.832,
+        "error": 0.0,
+        "score_checksum": "48.008113995",
+        "id_checksum": "10511493593234606401"
+      },
+      "AVX2": {
+        "latencies": [
+          704.07,
+          702.794,
+          638.119,
+          753.075
+        ],
+        "qps": 1.42,
+        "error": 0.0,
+        "score_checksum": "48.008113995",
+        "id_checksum": "10511493593234606401"
+      },
+      "MultithreadedScalar[16]": {
+        "latencies": [
+          104.739,
+          105.498,
+          89.111,
+          120.498
+        ],
+        "qps": 9.548,
+        "error": 0.0,
+        "score_checksum": "48.008113995",
+        "id_checksum": "10511493593234606401"
+      },
+      "MultithreadedScalar[32]": {
+        "latencies": [
+          109.42,
+          113.318,
+          94.367,
+          120.688
+        ],
+        "qps": 9.139,
+        "error": 0.0,
+        "score_checksum": "48.008113995",
+        "id_checksum": "10511493593234606401"
+      },
+      "MultithreadedAVX2[16]": {
+        "latencies": [
+          75.824,
+          76.599,
+          68.807,
+          87.073
+        ],
+        "qps": 13.188,
+        "error": 0.0,
+        "score_checksum": "48.008113995",
+        "id_checksum": "10511493593234606401"
+      },
+      "MultithreadedAVX2[32]": {
+        "latencies": [
+          84.239,
+          83.928,
+          76.665,
+          90.986
+        ],
+        "qps": 11.871,
+        "error": 0.0,
+        "score_checksum": "48.008113995",
+        "id_checksum": "10511493593234606401"
+      },
+      "CUDA-Persistent": {
+        "latencies": [
+          62.595,
+          42.754,
+          31.836,
+          285.107
+        ],
+        "qps": 15.976,
+        "error": 0.0,
+        "score_checksum": "48.008113995",
+        "id_checksum": "10511493593234606401",
+        "phases": {
+          "flatten + query norm (host)": [
+            0.00088,
+            0.0007,
+            0.0003,
+            0.0019
+          ],
+          "query-path H2D (host, synchronized)": [
+            0.32597,
+            0.0797,
+            0.0476,
+            2.9654
+          ],
+          "kernel-only (CUDA events)": [
+            34.099332,
+            13.892592,
+            13.82912,
+            250.474503
+          ],
+          "D2H scores (host)": [
+            0.849977,
+            0.67155,
+            0.5789,
+            3.2168
+          ],
+          "CPU Top-K": [
+            24.98085,
+            24.19755,
+            15.142,
+            40.4752
+          ],
+          "profiled end-to-end": [
+            62.593887,
+            42.75305,
+            31.8353,
+            285.1058
+          ]
+        },
+        "bytes": [
+          "0",
+          "3072"
+        ]
+      },
+      "CUDA-BlockParallel": {
+        "latencies": [
+          60.596,
+          50.496,
+          38.911,
+          225.284
+        ],
+        "qps": 16.503,
+        "error": 0.0,
+        "score_checksum": "48.008113995",
+        "id_checksum": "10511493593234606401",
+        "phases": {
+          "flatten + query norm (host)": [
+            0.000767,
+            0.0006,
+            0.0003,
+            0.0019
+          ],
+          "query-path H2D (host, synchronized)": [
+            0.18944,
+            0.06685,
+            0.0493,
+            3.2198
+          ],
+          "kernel-only (CUDA events)": [
+            30.769517,
+            17.969152,
+            17.059681,
+            198.569977
+          ],
+          "D2H scores (host)": [
+            0.752047,
+            0.7056,
+            0.6059,
+            1.144
+          ],
+          "CPU Top-K": [
+            26.946437,
+            25.5226,
+            16.3618,
+            43.0792
+          ],
+          "profiled end-to-end": [
+            60.594633,
+            50.49545,
+            38.9103,
+            225.283
+          ]
+        },
+        "bytes": [
+          "0",
+          "3072"
+        ]
+      }
+    },
+    "best_cpu": "MultithreadedAVX2[16]"
+  }
+}

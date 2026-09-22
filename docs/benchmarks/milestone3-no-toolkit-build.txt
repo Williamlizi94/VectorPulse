@@ -1,0 +1,17 @@
+MSBuild version 17.14.51+25f168cee for .NET Framework
+
+  1>Checking Build System
+  Building Custom Rule E:/Project VectorPulse/CMakeLists.txt
+  avx2_search_backend.cpp
+  avx2_support.cpp
+  cuda_search_backend.cpp
+  multithreaded_scalar_search_backend.cpp
+  multithreaded_avx2_search_backend.cpp
+  scalar_search_backend.cpp
+  similarity.cpp
+  vector_store.cpp
+  cuda_runtime_stub.cpp
+  Generating Code...
+  avx2_kernel.cpp
+  vectorpulse.vcxproj -> E:\Project VectorPulse\out\build-no-toolkit\Release\vectorpulse.lib
+  Building Custom Rule E:/Project VectorPulse/CMakeLists.txt

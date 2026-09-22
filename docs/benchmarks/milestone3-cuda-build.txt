@@ -1,0 +1,67 @@
+-- The CXX compiler identification is MSVC 19.44.35228.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Found Threads: TRUE
+-- The CUDA compiler identification is NVIDIA 12.9.86 with host compiler MSVC 19.44.35228.0
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - done
+-- Check for working CUDA compiler: E:/Project VectorPulse/out/cuda-12.9/bin/nvcc.exe - skipped
+-- Detecting CUDA compile features
+-- Detecting CUDA compile features - done
+-- Found CUDAToolkit: E:/Project VectorPulse/out/cuda-12.9/include (found version "12.9.86")
+-- VectorPulse CUDA compiled: ON
+-- Performing Test VECTORPULSE_COMPILER_HAS_AVX2
+-- Performing Test VECTORPULSE_COMPILER_HAS_AVX2 - Success
+-- The C compiler identification is MSVC 19.44.35228.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done (11.8s)
+-- Generating done (0.1s)
+-- Build files have been written to: E:/Project VectorPulse/out/build-cuda
+[1/31] Building CXX object CMakeFiles\vectorpulse.dir\src\avx2_support.cpp.obj
+[2/31] Building CXX object CMakeFiles\vectorpulse.dir\src\avx2_search_backend.cpp.obj
+[3/31] Building CXX object CMakeFiles\vectorpulse.dir\src\multithreaded_scalar_search_backend.cpp.obj
+[4/31] Building CXX object CMakeFiles\vectorpulse.dir\src\cuda_search_backend.cpp.obj
+[5/31] Building CXX object CMakeFiles\vectorpulse.dir\src\multithreaded_avx2_search_backend.cpp.obj
+[6/31] Building CXX object CMakeFiles\vectorpulse.dir\src\similarity.cpp.obj
+[7/31] Building CXX object CMakeFiles\vectorpulse.dir\src\scalar_search_backend.cpp.obj
+[8/31] Building CXX object CMakeFiles\vectorpulse.dir\src\vector_store.cpp.obj
+[9/31] Building CXX object CMakeFiles\vectorpulse.dir\src\avx2_kernel.cpp.obj
+[10/31] Building CXX object _deps\googletest-build\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj
+[11/31] Linking CXX static library lib\gtest.lib
+[12/31] Building CXX object _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj
+[13/31] Building CXX object CMakeFiles\vectorpulse_tests.dir\tests\avx2_search_backend_test.cpp.obj
+[14/31] Building CXX object CMakeFiles\vectorpulse_tests.dir\tests\multithreaded_scalar_search_backend_test.cpp.obj
+[15/31] Building CXX object CMakeFiles\vectorpulse_tests.dir\tests\multithreaded_avx2_search_backend_test.cpp.obj
+[16/31] Building CUDA object CMakeFiles\vectorpulse.dir\src\cuda_runtime.cu.obj
+cuda_runtime.cu
+
+tmpxft_00002904_00000000-7_cuda_runtime.cudafe1.cpp
+
+[17/31] Linking CXX static library vectorpulse.lib
+[18/31] Building CXX object CMakeFiles\vectorpulse_tests.dir\tests\cuda_search_backend_test.cpp.obj
+[19/31] Building CXX object CMakeFiles\vectorpulse_tests.dir\tests\similarity_test.cpp.obj
+[20/31] Building CXX object CMakeFiles\vectorpulse_tests.dir\tests\vector_store_test.cpp.obj
+[21/31] Building CXX object _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj
+[22/31] Building CXX object CMakeFiles\vectorpulse_benchmark.dir\benchmarks\scalar_benchmark.cpp.obj
+[23/31] Building CXX object _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj
+[24/31] Building CXX object _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\__\googletest\src\gtest-all.cc.obj
+[25/31] Linking CXX static library lib\gtest_main.lib
+[26/31] Linking CXX executable vectorpulse_benchmark.exe
+[27/31] Linking CXX static library lib\gmock.lib
+[28/31] Building CXX object _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src\gmock-all.cc.obj
+[29/31] Linking CXX executable vectorpulse_tests.exe
+[30/31] Building CXX object _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\__\googletest\src\gtest-all.cc.obj
+[31/31] Linking CXX static library lib\gmock_main.lib

@@ -1,0 +1,60 @@
+VectorPulse CPU/CUDA benchmark (input seed 42, order seed 2026)
+hardware_concurrency(): 32
+Vectors: 10
+Dimensions: 3
+Queries: 2
+Top-K: 2
+Warm-up rounds: 1
+Measured repetitions: 1
+CUDA compiled: no
+CUDA unavailable: CUDA support was not compiled (enable VECTORPULSE_ENABLE_CUDA with a CUDA toolkit)
+Untimed scalar reference complete.
+Warm-up round 1 complete.
+Measured round 1
+MultithreadedScalar[1] mean ms/query: 0.000
+AVX2 mean ms/query: 0.000
+MultithreadedAVX2[1] mean ms/query: 0.000
+Scalar mean ms/query: 0.000
+
+Backend: Scalar
+Measured queries: 2
+Latency ms/query (mean / median / min / max): 0.000 / 0.000 / 0.000 / 0.000
+Round mean ms/query (median / min / max): 0.000 / 0.000 / 0.000
+QPS: 3333333.333
+Speedup vs Scalar: 1.000x
+Score checksum (all measured results): 3.349303722
+ID checksum (all measured results): 1055197829132873191
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: AVX2
+Measured queries: 2
+Latency ms/query (mean / median / min / max): 0.000 / 0.000 / 0.000 / 0.000
+Round mean ms/query (median / min / max): 0.000 / 0.000 / 0.000
+QPS: 2857142.857
+Speedup vs Scalar: 0.857x
+Score checksum (all measured results): 3.349303722
+ID checksum (all measured results): 1055197829132873191
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: MultithreadedScalar[1]
+Measured queries: 2
+Latency ms/query (mean / median / min / max): 0.000 / 0.000 / 0.000 / 0.000
+Round mean ms/query (median / min / max): 0.000 / 0.000 / 0.000
+QPS: 2857142.857
+Speedup vs Scalar: 0.857x
+Score checksum (all measured results): 3.349303722
+ID checksum (all measured results): 1055197829132873191
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: MultithreadedAVX2[1]
+Measured queries: 2
+Latency ms/query (mean / median / min / max): 0.000 / 0.000 / 0.000 / 0.000
+Round mean ms/query (median / min / max): 0.000 / 0.000 / 0.000
+QPS: 2857142.857
+Speedup vs Scalar: 0.857x
+Score checksum (all measured results): 3.349303722
+ID checksum (all measured results): 1055197829132873191
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Speedup versus single-thread AVX2 (mean latency):
+MultithreadedAVX2[1]: 1.000x

@@ -1,0 +1,255 @@
+VectorPulse CPU/CUDA benchmark (input seed 42, order seed 2026)
+hardware_concurrency(): 32
+Vectors: 100000
+Dimensions: 768
+Queries: 100
+Top-K: 10
+Warm-up rounds: 1
+Measured repetitions: 3
+CUDA compiled: yes
+CUDA device 0: NVIDIA GeForce RTX 4080 SUPER
+Compute capability: 8.9
+CUDA driver API version: 13030
+CUDA runtime version: 12090
+GPU memory bytes: 17170956288
+CUDA block size: 256
+CUDA grid blocks: 391
+CUDA paths: PerQuery baseline and persistent matrix; same kernel and CPU Top-K
+CUDA-Persistent index build: bytes=307200000 flatten_ms=57.213000 H2D_ms=25.103500 total_ms=89.760000
+Untimed scalar reference complete.
+Warm-up round 1 complete.
+Measured round 1
+MultithreadedAVX2[4] mean ms/query: 10.061
+MultithreadedScalar[4] mean ms/query: 18.361
+CUDA-Persistent mean ms/query: 5.013
+MultithreadedScalar[8] mean ms/query: 11.505
+CUDA-Naive mean ms/query: 101.461
+MultithreadedScalar[32] mean ms/query: 7.917
+AVX2 mean ms/query: 26.626
+MultithreadedAVX2[8] mean ms/query: 9.473
+Scalar mean ms/query: 65.197
+MultithreadedScalar[1] mean ms/query: 62.971
+MultithreadedAVX2[32] mean ms/query: 8.664
+MultithreadedAVX2[1] mean ms/query: 28.929
+MultithreadedAVX2[2] mean ms/query: 15.608
+MultithreadedAVX2[16] mean ms/query: 8.517
+MultithreadedScalar[16] mean ms/query: 11.419
+MultithreadedScalar[2] mean ms/query: 33.605
+Measured round 2
+MultithreadedAVX2[16] mean ms/query: 8.607
+MultithreadedScalar[1] mean ms/query: 64.983
+MultithreadedAVX2[2] mean ms/query: 15.538
+CUDA-Naive mean ms/query: 102.292
+MultithreadedScalar[2] mean ms/query: 32.029
+MultithreadedScalar[32] mean ms/query: 14.351
+Scalar mean ms/query: 62.079
+MultithreadedAVX2[32] mean ms/query: 7.868
+MultithreadedAVX2[4] mean ms/query: 10.412
+MultithreadedScalar[16] mean ms/query: 13.199
+CUDA-Persistent mean ms/query: 5.825
+AVX2 mean ms/query: 26.326
+MultithreadedScalar[4] mean ms/query: 18.155
+MultithreadedAVX2[8] mean ms/query: 8.281
+MultithreadedAVX2[1] mean ms/query: 27.112
+MultithreadedScalar[8] mean ms/query: 14.167
+Measured round 3
+AVX2 mean ms/query: 29.731
+MultithreadedAVX2[4] mean ms/query: 10.214
+Scalar mean ms/query: 61.745
+MultithreadedAVX2[16] mean ms/query: 11.402
+MultithreadedAVX2[32] mean ms/query: 8.536
+MultithreadedAVX2[1] mean ms/query: 27.257
+MultithreadedScalar[8] mean ms/query: 14.552
+MultithreadedAVX2[8] mean ms/query: 9.617
+MultithreadedAVX2[2] mean ms/query: 15.261
+MultithreadedScalar[1] mean ms/query: 66.590
+MultithreadedScalar[16] mean ms/query: 11.466
+CUDA-Naive mean ms/query: 105.282
+CUDA-Persistent mean ms/query: 3.530
+MultithreadedScalar[4] mean ms/query: 18.471
+MultithreadedScalar[2] mean ms/query: 33.258
+MultithreadedScalar[32] mean ms/query: 8.454
+
+Backend: Scalar
+Measured queries: 300
+Latency ms/query (mean / median / min / max): 63.007 / 60.107 / 58.278 / 310.126
+Round mean ms/query (median / min / max): 62.079 / 61.745 / 65.197
+QPS: 15.871
+Speedup vs Scalar: 1.000x
+Score checksum (all measured results): 425.896235436
+ID checksum (all measured results): 4652264718457849833
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: AVX2
+Measured queries: 300
+Latency ms/query (mean / median / min / max): 27.561 / 26.127 / 25.405 / 292.373
+Round mean ms/query (median / min / max): 26.626 / 26.326 / 29.731
+QPS: 36.283
+Speedup vs Scalar: 2.286x
+Score checksum (all measured results): 425.896235436
+ID checksum (all measured results): 4652264718457849833
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: MultithreadedScalar[1]
+Measured queries: 300
+Latency ms/query (mean / median / min / max): 64.848 / 61.743 / 59.372 / 349.965
+Round mean ms/query (median / min / max): 64.983 / 62.971 / 66.590
+QPS: 15.421
+Speedup vs Scalar: 0.972x
+Score checksum (all measured results): 425.896235436
+ID checksum (all measured results): 4652264718457849833
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: MultithreadedScalar[2]
+Measured queries: 300
+Latency ms/query (mean / median / min / max): 32.964 / 32.297 / 30.374 / 53.720
+Round mean ms/query (median / min / max): 33.258 / 32.029 / 33.605
+QPS: 30.336
+Speedup vs Scalar: 1.911x
+Score checksum (all measured results): 425.896235436
+ID checksum (all measured results): 4652264718457849833
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: MultithreadedScalar[4]
+Measured queries: 300
+Latency ms/query (mean / median / min / max): 18.329 / 18.155 / 15.273 / 27.907
+Round mean ms/query (median / min / max): 18.361 / 18.155 / 18.471
+QPS: 54.558
+Speedup vs Scalar: 3.438x
+Score checksum (all measured results): 425.896235436
+ID checksum (all measured results): 4652264718457849833
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: MultithreadedScalar[8]
+Measured queries: 300
+Latency ms/query (mean / median / min / max): 13.408 / 13.184 / 10.064 / 33.002
+Round mean ms/query (median / min / max): 14.167 / 11.505 / 14.552
+QPS: 74.582
+Speedup vs Scalar: 4.699x
+Score checksum (all measured results): 425.896235436
+ID checksum (all measured results): 4652264718457849833
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: MultithreadedScalar[16]
+Measured queries: 300
+Latency ms/query (mean / median / min / max): 12.028 / 11.456 / 8.297 / 172.949
+Round mean ms/query (median / min / max): 11.466 / 11.419 / 13.199
+QPS: 83.141
+Speedup vs Scalar: 5.238x
+Score checksum (all measured results): 425.896235436
+ID checksum (all measured results): 4652264718457849833
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: MultithreadedScalar[32]
+Measured queries: 300
+Latency ms/query (mean / median / min / max): 10.241 / 8.328 / 6.984 / 185.028
+Round mean ms/query (median / min / max): 8.454 / 7.917 / 14.351
+QPS: 97.647
+Speedup vs Scalar: 6.152x
+Score checksum (all measured results): 425.896235436
+ID checksum (all measured results): 4652264718457849833
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: MultithreadedAVX2[1]
+Measured queries: 300
+Latency ms/query (mean / median / min / max): 27.766 / 26.328 / 25.594 / 145.352
+Round mean ms/query (median / min / max): 27.257 / 27.112 / 28.929
+QPS: 36.015
+Speedup vs Scalar: 2.269x
+Score checksum (all measured results): 425.896235436
+ID checksum (all measured results): 4652264718457849833
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: MultithreadedAVX2[2]
+Measured queries: 300
+Latency ms/query (mean / median / min / max): 15.469 / 14.687 / 13.988 / 37.374
+Round mean ms/query (median / min / max): 15.538 / 15.261 / 15.608
+QPS: 64.645
+Speedup vs Scalar: 4.073x
+Score checksum (all measured results): 425.896235436
+ID checksum (all measured results): 4652264718457849833
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: MultithreadedAVX2[4]
+Measured queries: 300
+Latency ms/query (mean / median / min / max): 10.229 / 9.678 / 8.472 / 22.893
+Round mean ms/query (median / min / max): 10.214 / 10.061 / 10.412
+QPS: 97.761
+Speedup vs Scalar: 6.160x
+Score checksum (all measured results): 425.896235436
+ID checksum (all measured results): 4652264718457849833
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: MultithreadedAVX2[8]
+Measured queries: 300
+Latency ms/query (mean / median / min / max): 9.124 / 8.639 / 7.086 / 28.046
+Round mean ms/query (median / min / max): 9.473 / 8.281 / 9.617
+QPS: 109.606
+Speedup vs Scalar: 6.906x
+Score checksum (all measured results): 425.896235436
+ID checksum (all measured results): 4652264718457849833
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: MultithreadedAVX2[16]
+Measured queries: 300
+Latency ms/query (mean / median / min / max): 9.509 / 8.145 / 6.814 / 247.214
+Round mean ms/query (median / min / max): 8.607 / 8.517 / 11.402
+QPS: 105.166
+Speedup vs Scalar: 6.626x
+Score checksum (all measured results): 425.896235436
+ID checksum (all measured results): 4652264718457849833
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: MultithreadedAVX2[32]
+Measured queries: 300
+Latency ms/query (mean / median / min / max): 8.356 / 7.427 / 6.362 / 22.393
+Round mean ms/query (median / min / max): 8.536 / 7.868 / 8.664
+QPS: 119.677
+Speedup vs Scalar: 7.540x
+Score checksum (all measured results): 425.896235436
+ID checksum (all measured results): 4652264718457849833
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: CUDA-Naive
+Measured queries: 300
+Latency ms/query (mean / median / min / max): 103.011 / 97.194 / 90.436 / 270.793
+Round mean ms/query (median / min / max): 102.292 / 101.461 / 105.282
+QPS: 9.708
+Speedup vs Scalar: 0.612x
+Score checksum (all measured results): 425.896235436
+ID checksum (all measured results): 4652264718457849833
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+CUDA flatten + query norm (host) ms (mean / median / min / max): 57.943172 / 56.919150 / 54.264700 / 87.169900
+CUDA query-path H2D (host, synchronized) ms (mean / median / min / max): 30.572097 / 26.836800 / 24.299900 / 120.757300
+CUDA kernel-only (CUDA events) ms (mean / median / min / max): 3.787528 / 2.546176 / 1.411936 / 74.768387
+CUDA D2H scores (host) ms (mean / median / min / max): 0.078547 / 0.060350 / 0.046400 / 0.634500
+CUDA CPU Top-K ms (mean / median / min / max): 1.258301 / 1.229850 / 1.123800 / 1.923100
+CUDA profiled end-to-end ms (mean / median / min / max): 103.010822 / 97.193500 / 90.435400 / 270.792100
+CUDA per-query H2D bytes: database=307200000 query=3072
+CUDA QPS and speedup use END-TO-END query latency, not kernel-only time.
+
+Backend: CUDA-Persistent
+Measured queries: 300
+Latency ms/query (mean / median / min / max): 4.789 / 3.240 / 2.941 / 79.732
+Round mean ms/query (median / min / max): 5.013 / 3.530 / 5.825
+QPS: 208.793
+Speedup vs Scalar: 13.155x
+Score checksum (all measured results): 425.896235436
+ID checksum (all measured results): 4652264718457849833
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+CUDA flatten + query norm (host) ms (mean / median / min / max): 0.000321 / 0.000300 / 0.000300 / 0.000500
+CUDA query-path H2D (host, synchronized) ms (mean / median / min / max): 0.287172 / 0.198600 / 0.114200 / 3.287900
+CUDA kernel-only (CUDA events) ms (mean / median / min / max): 2.875142 / 1.447264 / 1.403808 / 69.191681
+CUDA D2H scores (host) ms (mean / median / min / max): 0.094780 / 0.070050 / 0.053500 / 1.416400
+CUDA CPU Top-K ms (mean / median / min / max): 1.222959 / 1.184400 / 1.105200 / 4.241100
+CUDA profiled end-to-end ms (mean / median / min / max): 4.789146 / 3.239700 / 2.941200 / 79.731600
+CUDA per-query H2D bytes: database=0 query=3072
+CUDA QPS and speedup use END-TO-END query latency, not kernel-only time.
+
+Speedup versus single-thread AVX2 (mean latency):
+MultithreadedAVX2[1]: 0.993x
+MultithreadedAVX2[2]: 1.782x
+MultithreadedAVX2[4]: 2.694x
+MultithreadedAVX2[8]: 3.021x
+MultithreadedAVX2[16]: 2.899x
+MultithreadedAVX2[32]: 3.298x

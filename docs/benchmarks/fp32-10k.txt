@@ -1,0 +1,124 @@
+VectorPulse CPU/CUDA benchmark (input seed 42, order seed 2026)
+hardware_concurrency(): 32
+Vectors: 10000
+Dimensions: 768
+Queries: 100
+Top-K: 10
+Warm-up rounds: 1
+Measured repetitions: 3
+CUDA compiled: yes
+CUDA device 0: NVIDIA GeForce RTX 4080 SUPER
+Compute capability: 8.9
+CUDA driver API version: 13030
+CUDA runtime version: 12090
+GPU memory bytes: 17170956288
+CUDA block size: 256
+CUDA grid blocks: 40
+Block-parallel CUDA grid blocks: 10000
+CUDA paths: naive persistent and block-parallel persistent; CPU Top-K
+CUDA-Persistent index build: bytes=30720000 flatten_ms=5.351800 H2D_ms=2.986200 total_ms=9.269200
+CUDA-BlockParallel index build: bytes=30720000 flatten_ms=5.354300 H2D_ms=2.762200 total_ms=9.007300
+CUDA-NaiveFP32 index build: bytes=30720000 flatten_ms=5.373700 H2D_ms=3.045800 total_ms=9.334900
+CUDA-BlockParallelFP32 index build: bytes=30720000 flatten_ms=5.351900 H2D_ms=3.056800 total_ms=9.328200
+Untimed scalar reference complete.
+Warm-up round 1 complete.
+Measured round 1
+CUDA-BlockParallel mean ms/query: 0.627
+CUDA-BlockParallelFP32 mean ms/query: 0.479
+CUDA-NaiveFP32 mean ms/query: 0.508
+Scalar mean ms/query: 5.996
+CUDA-Persistent mean ms/query: 0.722
+Measured round 2
+CUDA-Persistent mean ms/query: 0.765
+Scalar mean ms/query: 8.410
+CUDA-NaiveFP32 mean ms/query: 1.909
+CUDA-BlockParallelFP32 mean ms/query: 0.685
+CUDA-BlockParallel mean ms/query: 2.037
+Measured round 3
+Scalar mean ms/query: 11.913
+CUDA-NaiveFP32 mean ms/query: 0.745
+CUDA-Persistent mean ms/query: 2.102
+CUDA-BlockParallel mean ms/query: 0.916
+CUDA-BlockParallelFP32 mean ms/query: 0.594
+
+Backend: Scalar
+Measured queries: 300
+Latency ms/query (mean / median / min / max): 8.773 / 6.159 / 5.703 / 29.107
+Round mean ms/query (median / min / max): 8.410 / 5.996 / 11.913
+QPS: 113.989
+Speedup vs Scalar: 1.000x
+Score checksum (all measured results): 360.302542560
+ID checksum (all measured results): 6942403294749163753
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1.000000000e-06)
+
+Backend: CUDA-Persistent
+Measured queries: 300
+Latency ms/query (mean / median / min / max): 1.196 / 0.758 / 0.647 / 10.777
+Round mean ms/query (median / min / max): 0.765 / 0.722 / 2.102
+QPS: 835.906
+Speedup vs Scalar: 7.333x
+Score checksum (all measured results): 360.302542560
+ID checksum (all measured results): 6942403294749163753
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1.000000000e-06)
+CUDA flatten + query norm (host) ms (mean / median / min / max): 0.000440 / 0.000300 / 0.000200 / 0.011400
+CUDA query-path H2D (host, synchronized) ms (mean / median / min / max): 0.157043 / 0.137750 / 0.042400 / 1.696800
+CUDA kernel-only (CUDA events) ms (mean / median / min / max): 0.287295 / 0.282960 / 0.277504 / 0.427808
+CUDA D2H scores (host) ms (mean / median / min / max): 0.030319 / 0.025450 / 0.013600 / 0.728800
+CUDA CPU Top-K ms (mean / median / min / max): 0.183052 / 0.127850 / 0.078700 / 3.922700
+CUDA profiled end-to-end ms (mean / median / min / max): 1.196054 / 0.757350 / 0.646500 / 10.775900
+CUDA per-query H2D bytes: database=0 query=3072
+CUDA QPS and speedup use END-TO-END query latency, not kernel-only time.
+
+Backend: CUDA-BlockParallel
+Measured queries: 300
+Latency ms/query (mean / median / min / max): 1.194 / 0.740 / 0.539 / 10.335
+Round mean ms/query (median / min / max): 0.916 / 0.627 / 2.037
+QPS: 837.745
+Speedup vs Scalar: 7.349x
+Score checksum (all measured results): 360.302542560
+ID checksum (all measured results): 6942403294749163753
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1.000000000e-06)
+CUDA flatten + query norm (host) ms (mean / median / min / max): 0.000473 / 0.000500 / 0.000300 / 0.000700
+CUDA query-path H2D (host, synchronized) ms (mean / median / min / max): 0.162577 / 0.134250 / 0.035900 / 2.045500
+CUDA kernel-only (CUDA events) ms (mean / median / min / max): 0.206243 / 0.195584 / 0.185344 / 1.950368
+CUDA D2H scores (host) ms (mean / median / min / max): 0.035247 / 0.025050 / 0.013500 / 2.487200
+CUDA CPU Top-K ms (mean / median / min / max): 0.195013 / 0.155300 / 0.079200 / 2.700400
+CUDA profiled end-to-end ms (mean / median / min / max): 1.193410 / 0.739850 / 0.538900 / 10.334700
+CUDA per-query H2D bytes: database=0 query=3072
+CUDA QPS and speedup use END-TO-END query latency, not kernel-only time.
+
+Backend: CUDA-NaiveFP32
+Measured queries: 300
+Latency ms/query (mean / median / min / max): 1.054 / 0.611 / 0.431 / 7.290
+Round mean ms/query (median / min / max): 0.745 / 0.508 / 1.909
+QPS: 948.483
+Speedup vs Scalar: 8.321x
+Score checksum (all measured results): 360.302550428
+ID checksum (all measured results): 6942403294749163753
+Correctness: every ID/rank matches scalar; max score error: 2.086162567e-07 (tolerance 9.999999747e-06)
+CUDA flatten + query norm (host) ms (mean / median / min / max): 0.000472 / 0.000500 / 0.000300 / 0.000700
+CUDA query-path H2D (host, synchronized) ms (mean / median / min / max): 0.136153 / 0.125800 / 0.037400 / 0.358200
+CUDA kernel-only (CUDA events) ms (mean / median / min / max): 0.099319 / 0.098256 / 0.088064 / 0.182272
+CUDA D2H scores (host) ms (mean / median / min / max): 0.026902 / 0.024050 / 0.013300 / 0.330800
+CUDA CPU Top-K ms (mean / median / min / max): 0.201523 / 0.154250 / 0.077800 / 3.804900
+CUDA profiled end-to-end ms (mean / median / min / max): 1.054043 / 0.610950 / 0.431000 / 7.290000
+CUDA per-query H2D bytes: database=0 query=3072
+CUDA QPS and speedup use END-TO-END query latency, not kernel-only time.
+
+Backend: CUDA-BlockParallelFP32
+Measured queries: 300
+Latency ms/query (mean / median / min / max): 0.586 / 0.548 / 0.415 / 2.417
+Round mean ms/query (median / min / max): 0.594 / 0.479 / 0.685
+QPS: 1706.786
+Speedup vs Scalar: 14.973x
+Score checksum (all measured results): 360.302542783
+ID checksum (all measured results): 6942403294749163753
+Correctness: every ID/rank matches scalar; max score error: 2.235174179e-08 (tolerance 9.999999747e-06)
+CUDA flatten + query norm (host) ms (mean / median / min / max): 0.000481 / 0.000500 / 0.000200 / 0.000700
+CUDA query-path H2D (host, synchronized) ms (mean / median / min / max): 0.130571 / 0.124600 / 0.068000 / 0.319400
+CUDA kernel-only (CUDA events) ms (mean / median / min / max): 0.055711 / 0.054272 / 0.045920 / 0.108736
+CUDA D2H scores (host) ms (mean / median / min / max): 0.023423 / 0.022900 / 0.013300 / 0.065800
+CUDA CPU Top-K ms (mean / median / min / max): 0.151828 / 0.153350 / 0.078800 / 0.360700
+CUDA profiled end-to-end ms (mean / median / min / max): 0.585686 / 0.548000 / 0.415200 / 2.416600
+CUDA per-query H2D bytes: database=0 query=3072
+CUDA QPS and speedup use END-TO-END query latency, not kernel-only time.

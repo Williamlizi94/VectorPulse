@@ -1,0 +1,43 @@
+Milestone 2B measurement environment
+CPU: Intel(R) Core(TM) i9-14900F
+Physical cores (Win32_Processor): 24
+Logical processors (Win32_Processor): 32
+std::thread::hardware_concurrency(): 32 (reported by benchmark)
+Memory visible to Windows: 66820128 KiB
+Platform: Windows x64
+Compiler: MSVC 19.44.35228.0
+CMake: 3.31.6-msvc6
+Configuration: Release, default precise floating-point semantics
+Library flags: /O2 /Ob2 /DNDEBUG /MD /std:c++20 /W4 /permissive-
+Only the pre-existing AVX2 kernel receives /arch:AVX2.
+No affinity, frequency controls, or exclusive-machine reservation.
+
+Pre-change source commit: 3146f4a
+Prerequisite build: successful (exit 0)
+Prerequisite CTest: 37/37 passed, zero failures, 0.33 seconds
+Prerequisite benchmark exit: 0; all IDs/ranks/scores matched
+Command: vectorpulse_benchmark.exe --vectors 100000 --dimension 768 --queries 100 --top-k 10
+Raw prerequisite benchmark: milestone2b-baseline.txt
+
+Milestone 2B build: successful (exit 0)
+CTest: 76/76 passed, zero failures, 1.06 seconds
+Full benchmark command:
+vectorpulse_benchmark.exe --vectors 100000 --dimension 768 --queries 100 --top-k 10 --warmups 1 --repetitions 5 --threads 1,2,4,8,16,32
+One untimed scalar reference pass, one full warm-up round per backend,
+then five measured rounds with deterministic shuffled backend order.
+500 measured queries per backend. Input seed 42, order seed 2026.
+All eight stores coexist (2.4576 GB raw vector values plus metadata).
+Per-query clocks include search/result retention, thread creation, join, merge.
+Results are checked and consumed outside timing.
+Latency statistics summarize individual queries across all measured rounds.
+QPS = 1000 / mean latency (ms); speedup = scalar mean / backend mean.
+Scalar is measured in the same repeated run as the other backends.
+The old single-run baseline is historical, not the speedup denominator.
+
+Full repeated benchmark: exit 0, all IDs/ranks/checksums match, max score error 0.
+Best observed thread budget: 16, mean 12.618 ms/query, QPS 79.254, speedup 9.340x.
+32 threads: mean 13.189 ms/query, QPS 75.820, speedup 8.935x.
+AVX2-disabled Release build: successful.
+AVX2-disabled CTest: 52 passed, 24 skipped, zero failed.
+AVX2-disabled smoke benchmark: exit 0, all results match scalar.
+Command: vectorpulse_benchmark.exe --vectors 257 --dimension 128 --queries 10 --top-k 10 --warmups 1 --repetitions 2 --threads 1,2,4,8,16,32

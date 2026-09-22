@@ -1,0 +1,21 @@
+VectorPulse single-threaded CPU benchmark (seed 42)
+Vectors: 100000
+Dimensions: 768
+Queries: 100
+Top-K: 10
+
+Backend: Scalar
+Total search time: 8056.162 ms
+Average latency: 80.562 ms
+QPS: 12.413
+Score checksum: 141.965411812
+ID checksum: 5068271739574075209
+
+Backend: AVX2
+Total search time: 6463.361 ms
+Average latency: 64.634 ms
+QPS: 15.472
+Score checksum: 141.965411812
+ID checksum: 5068271739574075209
+Speedup vs Scalar: 1.246x
+Correctness: all Top-K IDs and ranks match; max score error: 0.000e+00 (tolerance 1e-6)

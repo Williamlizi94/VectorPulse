@@ -1,0 +1,692 @@
+Internal ctest changing into directory: E:/Project VectorPulse/build
+Test project E:/Project VectorPulse/build
+        Start   1: AVX2Support.ConstructionHonorsAvailability
+  1/309 Test   #1: AVX2Support.ConstructionHonorsAvailability ........................................................   Passed    0.01 sec
+        Start   2: AVX2Backend.StoreContractAndTies
+  2/309 Test   #2: AVX2Backend.StoreContractAndTies ..................................................................   Passed    0.01 sec
+        Start   3: AVX2Backend.ExtremeFiniteValuesRetainDoublePrecisionRange
+  3/309 Test   #3: AVX2Backend.ExtremeFiniteValuesRetainDoublePrecisionRange .........................................   Passed    0.01 sec
+        Start   4: MultithreadedBackend.ValidationAndStoreContract
+  4/309 Test   #4: MultithreadedBackend.ValidationAndStoreContract ...................................................   Passed    0.01 sec
+        Start   5: MultithreadedBackend.TiesAcrossPartitionsAndRepeatedSearches
+  5/309 Test   #5: MultithreadedBackend.TiesAcrossPartitionsAndRepeatedSearches ......................................   Passed    0.04 sec
+        Start   6: MultithreadedBackend.ConcurrentReadOnlyQueriesHaveIndependentState
+  6/309 Test   #6: MultithreadedBackend.ConcurrentReadOnlyQueriesHaveIndependentState ................................   Passed    0.01 sec
+        Start   7: MultithreadedBackend.ExtremeFiniteValuesAndHugeThreadBudget
+  7/309 Test   #7: MultithreadedBackend.ExtremeFiniteValuesAndHugeThreadBudget .......................................   Passed    0.01 sec
+        Start   8: MultithreadedAVX2Support.ConstructionHonorsAvailability
+  8/309 Test   #8: MultithreadedAVX2Support.ConstructionHonorsAvailability ...........................................   Passed    0.01 sec
+        Start   9: MultithreadedAVX2Backend.ValidationAndStoreContract
+  9/309 Test   #9: MultithreadedAVX2Backend.ValidationAndStoreContract ...............................................   Passed    0.01 sec
+        Start  10: MultithreadedAVX2Backend.TiesAcrossPartitionsAndRepeatedSearches
+ 10/309 Test  #10: MultithreadedAVX2Backend.TiesAcrossPartitionsAndRepeatedSearches ..................................   Passed    0.04 sec
+        Start  11: MultithreadedAVX2Backend.ConcurrentReadOnlyQueriesHaveIndependentState
+ 11/309 Test  #11: MultithreadedAVX2Backend.ConcurrentReadOnlyQueriesHaveIndependentState ............................   Passed    0.01 sec
+        Start  12: MultithreadedAVX2Backend.ExtremeFiniteValuesAndHugeThreadBudget
+ 12/309 Test  #12: MultithreadedAVX2Backend.ExtremeFiniteValuesAndHugeThreadBudget ...................................   Passed    0.01 sec
+        Start  13: CudaSupport.AvailabilityAndUnsupportedConstruction
+ 13/309 Test  #13: CudaSupport.AvailabilityAndUnsupportedConstruction ................................................   Passed    0.01 sec
+        Start  14: CudaBackend.EmptyStoreValidationAndRetrieval
+ 14/309 Test  #14: CudaBackend.EmptyStoreValidationAndRetrieval ......................................................***Skipped   0.01 sec
+        Start  15: CudaBackend.ExactTiesAcrossMultipleBlocks
+ 15/309 Test  #15: CudaBackend.ExactTiesAcrossMultipleBlocks .........................................................***Skipped   0.01 sec
+        Start  16: CudaBackend.RejectsNonfiniteInputsWithoutCorruptingStore
+ 16/309 Test  #16: CudaBackend.RejectsNonfiniteInputsWithoutCorruptingStore ..........................................***Skipped   0.01 sec
+        Start  17: CudaBackend.ExtremeFiniteInputsRetainReferenceRange
+ 17/309 Test  #17: CudaBackend.ExtremeFiniteInputsRetainReferenceRange ...............................................***Skipped   0.01 sec
+        Start  18: CudaBackend.ProfiledSearchAndInsertionAfterSearch
+ 18/309 Test  #18: CudaBackend.ProfiledSearchAndInsertionAfterSearch .................................................***Skipped   0.01 sec
+        Start  19: CudaPersistent.BuildsOnceAndTransfersOnlyQuery
+ 19/309 Test  #19: CudaPersistent.BuildsOnceAndTransfersOnlyQuery ....................................................***Skipped   0.01 sec
+        Start  20: CudaPersistent.ConcurrentFirstQueriesPublishOneIndex
+ 20/309 Test  #20: CudaPersistent.ConcurrentFirstQueriesPublishOneIndex ..............................................***Skipped   0.01 sec
+        Start  21: CudaPersistent.RepeatedRebuildsAndOwnershipLifetimes
+ 21/309 Test  #21: CudaPersistent.RepeatedRebuildsAndOwnershipLifetimes ..............................................***Skipped   0.01 sec
+        Start  22: CudaPersistent.NaiveModeRemainsFullTransferBaseline
+ 22/309 Test  #22: CudaPersistent.NaiveModeRemainsFullTransferBaseline ...............................................***Skipped   0.01 sec
+        Start  23: CudaBlockParallel.PersistentLifecycleAndTailDimensions
+ 23/309 Test  #23: CudaBlockParallel.PersistentLifecycleAndTailDimensions ............................................***Skipped   0.01 sec
+        Start  24: CudaBlockParallel.ExtremeFiniteValuesAndCancellation
+ 24/309 Test  #24: CudaBlockParallel.ExtremeFiniteValuesAndCancellation ..............................................***Skipped   0.01 sec
+        Start  25: CudaBlockParallel.ConcurrentFirstQueriesReuseIndex
+ 25/309 Test  #25: CudaBlockParallel.ConcurrentFirstQueriesReuseIndex ................................................***Skipped   0.01 sec
+        Start  26: CosineSimilarityTest.ComputesKnownSimilarities
+ 26/309 Test  #26: CosineSimilarityTest.ComputesKnownSimilarities ....................................................   Passed    0.01 sec
+        Start  27: CosineSimilarityTest.DefinesZeroMagnitudeSimilarityAsZero
+ 27/309 Test  #27: CosineSimilarityTest.DefinesZeroMagnitudeSimilarityAsZero .........................................   Passed    0.01 sec
+        Start  28: CosineSimilarityTest.RejectsMismatchedDimensions
+ 28/309 Test  #28: CosineSimilarityTest.RejectsMismatchedDimensions ..................................................   Passed    0.01 sec
+        Start  29: CosineSimilarityTest.RejectsEmptyVectors
+ 29/309 Test  #29: CosineSimilarityTest.RejectsEmptyVectors ..........................................................   Passed    0.01 sec
+        Start  30: VectorStoreTest.InsertsAndRetrievesVectors
+ 30/309 Test  #30: VectorStoreTest.InsertsAndRetrievesVectors ........................................................   Passed    0.01 sec
+        Start  31: VectorStoreTest.RejectsInvalidDimensions
+ 31/309 Test  #31: VectorStoreTest.RejectsInvalidDimensions ..........................................................   Passed    0.01 sec
+        Start  32: VectorStoreTest.RejectsDuplicateIdsWithoutReplacingOriginal
+ 32/309 Test  #32: VectorStoreTest.RejectsDuplicateIdsWithoutReplacingOriginal .......................................   Passed    0.01 sec
+        Start  33: VectorStoreTest.FindsTopOneResult
+ 33/309 Test  #33: VectorStoreTest.FindsTopOneResult .................................................................   Passed    0.01 sec
+        Start  34: VectorStoreTest.ReturnsTopKInDescendingSimilarityOrder
+ 34/309 Test  #34: VectorStoreTest.ReturnsTopKInDescendingSimilarityOrder ............................................   Passed    0.01 sec
+        Start  35: VectorStoreTest.ReturnsAllVectorsWhenKExceedsDatabaseSize
+ 35/309 Test  #35: VectorStoreTest.ReturnsAllVectorsWhenKExceedsDatabaseSize .........................................   Passed    0.01 sec
+        Start  36: VectorStoreTest.HandlesEmptyDatabaseAndZeroK
+ 36/309 Test  #36: VectorStoreTest.HandlesEmptyDatabaseAndZeroK ......................................................   Passed    0.01 sec
+        Start  37: VectorStoreTest.SearchesZeroVectorsWithoutNan
+ 37/309 Test  #37: VectorStoreTest.SearchesZeroVectorsWithoutNan .....................................................   Passed    0.01 sec
+        Start  38: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/1
+ 38/309 Test  #38: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/1 ..................................   Passed    0.01 sec
+        Start  39: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/2
+ 39/309 Test  #39: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/2 ..................................   Passed    0.01 sec
+        Start  40: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/3
+ 40/309 Test  #40: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/3 ..................................   Passed    0.01 sec
+        Start  41: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/4
+ 41/309 Test  #41: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/4 ..................................   Passed    0.01 sec
+        Start  42: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/5
+ 42/309 Test  #42: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/5 ..................................   Passed    0.01 sec
+        Start  43: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/6
+ 43/309 Test  #43: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/6 ..................................   Passed    0.03 sec
+        Start  44: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/7
+ 44/309 Test  #44: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/7 ..................................   Passed    0.01 sec
+        Start  45: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/8
+ 45/309 Test  #45: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/8 ..................................   Passed    0.01 sec
+        Start  46: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/9
+ 46/309 Test  #46: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/9 ..................................   Passed    0.01 sec
+        Start  47: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/10
+ 47/309 Test  #47: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/10 .................................   Passed    0.01 sec
+        Start  48: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/11
+ 48/309 Test  #48: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/11 .................................   Passed    0.01 sec
+        Start  49: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/12
+ 49/309 Test  #49: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/12 .................................   Passed    0.01 sec
+        Start  50: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/13
+ 50/309 Test  #50: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/13 .................................   Passed    0.01 sec
+        Start  51: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/14
+ 51/309 Test  #51: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/14 .................................   Passed    0.01 sec
+        Start  52: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/15
+ 52/309 Test  #52: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/15 .................................   Passed    0.01 sec
+        Start  53: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/16
+ 53/309 Test  #53: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/16 .................................   Passed    0.01 sec
+        Start  54: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/17
+ 54/309 Test  #54: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/17 .................................   Passed    0.01 sec
+        Start  55: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/31
+ 55/309 Test  #55: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/31 .................................   Passed    0.01 sec
+        Start  56: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/384
+ 56/309 Test  #56: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/384 ................................   Passed    0.02 sec
+        Start  57: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/767
+ 57/309 Test  #57: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/767 ................................   Passed    0.02 sec
+        Start  58: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/768
+ 58/309 Test  #58: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/768 ................................   Passed    0.01 sec
+        Start  59: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/769
+ 59/309 Test  #59: Dimensions/AVX2Comparison.DeterministicScoresAndEveryRankMatch/769 ................................   Passed    0.01 sec
+        Start  60: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(1, 1)
+ 60/309 Test  #60: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(1, 1) .................   Passed    0.01 sec
+        Start  61: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(1, 2)
+ 61/309 Test  #61: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(1, 2) .................   Passed    0.01 sec
+        Start  62: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(1, 3)
+ 62/309 Test  #62: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(1, 3) .................   Passed    0.01 sec
+        Start  63: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(1, 4)
+ 63/309 Test  #63: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(1, 4) .................   Passed    0.02 sec
+        Start  64: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(1, 8)
+ 64/309 Test  #64: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(1, 8) .................   Passed    0.02 sec
+        Start  65: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(1, 16)
+ 65/309 Test  #65: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(1, 16) ................   Passed    0.02 sec
+        Start  66: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(1, 32)
+ 66/309 Test  #66: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(1, 32) ................   Passed    0.03 sec
+        Start  67: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(17, 1)
+ 67/309 Test  #67: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(17, 1) ................   Passed    0.01 sec
+        Start  68: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(17, 2)
+ 68/309 Test  #68: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(17, 2) ................   Passed    0.01 sec
+        Start  69: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(17, 3)
+ 69/309 Test  #69: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(17, 3) ................   Passed    0.01 sec
+        Start  70: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(17, 4)
+ 70/309 Test  #70: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(17, 4) ................   Passed    0.01 sec
+        Start  71: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(17, 8)
+ 71/309 Test  #71: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(17, 8) ................   Passed    0.02 sec
+        Start  72: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(17, 16)
+ 72/309 Test  #72: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(17, 16) ...............   Passed    0.02 sec
+        Start  73: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(17, 32)
+ 73/309 Test  #73: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(17, 32) ...............   Passed    0.03 sec
+        Start  74: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(128, 1)
+ 74/309 Test  #74: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(128, 1) ...............   Passed    0.01 sec
+        Start  75: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(128, 2)
+ 75/309 Test  #75: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(128, 2) ...............   Passed    0.02 sec
+        Start  76: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(128, 3)
+ 76/309 Test  #76: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(128, 3) ...............   Passed    0.01 sec
+        Start  77: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(128, 4)
+ 77/309 Test  #77: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(128, 4) ...............   Passed    0.01 sec
+        Start  78: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(128, 8)
+ 78/309 Test  #78: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(128, 8) ...............   Passed    0.01 sec
+        Start  79: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(128, 16)
+ 79/309 Test  #79: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(128, 16) ..............   Passed    0.02 sec
+        Start  80: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(128, 32)
+ 80/309 Test  #80: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(128, 32) ..............   Passed    0.03 sec
+        Start  81: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(384, 1)
+ 81/309 Test  #81: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(384, 1) ...............   Passed    0.01 sec
+        Start  82: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(384, 2)
+ 82/309 Test  #82: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(384, 2) ...............   Passed    0.01 sec
+        Start  83: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(384, 3)
+ 83/309 Test  #83: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(384, 3) ...............   Passed    0.01 sec
+        Start  84: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(384, 4)
+ 84/309 Test  #84: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(384, 4) ...............   Passed    0.01 sec
+        Start  85: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(384, 8)
+ 85/309 Test  #85: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(384, 8) ...............   Passed    0.02 sec
+        Start  86: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(384, 16)
+ 86/309 Test  #86: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(384, 16) ..............   Passed    0.02 sec
+        Start  87: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(384, 32)
+ 87/309 Test  #87: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(384, 32) ..............   Passed    0.03 sec
+        Start  88: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(768, 1)
+ 88/309 Test  #88: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(768, 1) ...............   Passed    0.01 sec
+        Start  89: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(768, 2)
+ 89/309 Test  #89: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(768, 2) ...............   Passed    0.01 sec
+        Start  90: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(768, 3)
+ 90/309 Test  #90: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(768, 3) ...............   Passed    0.02 sec
+        Start  91: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(768, 4)
+ 91/309 Test  #91: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(768, 4) ...............   Passed    0.01 sec
+        Start  92: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(768, 8)
+ 92/309 Test  #92: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(768, 8) ...............   Passed    0.02 sec
+        Start  93: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(768, 16)
+ 93/309 Test  #93: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(768, 16) ..............   Passed    0.04 sec
+        Start  94: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(768, 32)
+ 94/309 Test  #94: DimensionsAndThreads/MultithreadedComparison.MatchesScalarForEveryRankAndK/(768, 32) ..............   Passed    0.03 sec
+        Start  95: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(1, 1)
+ 95/309 Test  #95: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(1, 1) ......   Passed    0.01 sec
+        Start  96: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(1, 2)
+ 96/309 Test  #96: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(1, 2) ......   Passed    0.01 sec
+        Start  97: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(1, 3)
+ 97/309 Test  #97: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(1, 3) ......   Passed    0.01 sec
+        Start  98: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(1, 4)
+ 98/309 Test  #98: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(1, 4) ......   Passed    0.02 sec
+        Start  99: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(1, 8)
+ 99/309 Test  #99: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(1, 8) ......   Passed    0.01 sec
+        Start 100: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(1, 16)
+100/309 Test #100: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(1, 16) .....   Passed    0.02 sec
+        Start 101: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(1, 32)
+101/309 Test #101: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(1, 32) .....   Passed    0.02 sec
+        Start 102: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(2, 1)
+102/309 Test #102: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(2, 1) ......   Passed    0.01 sec
+        Start 103: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(2, 2)
+103/309 Test #103: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(2, 2) ......   Passed    0.01 sec
+        Start 104: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(2, 3)
+104/309 Test #104: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(2, 3) ......   Passed    0.01 sec
+        Start 105: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(2, 4)
+105/309 Test #105: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(2, 4) ......   Passed    0.01 sec
+        Start 106: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(2, 8)
+106/309 Test #106: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(2, 8) ......   Passed    0.02 sec
+        Start 107: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(2, 16)
+107/309 Test #107: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(2, 16) .....   Passed    0.02 sec
+        Start 108: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(2, 32)
+108/309 Test #108: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(2, 32) .....   Passed    0.03 sec
+        Start 109: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(3, 1)
+109/309 Test #109: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(3, 1) ......   Passed    0.01 sec
+        Start 110: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(3, 2)
+110/309 Test #110: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(3, 2) ......   Passed    0.01 sec
+        Start 111: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(3, 3)
+111/309 Test #111: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(3, 3) ......   Passed    0.01 sec
+        Start 112: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(3, 4)
+112/309 Test #112: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(3, 4) ......   Passed    0.01 sec
+        Start 113: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(3, 8)
+113/309 Test #113: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(3, 8) ......   Passed    0.01 sec
+        Start 114: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(3, 16)
+114/309 Test #114: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(3, 16) .....   Passed    0.02 sec
+        Start 115: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(3, 32)
+115/309 Test #115: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(3, 32) .....   Passed    0.04 sec
+        Start 116: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(4, 1)
+116/309 Test #116: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(4, 1) ......   Passed    0.01 sec
+        Start 117: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(4, 2)
+117/309 Test #117: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(4, 2) ......   Passed    0.01 sec
+        Start 118: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(4, 3)
+118/309 Test #118: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(4, 3) ......   Passed    0.01 sec
+        Start 119: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(4, 4)
+119/309 Test #119: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(4, 4) ......   Passed    0.02 sec
+        Start 120: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(4, 8)
+120/309 Test #120: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(4, 8) ......   Passed    0.02 sec
+        Start 121: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(4, 16)
+121/309 Test #121: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(4, 16) .....   Passed    0.02 sec
+        Start 122: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(4, 32)
+122/309 Test #122: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(4, 32) .....   Passed    0.04 sec
+        Start 123: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(5, 1)
+123/309 Test #123: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(5, 1) ......   Passed    0.01 sec
+        Start 124: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(5, 2)
+124/309 Test #124: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(5, 2) ......   Passed    0.01 sec
+        Start 125: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(5, 3)
+125/309 Test #125: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(5, 3) ......   Passed    0.01 sec
+        Start 126: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(5, 4)
+126/309 Test #126: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(5, 4) ......   Passed    0.02 sec
+        Start 127: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(5, 8)
+127/309 Test #127: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(5, 8) ......   Passed    0.02 sec
+        Start 128: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(5, 16)
+128/309 Test #128: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(5, 16) .....   Passed    0.02 sec
+        Start 129: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(5, 32)
+129/309 Test #129: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(5, 32) .....   Passed    0.03 sec
+        Start 130: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(6, 1)
+130/309 Test #130: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(6, 1) ......   Passed    0.01 sec
+        Start 131: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(6, 2)
+131/309 Test #131: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(6, 2) ......   Passed    0.01 sec
+        Start 132: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(6, 3)
+132/309 Test #132: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(6, 3) ......   Passed    0.01 sec
+        Start 133: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(6, 4)
+133/309 Test #133: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(6, 4) ......   Passed    0.01 sec
+        Start 134: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(6, 8)
+134/309 Test #134: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(6, 8) ......   Passed    0.02 sec
+        Start 135: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(6, 16)
+135/309 Test #135: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(6, 16) .....   Passed    0.02 sec
+        Start 136: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(6, 32)
+136/309 Test #136: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(6, 32) .....   Passed    0.02 sec
+        Start 137: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(7, 1)
+137/309 Test #137: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(7, 1) ......   Passed    0.01 sec
+        Start 138: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(7, 2)
+138/309 Test #138: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(7, 2) ......   Passed    0.01 sec
+        Start 139: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(7, 3)
+139/309 Test #139: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(7, 3) ......   Passed    0.01 sec
+        Start 140: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(7, 4)
+140/309 Test #140: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(7, 4) ......   Passed    0.01 sec
+        Start 141: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(7, 8)
+141/309 Test #141: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(7, 8) ......   Passed    0.02 sec
+        Start 142: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(7, 16)
+142/309 Test #142: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(7, 16) .....   Passed    0.02 sec
+        Start 143: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(7, 32)
+143/309 Test #143: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(7, 32) .....   Passed    0.03 sec
+        Start 144: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(8, 1)
+144/309 Test #144: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(8, 1) ......   Passed    0.01 sec
+        Start 145: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(8, 2)
+145/309 Test #145: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(8, 2) ......   Passed    0.01 sec
+        Start 146: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(8, 3)
+146/309 Test #146: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(8, 3) ......   Passed    0.01 sec
+        Start 147: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(8, 4)
+147/309 Test #147: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(8, 4) ......   Passed    0.02 sec
+        Start 148: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(8, 8)
+148/309 Test #148: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(8, 8) ......   Passed    0.03 sec
+        Start 149: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(8, 16)
+149/309 Test #149: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(8, 16) .....   Passed    0.03 sec
+        Start 150: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(8, 32)
+150/309 Test #150: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(8, 32) .....   Passed    0.05 sec
+        Start 151: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(9, 1)
+151/309 Test #151: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(9, 1) ......   Passed    0.01 sec
+        Start 152: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(9, 2)
+152/309 Test #152: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(9, 2) ......   Passed    0.01 sec
+        Start 153: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(9, 3)
+153/309 Test #153: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(9, 3) ......   Passed    0.01 sec
+        Start 154: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(9, 4)
+154/309 Test #154: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(9, 4) ......   Passed    0.02 sec
+        Start 155: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(9, 8)
+155/309 Test #155: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(9, 8) ......   Passed    0.02 sec
+        Start 156: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(9, 16)
+156/309 Test #156: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(9, 16) .....   Passed    0.02 sec
+        Start 157: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(9, 32)
+157/309 Test #157: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(9, 32) .....   Passed    0.03 sec
+        Start 158: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(10, 1)
+158/309 Test #158: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(10, 1) .....   Passed    0.01 sec
+        Start 159: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(10, 2)
+159/309 Test #159: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(10, 2) .....   Passed    0.01 sec
+        Start 160: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(10, 3)
+160/309 Test #160: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(10, 3) .....   Passed    0.01 sec
+        Start 161: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(10, 4)
+161/309 Test #161: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(10, 4) .....   Passed    0.01 sec
+        Start 162: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(10, 8)
+162/309 Test #162: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(10, 8) .....   Passed    0.01 sec
+        Start 163: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(10, 16)
+163/309 Test #163: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(10, 16) ....   Passed    0.02 sec
+        Start 164: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(10, 32)
+164/309 Test #164: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(10, 32) ....   Passed    0.03 sec
+        Start 165: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(11, 1)
+165/309 Test #165: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(11, 1) .....   Passed    0.01 sec
+        Start 166: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(11, 2)
+166/309 Test #166: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(11, 2) .....   Passed    0.01 sec
+        Start 167: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(11, 3)
+167/309 Test #167: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(11, 3) .....   Passed    0.02 sec
+        Start 168: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(11, 4)
+168/309 Test #168: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(11, 4) .....   Passed    0.01 sec
+        Start 169: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(11, 8)
+169/309 Test #169: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(11, 8) .....   Passed    0.02 sec
+        Start 170: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(11, 16)
+170/309 Test #170: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(11, 16) ....   Passed    0.02 sec
+        Start 171: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(11, 32)
+171/309 Test #171: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(11, 32) ....   Passed    0.02 sec
+        Start 172: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(12, 1)
+172/309 Test #172: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(12, 1) .....   Passed    0.01 sec
+        Start 173: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(12, 2)
+173/309 Test #173: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(12, 2) .....   Passed    0.01 sec
+        Start 174: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(12, 3)
+174/309 Test #174: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(12, 3) .....   Passed    0.01 sec
+        Start 175: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(12, 4)
+175/309 Test #175: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(12, 4) .....   Passed    0.01 sec
+        Start 176: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(12, 8)
+176/309 Test #176: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(12, 8) .....   Passed    0.01 sec
+        Start 177: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(12, 16)
+177/309 Test #177: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(12, 16) ....   Passed    0.03 sec
+        Start 178: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(12, 32)
+178/309 Test #178: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(12, 32) ....   Passed    0.03 sec
+        Start 179: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(13, 1)
+179/309 Test #179: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(13, 1) .....   Passed    0.01 sec
+        Start 180: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(13, 2)
+180/309 Test #180: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(13, 2) .....   Passed    0.01 sec
+        Start 181: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(13, 3)
+181/309 Test #181: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(13, 3) .....   Passed    0.01 sec
+        Start 182: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(13, 4)
+182/309 Test #182: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(13, 4) .....   Passed    0.01 sec
+        Start 183: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(13, 8)
+183/309 Test #183: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(13, 8) .....   Passed    0.25 sec
+        Start 184: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(13, 16)
+184/309 Test #184: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(13, 16) ....   Passed    0.03 sec
+        Start 185: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(13, 32)
+185/309 Test #185: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(13, 32) ....   Passed    0.03 sec
+        Start 186: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(14, 1)
+186/309 Test #186: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(14, 1) .....   Passed    0.01 sec
+        Start 187: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(14, 2)
+187/309 Test #187: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(14, 2) .....   Passed    0.01 sec
+        Start 188: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(14, 3)
+188/309 Test #188: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(14, 3) .....   Passed    0.01 sec
+        Start 189: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(14, 4)
+189/309 Test #189: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(14, 4) .....   Passed    0.01 sec
+        Start 190: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(14, 8)
+190/309 Test #190: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(14, 8) .....   Passed    0.02 sec
+        Start 191: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(14, 16)
+191/309 Test #191: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(14, 16) ....   Passed    0.02 sec
+        Start 192: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(14, 32)
+192/309 Test #192: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(14, 32) ....   Passed    0.03 sec
+        Start 193: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(15, 1)
+193/309 Test #193: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(15, 1) .....   Passed    0.01 sec
+        Start 194: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(15, 2)
+194/309 Test #194: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(15, 2) .....   Passed    0.01 sec
+        Start 195: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(15, 3)
+195/309 Test #195: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(15, 3) .....   Passed    0.01 sec
+        Start 196: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(15, 4)
+196/309 Test #196: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(15, 4) .....   Passed    0.01 sec
+        Start 197: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(15, 8)
+197/309 Test #197: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(15, 8) .....   Passed    0.02 sec
+        Start 198: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(15, 16)
+198/309 Test #198: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(15, 16) ....   Passed    0.04 sec
+        Start 199: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(15, 32)
+199/309 Test #199: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(15, 32) ....   Passed    0.03 sec
+        Start 200: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(16, 1)
+200/309 Test #200: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(16, 1) .....   Passed    0.01 sec
+        Start 201: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(16, 2)
+201/309 Test #201: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(16, 2) .....   Passed    0.01 sec
+        Start 202: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(16, 3)
+202/309 Test #202: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(16, 3) .....   Passed    0.01 sec
+        Start 203: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(16, 4)
+203/309 Test #203: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(16, 4) .....   Passed    0.02 sec
+        Start 204: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(16, 8)
+204/309 Test #204: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(16, 8) .....   Passed    0.01 sec
+        Start 205: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(16, 16)
+205/309 Test #205: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(16, 16) ....   Passed    0.02 sec
+        Start 206: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(16, 32)
+206/309 Test #206: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(16, 32) ....   Passed    0.03 sec
+        Start 207: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(17, 1)
+207/309 Test #207: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(17, 1) .....   Passed    0.01 sec
+        Start 208: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(17, 2)
+208/309 Test #208: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(17, 2) .....   Passed    0.01 sec
+        Start 209: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(17, 3)
+209/309 Test #209: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(17, 3) .....   Passed    0.01 sec
+        Start 210: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(17, 4)
+210/309 Test #210: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(17, 4) .....   Passed    0.01 sec
+        Start 211: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(17, 8)
+211/309 Test #211: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(17, 8) .....   Passed    0.02 sec
+        Start 212: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(17, 16)
+212/309 Test #212: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(17, 16) ....   Passed    0.02 sec
+        Start 213: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(17, 32)
+213/309 Test #213: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(17, 32) ....   Passed    0.02 sec
+        Start 214: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(31, 1)
+214/309 Test #214: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(31, 1) .....   Passed    0.01 sec
+        Start 215: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(31, 2)
+215/309 Test #215: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(31, 2) .....   Passed    0.01 sec
+        Start 216: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(31, 3)
+216/309 Test #216: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(31, 3) .....   Passed    0.01 sec
+        Start 217: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(31, 4)
+217/309 Test #217: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(31, 4) .....   Passed    0.01 sec
+        Start 218: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(31, 8)
+218/309 Test #218: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(31, 8) .....   Passed    0.02 sec
+        Start 219: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(31, 16)
+219/309 Test #219: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(31, 16) ....   Passed    0.03 sec
+        Start 220: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(31, 32)
+220/309 Test #220: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(31, 32) ....   Passed    0.03 sec
+        Start 221: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(128, 1)
+221/309 Test #221: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(128, 1) ....   Passed    0.01 sec
+        Start 222: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(128, 2)
+222/309 Test #222: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(128, 2) ....   Passed    0.01 sec
+        Start 223: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(128, 3)
+223/309 Test #223: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(128, 3) ....   Passed    0.01 sec
+        Start 224: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(128, 4)
+224/309 Test #224: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(128, 4) ....   Passed    0.02 sec
+        Start 225: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(128, 8)
+225/309 Test #225: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(128, 8) ....   Passed    0.01 sec
+        Start 226: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(128, 16)
+226/309 Test #226: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(128, 16) ...   Passed    0.02 sec
+        Start 227: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(128, 32)
+227/309 Test #227: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(128, 32) ...   Passed    0.04 sec
+        Start 228: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(384, 1)
+228/309 Test #228: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(384, 1) ....   Passed    0.01 sec
+        Start 229: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(384, 2)
+229/309 Test #229: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(384, 2) ....   Passed    0.01 sec
+        Start 230: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(384, 3)
+230/309 Test #230: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(384, 3) ....   Passed    0.01 sec
+        Start 231: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(384, 4)
+231/309 Test #231: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(384, 4) ....   Passed    0.01 sec
+        Start 232: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(384, 8)
+232/309 Test #232: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(384, 8) ....   Passed    0.02 sec
+        Start 233: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(384, 16)
+233/309 Test #233: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(384, 16) ...   Passed    0.02 sec
+        Start 234: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(384, 32)
+234/309 Test #234: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(384, 32) ...   Passed    0.03 sec
+        Start 235: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(767, 1)
+235/309 Test #235: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(767, 1) ....   Passed    0.01 sec
+        Start 236: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(767, 2)
+236/309 Test #236: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(767, 2) ....   Passed    0.01 sec
+        Start 237: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(767, 3)
+237/309 Test #237: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(767, 3) ....   Passed    0.01 sec
+        Start 238: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(767, 4)
+238/309 Test #238: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(767, 4) ....   Passed    0.01 sec
+        Start 239: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(767, 8)
+239/309 Test #239: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(767, 8) ....   Passed    0.02 sec
+        Start 240: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(767, 16)
+240/309 Test #240: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(767, 16) ...   Passed    0.02 sec
+        Start 241: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(767, 32)
+241/309 Test #241: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(767, 32) ...   Passed    0.03 sec
+        Start 242: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(768, 1)
+242/309 Test #242: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(768, 1) ....   Passed    0.01 sec
+        Start 243: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(768, 2)
+243/309 Test #243: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(768, 2) ....   Passed    0.01 sec
+        Start 244: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(768, 3)
+244/309 Test #244: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(768, 3) ....   Passed    0.01 sec
+        Start 245: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(768, 4)
+245/309 Test #245: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(768, 4) ....   Passed    0.01 sec
+        Start 246: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(768, 8)
+246/309 Test #246: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(768, 8) ....   Passed    0.02 sec
+        Start 247: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(768, 16)
+247/309 Test #247: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(768, 16) ...   Passed    0.02 sec
+        Start 248: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(768, 32)
+248/309 Test #248: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(768, 32) ...   Passed    0.03 sec
+        Start 249: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(769, 1)
+249/309 Test #249: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(769, 1) ....   Passed    0.01 sec
+        Start 250: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(769, 2)
+250/309 Test #250: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(769, 2) ....   Passed    0.01 sec
+        Start 251: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(769, 3)
+251/309 Test #251: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(769, 3) ....   Passed    0.01 sec
+        Start 252: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(769, 4)
+252/309 Test #252: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(769, 4) ....   Passed    0.01 sec
+        Start 253: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(769, 8)
+253/309 Test #253: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(769, 8) ....   Passed    0.01 sec
+        Start 254: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(769, 16)
+254/309 Test #254: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(769, 16) ...   Passed    0.02 sec
+        Start 255: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(769, 32)
+255/309 Test #255: DimensionsAndThreads/MultithreadedAVX2Comparison.MatchesScalarAndAVX2ForEveryRankAndK/(769, 32) ...   Passed    0.02 sec
+        Start 256: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 1, 0)
+256/309 Test #256: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 1, 0) ..............***Skipped   0.01 sec
+        Start 257: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 1, 1)
+257/309 Test #257: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 1, 1) ..............***Skipped   0.01 sec
+        Start 258: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 1, 2)
+258/309 Test #258: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 1, 2) ..............***Skipped   0.01 sec
+        Start 259: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 257, 0)
+259/309 Test #259: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 257, 0) ............***Skipped   0.01 sec
+        Start 260: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 257, 1)
+260/309 Test #260: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 257, 1) ............***Skipped   0.01 sec
+        Start 261: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 257, 2)
+261/309 Test #261: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 257, 2) ............***Skipped   0.01 sec
+        Start 262: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 513, 0)
+262/309 Test #262: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 513, 0) ............***Skipped   0.01 sec
+        Start 263: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 513, 1)
+263/309 Test #263: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 513, 1) ............***Skipped   0.01 sec
+        Start 264: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 513, 2)
+264/309 Test #264: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 513, 2) ............***Skipped   0.01 sec
+        Start 265: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 1, 0)
+265/309 Test #265: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 1, 0) ..............***Skipped   0.01 sec
+        Start 266: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 1, 1)
+266/309 Test #266: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 1, 1) ..............***Skipped   0.01 sec
+        Start 267: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 1, 2)
+267/309 Test #267: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 1, 2) ..............***Skipped   0.01 sec
+        Start 268: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 257, 0)
+268/309 Test #268: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 257, 0) ............***Skipped   0.01 sec
+        Start 269: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 257, 1)
+269/309 Test #269: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 257, 1) ............***Skipped   0.01 sec
+        Start 270: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 257, 2)
+270/309 Test #270: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 257, 2) ............***Skipped   0.01 sec
+        Start 271: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 513, 0)
+271/309 Test #271: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 513, 0) ............***Skipped   0.01 sec
+        Start 272: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 513, 1)
+272/309 Test #272: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 513, 1) ............***Skipped   0.01 sec
+        Start 273: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 513, 2)
+273/309 Test #273: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 513, 2) ............***Skipped   0.01 sec
+        Start 274: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 1, 0)
+274/309 Test #274: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 1, 0) ............***Skipped   0.01 sec
+        Start 275: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 1, 1)
+275/309 Test #275: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 1, 1) ............***Skipped   0.01 sec
+        Start 276: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 1, 2)
+276/309 Test #276: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 1, 2) ............***Skipped   0.01 sec
+        Start 277: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 257, 0)
+277/309 Test #277: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 257, 0) ..........***Skipped   0.01 sec
+        Start 278: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 257, 1)
+278/309 Test #278: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 257, 1) ..........***Skipped   0.01 sec
+        Start 279: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 257, 2)
+279/309 Test #279: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 257, 2) ..........***Skipped   0.01 sec
+        Start 280: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 513, 0)
+280/309 Test #280: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 513, 0) ..........***Skipped   0.01 sec
+        Start 281: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 513, 1)
+281/309 Test #281: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 513, 1) ..........***Skipped   0.01 sec
+        Start 282: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 513, 2)
+282/309 Test #282: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 513, 2) ..........***Skipped   0.01 sec
+        Start 283: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 1, 0)
+283/309 Test #283: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 1, 0) ............***Skipped   0.01 sec
+        Start 284: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 1, 1)
+284/309 Test #284: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 1, 1) ............***Skipped   0.01 sec
+        Start 285: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 1, 2)
+285/309 Test #285: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 1, 2) ............***Skipped   0.01 sec
+        Start 286: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 257, 0)
+286/309 Test #286: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 257, 0) ..........***Skipped   0.01 sec
+        Start 287: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 257, 1)
+287/309 Test #287: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 257, 1) ..........***Skipped   0.01 sec
+        Start 288: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 257, 2)
+288/309 Test #288: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 257, 2) ..........***Skipped   0.01 sec
+        Start 289: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 513, 0)
+289/309 Test #289: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 513, 0) ..........***Skipped   0.01 sec
+        Start 290: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 513, 1)
+290/309 Test #290: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 513, 1) ..........***Skipped   0.01 sec
+        Start 291: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 513, 2)
+291/309 Test #291: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 513, 2) ..........***Skipped   0.01 sec
+        Start 292: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 1, 0)
+292/309 Test #292: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 1, 0) ............***Skipped   0.01 sec
+        Start 293: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 1, 1)
+293/309 Test #293: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 1, 1) ............***Skipped   0.01 sec
+        Start 294: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 1, 2)
+294/309 Test #294: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 1, 2) ............***Skipped   0.01 sec
+        Start 295: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 257, 0)
+295/309 Test #295: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 257, 0) ..........***Skipped   0.01 sec
+        Start 296: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 257, 1)
+296/309 Test #296: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 257, 1) ..........***Skipped   0.01 sec
+        Start 297: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 257, 2)
+297/309 Test #297: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 257, 2) ..........***Skipped   0.01 sec
+        Start 298: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 513, 0)
+298/309 Test #298: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 513, 0) ..........***Skipped   0.01 sec
+        Start 299: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 513, 1)
+299/309 Test #299: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 513, 1) ..........***Skipped   0.01 sec
+        Start 300: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 513, 2)
+300/309 Test #300: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 513, 2) ..........***Skipped   0.01 sec
+        Start 301: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 1, 0)
+301/309 Test #301: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 1, 0) ............***Skipped   0.01 sec
+        Start 302: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 1, 1)
+302/309 Test #302: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 1, 1) ............***Skipped   0.01 sec
+        Start 303: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 1, 2)
+303/309 Test #303: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 1, 2) ............***Skipped   0.01 sec
+        Start 304: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 257, 0)
+304/309 Test #304: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 257, 0) ..........***Skipped   0.01 sec
+        Start 305: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 257, 1)
+305/309 Test #305: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 257, 1) ..........***Skipped   0.01 sec
+        Start 306: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 257, 2)
+306/309 Test #306: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 257, 2) ..........***Skipped   0.01 sec
+        Start 307: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 513, 0)
+307/309 Test #307: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 513, 0) ..........***Skipped   0.01 sec
+        Start 308: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 513, 1)
+308/309 Test #308: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 513, 1) ..........***Skipped   0.01 sec
+        Start 309: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 513, 2)
+309/309 Test #309: DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 513, 2) ..........***Skipped   0.01 sec
+
+100% tests passed, 0 tests failed out of 309
+
+Total Test time (real) =   4.82 sec
+
+The following tests did not run:
+	 14 - CudaBackend.EmptyStoreValidationAndRetrieval (Skipped)
+	 15 - CudaBackend.ExactTiesAcrossMultipleBlocks (Skipped)
+	 16 - CudaBackend.RejectsNonfiniteInputsWithoutCorruptingStore (Skipped)
+	 17 - CudaBackend.ExtremeFiniteInputsRetainReferenceRange (Skipped)
+	 18 - CudaBackend.ProfiledSearchAndInsertionAfterSearch (Skipped)
+	 19 - CudaPersistent.BuildsOnceAndTransfersOnlyQuery (Skipped)
+	 20 - CudaPersistent.ConcurrentFirstQueriesPublishOneIndex (Skipped)
+	 21 - CudaPersistent.RepeatedRebuildsAndOwnershipLifetimes (Skipped)
+	 22 - CudaPersistent.NaiveModeRemainsFullTransferBaseline (Skipped)
+	 23 - CudaBlockParallel.PersistentLifecycleAndTailDimensions (Skipped)
+	 24 - CudaBlockParallel.ExtremeFiniteValuesAndCancellation (Skipped)
+	 25 - CudaBlockParallel.ConcurrentFirstQueriesReuseIndex (Skipped)
+	256 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 1, 0) (Skipped)
+	257 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 1, 1) (Skipped)
+	258 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 1, 2) (Skipped)
+	259 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 257, 0) (Skipped)
+	260 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 257, 1) (Skipped)
+	261 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 257, 2) (Skipped)
+	262 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 513, 0) (Skipped)
+	263 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 513, 1) (Skipped)
+	264 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(3, 513, 2) (Skipped)
+	265 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 1, 0) (Skipped)
+	266 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 1, 1) (Skipped)
+	267 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 1, 2) (Skipped)
+	268 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 257, 0) (Skipped)
+	269 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 257, 1) (Skipped)
+	270 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 257, 2) (Skipped)
+	271 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 513, 0) (Skipped)
+	272 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 513, 1) (Skipped)
+	273 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(7, 513, 2) (Skipped)
+	274 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 1, 0) (Skipped)
+	275 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 1, 1) (Skipped)
+	276 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 1, 2) (Skipped)
+	277 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 257, 0) (Skipped)
+	278 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 257, 1) (Skipped)
+	279 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 257, 2) (Skipped)
+	280 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 513, 0) (Skipped)
+	281 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 513, 1) (Skipped)
+	282 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(128, 513, 2) (Skipped)
+	283 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 1, 0) (Skipped)
+	284 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 1, 1) (Skipped)
+	285 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 1, 2) (Skipped)
+	286 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 257, 0) (Skipped)
+	287 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 257, 1) (Skipped)
+	288 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 257, 2) (Skipped)
+	289 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 513, 0) (Skipped)
+	290 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 513, 1) (Skipped)
+	291 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(384, 513, 2) (Skipped)
+	292 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 1, 0) (Skipped)
+	293 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 1, 1) (Skipped)
+	294 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 1, 2) (Skipped)
+	295 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 257, 0) (Skipped)
+	296 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 257, 1) (Skipped)
+	297 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 257, 2) (Skipped)
+	298 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 513, 0) (Skipped)
+	299 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 513, 1) (Skipped)
+	300 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(768, 513, 2) (Skipped)
+	301 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 1, 0) (Skipped)
+	302 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 1, 1) (Skipped)
+	303 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 1, 2) (Skipped)
+	304 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 257, 0) (Skipped)
+	305 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 257, 1) (Skipped)
+	306 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 257, 2) (Skipped)
+	307 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 513, 0) (Skipped)
+	308 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 513, 1) (Skipped)
+	309 - DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/(769, 513, 2) (Skipped)

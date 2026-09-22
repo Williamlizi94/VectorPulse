@@ -1,0 +1,55 @@
+Milestone 2C measurement environment
+CPU: Intel(R) Core(TM) i9-14900F
+Physical cores: 24; logical processors: 32
+std::thread::hardware_concurrency(): 32 (benchmark output)
+Platform: Windows x64
+Compiler: MSVC 19.44.35228.0
+CMake: 3.31.6-msvc6; generator: Visual Studio 17 2022
+Configuration: Release
+Relevant flags: /O2 /Ob2 /DNDEBUG /MD /std:c++20 /W4 /permissive-
+Default precise floating-point semantics; no fast-math flags added.
+Only src/avx2_kernel.cpp receives /arch:AVX2.
+No core affinity, frequency controls, hardware counters, or phase profiling.
+
+Before code changes: existing Release build succeeded; all 76 tests passed
+in 0.87 seconds. Existing benchmark completed successfully with matching
+IDs/ranks/scores/checksums. All prior working-tree changes were retained.
+Baseline means: scalar 63.419 ms; AVX2 26.840 ms;
+best threaded scalar 10.919 ms at 32 threads.
+Baseline command:
+vectorpulse_benchmark.exe --vectors 100000 --dimension 768 --queries 100 --top-k 10 --warmups 1 --repetitions 5 --threads 1,2,4,8,16,32
+Baseline output: milestone2c-baseline.txt
+Baseline test log: milestone2c-baseline-tests.txt
+
+Final Release build succeeded, all 242 tests passed in 3.15 seconds.
+AVX2-disabled Release build succeeded: 53 passed, 189 skipped, zero failed.
+Both SIMD availability/unsupported-construction tests passed.
+Disabled benchmark exit 0, both SIMD families reported unsupported and skipped.
+Disabled command:
+vectorpulse_benchmark.exe --vectors 257 --dimension 17 --queries 10 --top-k 10 --warmups 1 --repetitions 2 --threads 1,2,4,8,16,32
+
+Final benchmark command (same executable path build/Release/):
+vectorpulse_benchmark.exe --vectors 100000 --dimension 768 --queries 100 --top-k 10 --warmups 1 --repetitions 5 --threads 1,2,4,8,16,32
+One untimed scalar reference pass; one full-query warm-up round per backend;
+five measured rounds in deterministically shuffled order, 500 queries/variant.
+Input seed 42, order seed 2026. Fourteen stores coexist (4.3008 GB raw values).
+Latency statistics cover individual queries; round means also recorded.
+Generation/insertion, checks, checksums, output, destruction excluded from timing.
+Search/result retention, allocation, worker creation, joins and merge included.
+QPS = 1000 / mean ms; speedups use means within the same final run.
+
+Final benchmark exit 0: all IDs/ranks/scores match, maximum error 0.
+All 14 variants: score checksum 709.827059060; ID checksum 8705275316278055177.
+Checksums also equal the prerequisite baseline's five-repeat values.
+Scalar 65.121 ms, AVX2 28.450 ms; best threaded scalar 12.041 ms at 32 threads.
+Best threaded AVX2: 16 threads, 7.962 ms, 125.602 QPS,
+8.179x scalar and 3.573x single-thread AVX2.
+32 AVX2 threads: 8.394 ms, about 5.4% slower than 16 in this run.
+At 16 threads, independence product 2.289 * 5.387 = about 12.331x,
+versus observed combined 8.179x. Shared memory/cache throughput and orchestration
+are plausible limits; no specific hardware bottleneck was proven.
+
+SHA-256 comparison verified all 15 pre-existing library source/header files unchanged,
+including all three existing backends, VectorStore, interfaces, both cosine
+implementations, and AVX2 runtime support. Existing tests were retained.
+No CUDA or unrelated features added. No commit was created.

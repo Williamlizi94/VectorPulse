@@ -1,0 +1,17 @@
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 12428 (E:\Project VectorPulse\out\build-cuda\vectorpulse_cuda_profile.exe)
+mode=naive32 vectors=100000 dimension=768 warmups=3 measured=5 matrix_bytes=307200000
+iteration=0 kernel_ms=3.51642 total_ms=5.6882
+iteration=1 kernel_ms=1.93814 total_ms=4.0657
+iteration=2 kernel_ms=1.69882 total_ms=3.6926
+==PROF== Profiling "cosine_similarity_fp32_kernel" - 0 (1/3): 0%....50%....100% - 34 passes
+iteration=3 kernel_ms=621.659 total_ms=623.897
+==PROF== Profiling "cosine_similarity_fp32_kernel" - 1 (2/3): 0%....50%....100% - 34 passes
+iteration=4 kernel_ms=216.459 total_ms=218.546
+==PROF== Profiling "cosine_similarity_fp32_kernel" - 2 (3/3): 0%....50%....100% - 34 passes
+iteration=5 kernel_ms=214.12 total_ms=216.177
+iteration=6 kernel_ms=1.55542 total_ms=3.8351
+iteration=7 kernel_ms=1.54483 total_ms=3.5678
+checksum=11.1254 max_score_error=1.93715e-07
+==PROF== Disconnected from process 12428
+==PROF== Report: E:\Project VectorPulse\docs\benchmarks\fp32-nsight\100000-naive32.ncu-rep

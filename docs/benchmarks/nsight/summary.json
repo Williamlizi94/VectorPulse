@@ -1,0 +1,2234 @@
+{
+  "10000-block": {
+    "gpu__time_duration.sum": {
+      "mean": 183061.33333333334,
+      "min": 182912.0,
+      "max": 183136.0,
+      "values": [
+        183136.0,
+        183136.0,
+        182912.0
+      ]
+    },
+    "sm__warps_active.avg.pct_of_peak_sustained_active": {
+      "mean": 78.29666666666667,
+      "min": 78.25,
+      "max": 78.38,
+      "values": [
+        78.38,
+        78.25,
+        78.26
+      ]
+    },
+    "sm__maximum_warps_per_active_cycle_pct": {
+      "mean": 100.0,
+      "min": 100.0,
+      "max": 100.0,
+      "values": [
+        100.0,
+        100.0,
+        100.0
+      ]
+    },
+    "sm__throughput.avg.pct_of_peak_sustained_elapsed": {
+      "mean": 83.94,
+      "min": 83.75,
+      "max": 84.28,
+      "values": [
+        83.79,
+        84.28,
+        83.75
+      ]
+    },
+    "dram__bytes_read.sum.per_second": {
+      "mean": 169451965988.62668,
+      "min": 167799405905.99,
+      "max": 170972008397.48,
+      "values": [
+        167799405905.99,
+        169584483662.41,
+        170972008397.48
+      ]
+    },
+    "dram__bytes_write.sum.per_second": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "values": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+      "mean": 23.56,
+      "min": 23.33,
+      "max": 23.77,
+      "values": [
+        23.33,
+        23.58,
+        23.77
+      ]
+    },
+    "smsp__sass_average_data_bytes_per_sector_mem_global_op_ld.ratio": {
+      "mean": 32.0,
+      "min": 32.0,
+      "max": 32.0,
+      "values": [
+        32.0,
+        32.0,
+        32.0
+      ]
+    },
+    "smsp__thread_inst_executed_per_inst_executed.ratio": {
+      "mean": 30.23,
+      "min": 30.23,
+      "max": 30.23,
+      "values": [
+        30.23,
+        30.23,
+        30.23
+      ]
+    },
+    "smsp__sass_average_branch_targets_threads_uniform.pct": {
+      "mean": 97.21,
+      "min": 97.21,
+      "max": 97.21,
+      "values": [
+        97.21,
+        97.21,
+        97.21
+      ]
+    },
+    "launch__registers_per_thread": {
+      "mean": 25.0,
+      "min": 25.0,
+      "max": 25.0,
+      "values": [
+        25.0,
+        25.0,
+        25.0
+      ]
+    },
+    "launch__registers_per_thread_allocated": {
+      "mean": 32.0,
+      "min": 32.0,
+      "max": 32.0,
+      "values": [
+        32.0,
+        32.0,
+        32.0
+      ]
+    },
+    "launch__shared_mem_per_block_static": {
+      "mean": 4096.0,
+      "min": 4096.0,
+      "max": 4096.0,
+      "values": [
+        4096.0,
+        4096.0,
+        4096.0
+      ]
+    },
+    "launch__shared_mem_per_block_driver": {
+      "mean": 1024.0,
+      "min": 1024.0,
+      "max": 1024.0,
+      "values": [
+        1024.0,
+        1024.0,
+        1024.0
+      ]
+    },
+    "launch__waves_per_multiprocessor": {
+      "mean": 20.83,
+      "min": 20.83,
+      "max": 20.83,
+      "values": [
+        20.83,
+        20.83,
+        20.83
+      ]
+    },
+    "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active": {
+      "mean": 84.88,
+      "min": 84.87,
+      "max": 84.89,
+      "values": [
+        84.88,
+        84.87,
+        84.89
+      ]
+    },
+    "smsp__average_warp_latency_per_inst_issued.ratio": {
+      "mean": 96.21000000000001,
+      "min": 96.18,
+      "max": 96.26,
+      "values": [
+        96.26,
+        96.19,
+        96.18
+      ]
+    },
+    "smsp__average_warps_issue_stalled_barrier_per_issue_active.ratio": {
+      "mean": 40.806666666666665,
+      "min": 40.79,
+      "max": 40.82,
+      "values": [
+        40.82,
+        40.79,
+        40.81
+      ]
+    },
+    "smsp__average_warps_issue_stalled_tex_throttle_per_issue_active.ratio": {
+      "mean": 18.35,
+      "min": 18.22,
+      "max": 18.53,
+      "values": [
+        18.22,
+        18.53,
+        18.3
+      ]
+    },
+    "smsp__average_warps_issue_stalled_long_scoreboard_per_issue_active.ratio": {
+      "mean": 8.756666666666666,
+      "min": 8.75,
+      "max": 8.76,
+      "values": [
+        8.76,
+        8.75,
+        8.76
+      ]
+    },
+    "smsp__average_warps_issue_stalled_short_scoreboard_per_issue_active.ratio": {
+      "mean": 22.573333333333334,
+      "min": 22.57,
+      "max": 22.58,
+      "values": [
+        22.58,
+        22.57,
+        22.57
+      ]
+    },
+    "smsp__issue_active.avg.pct_of_peak_sustained_active": {
+      "mean": 9.77,
+      "min": 9.77,
+      "max": 9.77,
+      "values": [
+        9.77,
+        9.77,
+        9.77
+      ]
+    },
+    "smsp__thread_inst_executed_pred_on_per_inst_executed.ratio": {
+      "mean": 28.62,
+      "min": 28.62,
+      "max": 28.62,
+      "values": [
+        28.62,
+        28.62,
+        28.62
+      ]
+    },
+    "l1tex__t_sector_pipe_lsu_mem_global_op_ld_hit_rate.pct": {
+      "mean": 49.01,
+      "min": 49.0,
+      "max": 49.02,
+      "values": [
+        49.01,
+        49.02,
+        49.0
+      ]
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld.sum": {
+      "mean": 1920101.3333333333,
+      "min": 1919404.0,
+      "max": 1921204.0,
+      "values": [
+        1921204.0,
+        1919696.0,
+        1919404.0
+      ]
+    },
+    "l1tex__t_requests_pipe_lsu_mem_global_op_ld.sum": {
+      "mean": 480000.0,
+      "min": 480000.0,
+      "max": 480000.0,
+      "values": [
+        480000.0,
+        480000.0,
+        480000.0
+      ]
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared.sum": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "values": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "thread_inst_executed_true": {
+      "mean": 409890000.0,
+      "min": 409890000.0,
+      "max": 409890000.0,
+      "values": [
+        409890000.0,
+        409890000.0,
+        409890000.0
+      ]
+    },
+    "dram__bytes_read.sum": {
+      "mean": 31019989.333333332,
+      "min": 30730112.0,
+      "max": 31272832.0,
+      "values": [
+        30730112.0,
+        31057024.0,
+        31272832.0
+      ]
+    },
+    "dram__bytes_write.sum": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "values": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "launch__grid_size": {
+      "mean": 10000.0,
+      "min": 10000.0,
+      "max": 10000.0,
+      "values": [
+        10000.0,
+        10000.0,
+        10000.0
+      ]
+    },
+    "launch__block_size": {
+      "mean": 256.0,
+      "min": 256.0,
+      "max": 256.0,
+      "values": [
+        256.0,
+        256.0,
+        256.0
+      ]
+    },
+    "launch__occupancy_limit_blocks": {
+      "mean": 24.0,
+      "min": 24.0,
+      "max": 24.0,
+      "values": [
+        24.0,
+        24.0,
+        24.0
+      ]
+    },
+    "launch__occupancy_limit_registers": {
+      "mean": 8.0,
+      "min": 8.0,
+      "max": 8.0,
+      "values": [
+        8.0,
+        8.0,
+        8.0
+      ]
+    },
+    "launch__occupancy_limit_shared_mem": {
+      "mean": 12.0,
+      "min": 12.0,
+      "max": 12.0,
+      "values": [
+        12.0,
+        12.0,
+        12.0
+      ]
+    },
+    "launch__occupancy_limit_warps": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0,
+      "values": [
+        6.0,
+        6.0,
+        6.0
+      ]
+    },
+    "dram__cycles_elapsed.avg.per_second": {
+      "mean": 11237851097.926666,
+      "min": 11237462869.12,
+      "max": 11238161803.25,
+      "values": [
+        11238161803.25,
+        11237462869.12,
+        11237928621.41
+      ]
+    }
+  },
+  "10000-naive": {
+    "gpu__time_duration.sum": {
+      "mean": 275082.6666666667,
+      "min": 274944.0,
+      "max": 275360.0,
+      "values": [
+        275360.0,
+        274944.0,
+        274944.0
+      ]
+    },
+    "sm__warps_active.avg.pct_of_peak_sustained_active": {
+      "mean": 16.45,
+      "min": 16.45,
+      "max": 16.45,
+      "values": [
+        16.45,
+        16.45,
+        16.45
+      ]
+    },
+    "sm__maximum_warps_per_active_cycle_pct": {
+      "mean": 100.0,
+      "min": 100.0,
+      "max": 100.0,
+      "values": [
+        100.0,
+        100.0,
+        100.0
+      ]
+    },
+    "sm__throughput.avg.pct_of_peak_sustained_elapsed": {
+      "mean": 41.42333333333333,
+      "min": 41.4,
+      "max": 41.45,
+      "values": [
+        41.45,
+        41.4,
+        41.42
+      ]
+    },
+    "dram__bytes_read.sum.per_second": {
+      "mean": 116278000606.66666,
+      "min": 111778864059.59,
+      "max": 123343109869.65,
+      "values": [
+        113712027890.76,
+        111778864059.59,
+        123343109869.65
+      ]
+    },
+    "dram__bytes_write.sum.per_second": {
+      "mean": 11467139.59,
+      "min": 0.0,
+      "max": 32539221.38,
+      "values": [
+        32539221.38,
+        0.0,
+        1862197.39
+      ]
+    },
+    "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+      "mean": 16.166666666666664,
+      "min": 15.54,
+      "max": 17.15,
+      "values": [
+        15.81,
+        15.54,
+        17.15
+      ]
+    },
+    "smsp__sass_average_data_bytes_per_sector_mem_global_op_ld.ratio": {
+      "mean": 4.0,
+      "min": 4.0,
+      "max": 4.0,
+      "values": [
+        4.0,
+        4.0,
+        4.0
+      ]
+    },
+    "smsp__thread_inst_executed_per_inst_executed.ratio": {
+      "mean": 31.95,
+      "min": 31.95,
+      "max": 31.95,
+      "values": [
+        31.95,
+        31.95,
+        31.95
+      ]
+    },
+    "smsp__sass_average_branch_targets_threads_uniform.pct": {
+      "mean": 100.0,
+      "min": 100.0,
+      "max": 100.0,
+      "values": [
+        100.0,
+        100.0,
+        100.0
+      ]
+    },
+    "launch__registers_per_thread": {
+      "mean": 38.0,
+      "min": 38.0,
+      "max": 38.0,
+      "values": [
+        38.0,
+        38.0,
+        38.0
+      ]
+    },
+    "launch__registers_per_thread_allocated": {
+      "mean": 40.0,
+      "min": 40.0,
+      "max": 40.0,
+      "values": [
+        40.0,
+        40.0,
+        40.0
+      ]
+    },
+    "launch__shared_mem_per_block_static": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "values": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "launch__shared_mem_per_block_driver": {
+      "mean": 1024.0,
+      "min": 1024.0,
+      "max": 1024.0,
+      "values": [
+        1024.0,
+        1024.0,
+        1024.0
+      ]
+    },
+    "launch__waves_per_multiprocessor": {
+      "mean": 0.08,
+      "min": 0.08,
+      "max": 0.08,
+      "values": [
+        0.08,
+        0.08,
+        0.08
+      ]
+    },
+    "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active": {
+      "mean": 84.88666666666667,
+      "min": 84.88,
+      "max": 84.89,
+      "values": [
+        84.89,
+        84.88,
+        84.89
+      ]
+    },
+    "smsp__average_warp_latency_per_inst_issued.ratio": {
+      "mean": 82.40666666666667,
+      "min": 82.4,
+      "max": 82.42,
+      "values": [
+        82.4,
+        82.4,
+        82.42
+      ]
+    },
+    "smsp__average_warps_issue_stalled_barrier_per_issue_active.ratio": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "values": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "smsp__average_warps_issue_stalled_tex_throttle_per_issue_active.ratio": {
+      "mean": 24.156666666666666,
+      "min": 24.13,
+      "max": 24.2,
+      "values": [
+        24.13,
+        24.14,
+        24.2
+      ]
+    },
+    "smsp__average_warps_issue_stalled_long_scoreboard_per_issue_active.ratio": {
+      "mean": 14.216666666666667,
+      "min": 14.2,
+      "max": 14.24,
+      "values": [
+        14.2,
+        14.24,
+        14.21
+      ]
+    },
+    "smsp__average_warps_issue_stalled_short_scoreboard_per_issue_active.ratio": {
+      "mean": 40.52333333333333,
+      "min": 40.5,
+      "max": 40.56,
+      "values": [
+        40.5,
+        40.51,
+        40.56
+      ]
+    },
+    "smsp__issue_active.avg.pct_of_peak_sustained_active": {
+      "mean": 2.42,
+      "min": 2.42,
+      "max": 2.42,
+      "values": [
+        2.42,
+        2.42,
+        2.42
+      ]
+    },
+    "smsp__thread_inst_executed_pred_on_per_inst_executed.ratio": {
+      "mean": 31.93,
+      "min": 31.93,
+      "max": 31.93,
+      "values": [
+        31.93,
+        31.93,
+        31.93
+      ]
+    },
+    "l1tex__t_sector_pipe_lsu_mem_global_op_ld_hit_rate.pct": {
+      "mean": 87.81333333333333,
+      "min": 87.81,
+      "max": 87.82,
+      "values": [
+        87.81,
+        87.81,
+        87.82
+      ]
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld.sum": {
+      "mean": 7920374.333333333,
+      "min": 7920163.0,
+      "max": 7920549.0,
+      "values": [
+        7920411.0,
+        7920549.0,
+        7920163.0
+      ]
+    },
+    "l1tex__t_requests_pipe_lsu_mem_global_op_ld.sum": {
+      "mean": 480768.0,
+      "min": 480768.0,
+      "max": 480768.0,
+      "values": [
+        480768.0,
+        480768.0,
+        480768.0
+      ]
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared.sum": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "values": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "thread_inst_executed_true": {
+      "mean": 83411920.0,
+      "min": 83411920.0,
+      "max": 83411920.0,
+      "values": [
+        83411920.0,
+        83411920.0,
+        83411920.0
+      ]
+    },
+    "dram__bytes_read.sum": {
+      "mean": 31985706.666666668,
+      "min": 30732928.0,
+      "max": 33912448.0,
+      "values": [
+        31311744.0,
+        30732928.0,
+        33912448.0
+      ]
+    },
+    "dram__bytes_write.sum": {
+      "mean": 3157.3333333333335,
+      "min": 0.0,
+      "max": 8960.0,
+      "values": [
+        8960.0,
+        0.0,
+        512.0
+      ]
+    },
+    "launch__grid_size": {
+      "mean": 40.0,
+      "min": 40.0,
+      "max": 40.0,
+      "values": [
+        40.0,
+        40.0,
+        40.0
+      ]
+    },
+    "launch__block_size": {
+      "mean": 256.0,
+      "min": 256.0,
+      "max": 256.0,
+      "values": [
+        256.0,
+        256.0,
+        256.0
+      ]
+    },
+    "launch__occupancy_limit_blocks": {
+      "mean": 24.0,
+      "min": 24.0,
+      "max": 24.0,
+      "values": [
+        24.0,
+        24.0,
+        24.0
+      ]
+    },
+    "launch__occupancy_limit_registers": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0,
+      "values": [
+        6.0,
+        6.0,
+        6.0
+      ]
+    },
+    "launch__occupancy_limit_shared_mem": {
+      "mean": 16.0,
+      "min": 16.0,
+      "max": 16.0,
+      "values": [
+        16.0,
+        16.0,
+        16.0
+      ]
+    },
+    "launch__occupancy_limit_warps": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0,
+      "values": [
+        6.0,
+        6.0,
+        6.0
+      ]
+    },
+    "dram__cycles_elapsed.avg.per_second": {
+      "mean": 11239055649.873333,
+      "min": 11238582219.64,
+      "max": 11239292364.99,
+      "values": [
+        11238582219.64,
+        11239292364.99,
+        11239292364.99
+      ]
+    }
+  },
+  "100000-block": {
+    "gpu__time_duration.sum": {
+      "mean": 1713045.3333333333,
+      "min": 1670304.0,
+      "max": 1796608.0,
+      "values": [
+        1796608.0,
+        1670304.0,
+        1672224.0
+      ]
+    },
+    "sm__warps_active.avg.pct_of_peak_sustained_active": {
+      "mean": 78.64333333333333,
+      "min": 78.52,
+      "max": 78.81,
+      "values": [
+        78.52,
+        78.81,
+        78.6
+      ]
+    },
+    "sm__maximum_warps_per_active_cycle_pct": {
+      "mean": 100.0,
+      "min": 100.0,
+      "max": 100.0,
+      "values": [
+        100.0,
+        100.0,
+        100.0
+      ]
+    },
+    "sm__throughput.avg.pct_of_peak_sustained_elapsed": {
+      "mean": 82.60333333333334,
+      "min": 81.18,
+      "max": 85.13,
+      "values": [
+        81.5,
+        85.13,
+        81.18
+      ]
+    },
+    "dram__bytes_read.sum.per_second": {
+      "mean": 180462737013.95,
+      "min": 171650826446.28,
+      "max": 185641780178.94,
+      "values": [
+        171650826446.28,
+        185641780178.94,
+        184095604416.63
+      ]
+    },
+    "dram__bytes_write.sum.per_second": {
+      "mean": 3230270054.536667,
+      "min": 2758367300.07,
+      "max": 3580205758.95,
+      "values": [
+        3352237104.59,
+        3580205758.95,
+        2758367300.07
+      ]
+    },
+    "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+      "mean": 25.53333333333333,
+      "min": 24.33,
+      "max": 26.3,
+      "values": [
+        24.33,
+        26.3,
+        25.97
+      ]
+    },
+    "smsp__sass_average_data_bytes_per_sector_mem_global_op_ld.ratio": {
+      "mean": 32.0,
+      "min": 32.0,
+      "max": 32.0,
+      "values": [
+        32.0,
+        32.0,
+        32.0
+      ]
+    },
+    "smsp__thread_inst_executed_per_inst_executed.ratio": {
+      "mean": 30.23,
+      "min": 30.23,
+      "max": 30.23,
+      "values": [
+        30.23,
+        30.23,
+        30.23
+      ]
+    },
+    "smsp__sass_average_branch_targets_threads_uniform.pct": {
+      "mean": 97.21,
+      "min": 97.21,
+      "max": 97.21,
+      "values": [
+        97.21,
+        97.21,
+        97.21
+      ]
+    },
+    "launch__registers_per_thread": {
+      "mean": 25.0,
+      "min": 25.0,
+      "max": 25.0,
+      "values": [
+        25.0,
+        25.0,
+        25.0
+      ]
+    },
+    "launch__registers_per_thread_allocated": {
+      "mean": 32.0,
+      "min": 32.0,
+      "max": 32.0,
+      "values": [
+        32.0,
+        32.0,
+        32.0
+      ]
+    },
+    "launch__shared_mem_per_block_static": {
+      "mean": 4096.0,
+      "min": 4096.0,
+      "max": 4096.0,
+      "values": [
+        4096.0,
+        4096.0,
+        4096.0
+      ]
+    },
+    "launch__shared_mem_per_block_driver": {
+      "mean": 1024.0,
+      "min": 1024.0,
+      "max": 1024.0,
+      "values": [
+        1024.0,
+        1024.0,
+        1024.0
+      ]
+    },
+    "launch__waves_per_multiprocessor": {
+      "mean": 208.33,
+      "min": 208.33,
+      "max": 208.33,
+      "values": [
+        208.33,
+        208.33,
+        208.33
+      ]
+    },
+    "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active": {
+      "mean": 85.24333333333333,
+      "min": 85.24,
+      "max": 85.25,
+      "values": [
+        85.25,
+        85.24,
+        85.24
+      ]
+    },
+    "smsp__average_warp_latency_per_inst_issued.ratio": {
+      "mean": 96.42999999999999,
+      "min": 96.22,
+      "max": 96.6,
+      "values": [
+        96.22,
+        96.47,
+        96.6
+      ]
+    },
+    "smsp__average_warps_issue_stalled_barrier_per_issue_active.ratio": {
+      "mean": 41.913333333333334,
+      "min": 41.87,
+      "max": 41.96,
+      "values": [
+        41.96,
+        41.87,
+        41.91
+      ]
+    },
+    "smsp__average_warps_issue_stalled_tex_throttle_per_issue_active.ratio": {
+      "mean": 17.13,
+      "min": 17.03,
+      "max": 17.22,
+      "values": [
+        17.03,
+        17.22,
+        17.14
+      ]
+    },
+    "smsp__average_warps_issue_stalled_long_scoreboard_per_issue_active.ratio": {
+      "mean": 8.946666666666665,
+      "min": 8.7,
+      "max": 9.1,
+      "values": [
+        8.7,
+        9.04,
+        9.1
+      ]
+    },
+    "smsp__average_warps_issue_stalled_short_scoreboard_per_issue_active.ratio": {
+      "mean": 22.816666666666666,
+      "min": 22.8,
+      "max": 22.85,
+      "values": [
+        22.85,
+        22.8,
+        22.8
+      ]
+    },
+    "smsp__issue_active.avg.pct_of_peak_sustained_active": {
+      "mean": 9.783333333333333,
+      "min": 9.78,
+      "max": 9.79,
+      "values": [
+        9.79,
+        9.78,
+        9.78
+      ]
+    },
+    "smsp__thread_inst_executed_pred_on_per_inst_executed.ratio": {
+      "mean": 28.62,
+      "min": 28.62,
+      "max": 28.62,
+      "values": [
+        28.62,
+        28.62,
+        28.62
+      ]
+    },
+    "l1tex__t_sector_pipe_lsu_mem_global_op_ld_hit_rate.pct": {
+      "mean": 49.17666666666666,
+      "min": 49.16,
+      "max": 49.19,
+      "values": [
+        49.18,
+        49.16,
+        49.19
+      ]
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld.sum": {
+      "mean": 19197878.666666668,
+      "min": 19192664.0,
+      "max": 19201944.0,
+      "values": [
+        19199028.0,
+        19192664.0,
+        19201944.0
+      ]
+    },
+    "l1tex__t_requests_pipe_lsu_mem_global_op_ld.sum": {
+      "mean": 4800000.0,
+      "min": 4800000.0,
+      "max": 4800000.0,
+      "values": [
+        4800000.0,
+        4800000.0,
+        4800000.0
+      ]
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared.sum": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "values": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "thread_inst_executed_true": {
+      "mean": 4098900000.0,
+      "min": 4098900000.0,
+      "max": 4098900000.0,
+      "values": [
+        4098900000.0,
+        4098900000.0,
+        4098900000.0
+      ]
+    },
+    "dram__bytes_read.sum": {
+      "mean": 308772181.3333333,
+      "min": 307849088.0,
+      "max": 310078208.0,
+      "values": [
+        308389248.0,
+        310078208.0,
+        307849088.0
+      ]
+    },
+    "dram__bytes_write.sum": {
+      "mean": 5538432.0,
+      "min": 4612608.0,
+      "max": 6022656.0,
+      "values": [
+        6022656.0,
+        5980032.0,
+        4612608.0
+      ]
+    },
+    "launch__grid_size": {
+      "mean": 100000.0,
+      "min": 100000.0,
+      "max": 100000.0,
+      "values": [
+        100000.0,
+        100000.0,
+        100000.0
+      ]
+    },
+    "launch__block_size": {
+      "mean": 256.0,
+      "min": 256.0,
+      "max": 256.0,
+      "values": [
+        256.0,
+        256.0,
+        256.0
+      ]
+    },
+    "launch__occupancy_limit_blocks": {
+      "mean": 24.0,
+      "min": 24.0,
+      "max": 24.0,
+      "values": [
+        24.0,
+        24.0,
+        24.0
+      ]
+    },
+    "launch__occupancy_limit_registers": {
+      "mean": 8.0,
+      "min": 8.0,
+      "max": 8.0,
+      "values": [
+        8.0,
+        8.0,
+        8.0
+      ]
+    },
+    "launch__occupancy_limit_shared_mem": {
+      "mean": 12.0,
+      "min": 12.0,
+      "max": 12.0,
+      "values": [
+        12.0,
+        12.0,
+        12.0
+      ]
+    },
+    "launch__occupancy_limit_warps": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0,
+      "values": [
+        6.0,
+        6.0,
+        6.0
+      ]
+    },
+    "dram__cycles_elapsed.avg.per_second": {
+      "mean": 11240491381.773333,
+      "min": 11240381875.18,
+      "max": 11240646014.14,
+      "values": [
+        11240381875.18,
+        11240646014.14,
+        11240446256.0
+      ]
+    }
+  },
+  "100000-naive": {
+    "gpu__time_duration.sum": {
+      "mean": 1443242.6666666667,
+      "min": 1436704.0,
+      "max": 1447264.0,
+      "values": [
+        1436704.0,
+        1445760.0,
+        1447264.0
+      ]
+    },
+    "sm__warps_active.avg.pct_of_peak_sustained_active": {
+      "mean": 65.98,
+      "min": 64.07,
+      "max": 68.39,
+      "values": [
+        64.07,
+        65.48,
+        68.39
+      ]
+    },
+    "sm__maximum_warps_per_active_cycle_pct": {
+      "mean": 100.0,
+      "min": 100.0,
+      "max": 100.0,
+      "values": [
+        100.0,
+        100.0,
+        100.0
+      ]
+    },
+    "sm__throughput.avg.pct_of_peak_sustained_elapsed": {
+      "mean": 78.00333333333333,
+      "min": 74.24,
+      "max": 80.55,
+      "values": [
+        79.22,
+        80.55,
+        74.24
+      ]
+    },
+    "dram__bytes_read.sum.per_second": {
+      "mean": 214446409434.14,
+      "min": 213912020847.72,
+      "max": 214815139442.23,
+      "values": [
+        213912020847.72,
+        214815139442.23,
+        214612068012.47
+      ]
+    },
+    "dram__bytes_write.sum.per_second": {
+      "mean": 3469882983.6466665,
+      "min": 2142503953.49,
+      "max": 4135936498.11,
+      "values": [
+        2142503953.49,
+        4131208499.34,
+        4135936498.11
+      ]
+    },
+    "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+      "mean": 30.293333333333333,
+      "min": 30.03,
+      "max": 30.44,
+      "values": [
+        30.03,
+        30.44,
+        30.41
+      ]
+    },
+    "smsp__sass_average_data_bytes_per_sector_mem_global_op_ld.ratio": {
+      "mean": 4.0,
+      "min": 4.0,
+      "max": 4.0,
+      "values": [
+        4.0,
+        4.0,
+        4.0
+      ]
+    },
+    "smsp__thread_inst_executed_per_inst_executed.ratio": {
+      "mean": 32.0,
+      "min": 32.0,
+      "max": 32.0,
+      "values": [
+        32.0,
+        32.0,
+        32.0
+      ]
+    },
+    "smsp__sass_average_branch_targets_threads_uniform.pct": {
+      "mean": 100.0,
+      "min": 100.0,
+      "max": 100.0,
+      "values": [
+        100.0,
+        100.0,
+        100.0
+      ]
+    },
+    "launch__registers_per_thread": {
+      "mean": 38.0,
+      "min": 38.0,
+      "max": 38.0,
+      "values": [
+        38.0,
+        38.0,
+        38.0
+      ]
+    },
+    "launch__registers_per_thread_allocated": {
+      "mean": 40.0,
+      "min": 40.0,
+      "max": 40.0,
+      "values": [
+        40.0,
+        40.0,
+        40.0
+      ]
+    },
+    "launch__shared_mem_per_block_static": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "values": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "launch__shared_mem_per_block_driver": {
+      "mean": 1024.0,
+      "min": 1024.0,
+      "max": 1024.0,
+      "values": [
+        1024.0,
+        1024.0,
+        1024.0
+      ]
+    },
+    "launch__waves_per_multiprocessor": {
+      "mean": 0.81,
+      "min": 0.81,
+      "max": 0.81,
+      "values": [
+        0.81,
+        0.81,
+        0.81
+      ]
+    },
+    "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active": {
+      "mean": 81.72666666666667,
+      "min": 78.93,
+      "max": 83.79,
+      "values": [
+        82.46,
+        83.79,
+        78.93
+      ]
+    },
+    "smsp__average_warp_latency_per_inst_issued.ratio": {
+      "mean": 349.67333333333335,
+      "min": 332.58,
+      "max": 369.32,
+      "values": [
+        347.12,
+        332.58,
+        369.32
+      ]
+    },
+    "smsp__average_warps_issue_stalled_barrier_per_issue_active.ratio": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "values": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "smsp__average_warps_issue_stalled_tex_throttle_per_issue_active.ratio": {
+      "mean": 109.30333333333333,
+      "min": 69.37,
+      "max": 129.92,
+      "values": [
+        128.62,
+        129.92,
+        69.37
+      ]
+    },
+    "smsp__average_warps_issue_stalled_long_scoreboard_per_issue_active.ratio": {
+      "mean": 130.93666666666667,
+      "min": 116.24,
+      "max": 153.05,
+      "values": [
+        116.24,
+        123.52,
+        153.05
+      ]
+    },
+    "smsp__average_warps_issue_stalled_short_scoreboard_per_issue_active.ratio": {
+      "mean": 37.77333333333333,
+      "min": 34.14,
+      "max": 39.72,
+      "values": [
+        39.46,
+        39.72,
+        34.14
+      ]
+    },
+    "smsp__issue_active.avg.pct_of_peak_sustained_active": {
+      "mean": 2.31,
+      "min": 2.23,
+      "max": 2.37,
+      "values": [
+        2.33,
+        2.37,
+        2.23
+      ]
+    },
+    "smsp__thread_inst_executed_pred_on_per_inst_executed.ratio": {
+      "mean": 31.98,
+      "min": 31.98,
+      "max": 31.98,
+      "values": [
+        31.98,
+        31.98,
+        31.98
+      ]
+    },
+    "l1tex__t_sector_pipe_lsu_mem_global_op_ld_hit_rate.pct": {
+      "mean": 80.31666666666666,
+      "min": 78.7,
+      "max": 81.28,
+      "values": [
+        80.97,
+        81.28,
+        78.7
+      ]
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld.sum": {
+      "mean": 78904624.33333333,
+      "min": 78406334.0,
+      "max": 79264549.0,
+      "values": [
+        79264549.0,
+        78406334.0,
+        79042990.0
+      ]
+    },
+    "l1tex__t_requests_pipe_lsu_mem_global_op_ld.sum": {
+      "mean": 4800000.0,
+      "min": 4800000.0,
+      "max": 4800000.0,
+      "values": [
+        4800000.0,
+        4800000.0,
+        4800000.0
+      ]
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared.sum": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "values": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "thread_inst_executed_true": {
+      "mean": 834100768.0,
+      "min": 834100768.0,
+      "max": 834100768.0,
+      "values": [
+        834100768.0,
+        834100768.0,
+        834100768.0
+      ]
+    },
+    "dram__bytes_read.sum": {
+      "mean": 309499904.0,
+      "min": 307328256.0,
+      "max": 310600320.0,
+      "values": [
+        307328256.0,
+        310571136.0,
+        310600320.0
+      ]
+    },
+    "dram__bytes_write.sum": {
+      "mean": 5012224.0,
+      "min": 3078144.0,
+      "max": 5985792.0,
+      "values": [
+        3078144.0,
+        5972736.0,
+        5985792.0
+      ]
+    },
+    "launch__grid_size": {
+      "mean": 391.0,
+      "min": 391.0,
+      "max": 391.0,
+      "values": [
+        391.0,
+        391.0,
+        391.0
+      ]
+    },
+    "launch__block_size": {
+      "mean": 256.0,
+      "min": 256.0,
+      "max": 256.0,
+      "values": [
+        256.0,
+        256.0,
+        256.0
+      ]
+    },
+    "launch__occupancy_limit_blocks": {
+      "mean": 24.0,
+      "min": 24.0,
+      "max": 24.0,
+      "values": [
+        24.0,
+        24.0,
+        24.0
+      ]
+    },
+    "launch__occupancy_limit_registers": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0,
+      "values": [
+        6.0,
+        6.0,
+        6.0
+      ]
+    },
+    "launch__occupancy_limit_shared_mem": {
+      "mean": 16.0,
+      "min": 16.0,
+      "max": 16.0,
+      "values": [
+        16.0,
+        16.0,
+        16.0
+      ]
+    },
+    "launch__occupancy_limit_warps": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0,
+      "values": [
+        6.0,
+        6.0,
+        6.0
+      ]
+    },
+    "dram__cycles_elapsed.avg.per_second": {
+      "mean": 11240466141.336668,
+      "min": 11240371845.95,
+      "max": 11240572866.78,
+      "values": [
+        11240572866.78,
+        11240371845.95,
+        11240453711.28
+      ]
+    }
+  },
+  "1000000-block": {
+    "gpu__time_duration.sum": {
+      "mean": 17372202.666666668,
+      "min": 17363840.0,
+      "max": 17380832.0,
+      "values": [
+        17380832.0,
+        17363840.0,
+        17371936.0
+      ]
+    },
+    "sm__warps_active.avg.pct_of_peak_sustained_active": {
+      "mean": 80.3,
+      "min": 80.28,
+      "max": 80.33,
+      "values": [
+        80.33,
+        80.28,
+        80.29
+      ]
+    },
+    "sm__maximum_warps_per_active_cycle_pct": {
+      "mean": 100.0,
+      "min": 100.0,
+      "max": 100.0,
+      "values": [
+        100.0,
+        100.0,
+        100.0
+      ]
+    },
+    "sm__throughput.avg.pct_of_peak_sustained_elapsed": {
+      "mean": 84.27666666666667,
+      "min": 84.18,
+      "max": 84.47,
+      "values": [
+        84.47,
+        84.18,
+        84.18
+      ]
+    },
+    "dram__bytes_read.sum.per_second": {
+      "mean": 178078013724.84668,
+      "min": 177976034910.56,
+      "max": 178132505252.29,
+      "values": [
+        178125501011.69,
+        178132505252.29,
+        177976034910.56
+      ]
+    },
+    "dram__bytes_write.sum.per_second": {
+      "mean": 3726000610.0166664,
+      "min": 3608123548.71,
+      "max": 3803840920.85,
+      "values": [
+        3803840920.85,
+        3608123548.71,
+        3766037360.49
+      ]
+    },
+    "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+      "mean": 26.06,
+      "min": 26.04,
+      "max": 26.09,
+      "values": [
+        26.09,
+        26.04,
+        26.05
+      ]
+    },
+    "smsp__sass_average_data_bytes_per_sector_mem_global_op_ld.ratio": {
+      "mean": 32.0,
+      "min": 32.0,
+      "max": 32.0,
+      "values": [
+        32.0,
+        32.0,
+        32.0
+      ]
+    },
+    "smsp__thread_inst_executed_per_inst_executed.ratio": {
+      "mean": 30.23,
+      "min": 30.23,
+      "max": 30.23,
+      "values": [
+        30.23,
+        30.23,
+        30.23
+      ]
+    },
+    "smsp__sass_average_branch_targets_threads_uniform.pct": {
+      "mean": 97.21,
+      "min": 97.21,
+      "max": 97.21,
+      "values": [
+        97.21,
+        97.21,
+        97.21
+      ]
+    },
+    "launch__registers_per_thread": {
+      "mean": 25.0,
+      "min": 25.0,
+      "max": 25.0,
+      "values": [
+        25.0,
+        25.0,
+        25.0
+      ]
+    },
+    "launch__registers_per_thread_allocated": {
+      "mean": 32.0,
+      "min": 32.0,
+      "max": 32.0,
+      "values": [
+        32.0,
+        32.0,
+        32.0
+      ]
+    },
+    "launch__shared_mem_per_block_static": {
+      "mean": 4096.0,
+      "min": 4096.0,
+      "max": 4096.0,
+      "values": [
+        4096.0,
+        4096.0,
+        4096.0
+      ]
+    },
+    "launch__shared_mem_per_block_driver": {
+      "mean": 1024.0,
+      "min": 1024.0,
+      "max": 1024.0,
+      "values": [
+        1024.0,
+        1024.0,
+        1024.0
+      ]
+    },
+    "launch__waves_per_multiprocessor": {
+      "mean": 2083.33,
+      "min": 2083.33,
+      "max": 2083.33,
+      "values": [
+        2083.33,
+        2083.33,
+        2083.33
+      ]
+    },
+    "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active": {
+      "mean": 85.27,
+      "min": 85.27,
+      "max": 85.27,
+      "values": [
+        85.27,
+        85.27,
+        85.27
+      ]
+    },
+    "smsp__average_warp_latency_per_inst_issued.ratio": {
+      "mean": 98.39333333333333,
+      "min": 98.39,
+      "max": 98.4,
+      "values": [
+        98.39,
+        98.39,
+        98.4
+      ]
+    },
+    "smsp__average_warps_issue_stalled_barrier_per_issue_active.ratio": {
+      "mean": 42.53,
+      "min": 42.53,
+      "max": 42.53,
+      "values": [
+        42.53,
+        42.53,
+        42.53
+      ]
+    },
+    "smsp__average_warps_issue_stalled_tex_throttle_per_issue_active.ratio": {
+      "mean": 18.46,
+      "min": 18.45,
+      "max": 18.47,
+      "values": [
+        18.45,
+        18.47,
+        18.46
+      ]
+    },
+    "smsp__average_warps_issue_stalled_long_scoreboard_per_issue_active.ratio": {
+      "mean": 8.903333333333334,
+      "min": 8.89,
+      "max": 8.91,
+      "values": [
+        8.89,
+        8.91,
+        8.91
+      ]
+    },
+    "smsp__average_warps_issue_stalled_short_scoreboard_per_issue_active.ratio": {
+      "mean": 22.923333333333336,
+      "min": 22.92,
+      "max": 22.93,
+      "values": [
+        22.92,
+        22.93,
+        22.92
+      ]
+    },
+    "smsp__issue_active.avg.pct_of_peak_sustained_active": {
+      "mean": 9.78,
+      "min": 9.78,
+      "max": 9.78,
+      "values": [
+        9.78,
+        9.78,
+        9.78
+      ]
+    },
+    "smsp__thread_inst_executed_pred_on_per_inst_executed.ratio": {
+      "mean": 28.62,
+      "min": 28.62,
+      "max": 28.62,
+      "values": [
+        28.62,
+        28.62,
+        28.62
+      ]
+    },
+    "l1tex__t_sector_pipe_lsu_mem_global_op_ld_hit_rate.pct": {
+      "mean": 49.19,
+      "min": 49.19,
+      "max": 49.19,
+      "values": [
+        49.19,
+        49.19,
+        49.19
+      ]
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld.sum": {
+      "mean": 191994833.33333334,
+      "min": 191982880.0,
+      "max": 192004704.0,
+      "values": [
+        191996916.0,
+        192004704.0,
+        191982880.0
+      ]
+    },
+    "l1tex__t_requests_pipe_lsu_mem_global_op_ld.sum": {
+      "mean": 48000000.0,
+      "min": 48000000.0,
+      "max": 48000000.0,
+      "values": [
+        48000000.0,
+        48000000.0,
+        48000000.0
+      ]
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared.sum": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "values": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "thread_inst_executed_true": {
+      "mean": 40989000000.0,
+      "min": 40989000000.0,
+      "max": 40989000000.0,
+      "values": [
+        40989000000.0,
+        40989000000.0,
+        40989000000.0
+      ]
+    },
+    "dram__bytes_read.sum": {
+      "mean": 3093607338.6666665,
+      "min": 3091788288.0,
+      "max": 3095969408.0,
+      "values": [
+        3095969408.0,
+        3093064320.0,
+        3091788288.0
+      ]
+    },
+    "dram__bytes_write.sum": {
+      "mean": 64729386.666666664,
+      "min": 62650880.0,
+      "max": 66113920.0,
+      "values": [
+        66113920.0,
+        62650880.0,
+        65423360.0
+      ]
+    },
+    "launch__grid_size": {
+      "mean": 1000000.0,
+      "min": 1000000.0,
+      "max": 1000000.0,
+      "values": [
+        1000000.0,
+        1000000.0,
+        1000000.0
+      ]
+    },
+    "launch__block_size": {
+      "mean": 256.0,
+      "min": 256.0,
+      "max": 256.0,
+      "values": [
+        256.0,
+        256.0,
+        256.0
+      ]
+    },
+    "launch__occupancy_limit_blocks": {
+      "mean": 24.0,
+      "min": 24.0,
+      "max": 24.0,
+      "values": [
+        24.0,
+        24.0,
+        24.0
+      ]
+    },
+    "launch__occupancy_limit_registers": {
+      "mean": 8.0,
+      "min": 8.0,
+      "max": 8.0,
+      "values": [
+        8.0,
+        8.0,
+        8.0
+      ]
+    },
+    "launch__occupancy_limit_shared_mem": {
+      "mean": 12.0,
+      "min": 12.0,
+      "max": 12.0,
+      "values": [
+        12.0,
+        12.0,
+        12.0
+      ]
+    },
+    "launch__occupancy_limit_warps": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0,
+      "values": [
+        6.0,
+        6.0,
+        6.0
+      ]
+    },
+    "dram__cycles_elapsed.avg.per_second": {
+      "mean": 10900839160.646667,
+      "min": 10896778243.99,
+      "max": 10905443957.1,
+      "values": [
+        10896778243.99,
+        10905443957.1,
+        10900295280.85
+      ]
+    }
+  },
+  "1000000-naive": {
+    "gpu__time_duration.sum": {
+      "mean": 14640864.0,
+      "min": 14600224.0,
+      "max": 14664160.0,
+      "values": [
+        14658208.0,
+        14664160.0,
+        14600224.0
+      ]
+    },
+    "sm__warps_active.avg.pct_of_peak_sustained_active": {
+      "mean": 95.29666666666667,
+      "min": 95.19,
+      "max": 95.38,
+      "values": [
+        95.38,
+        95.19,
+        95.32
+      ]
+    },
+    "sm__maximum_warps_per_active_cycle_pct": {
+      "mean": 100.0,
+      "min": 100.0,
+      "max": 100.0,
+      "values": [
+        100.0,
+        100.0,
+        100.0
+      ]
+    },
+    "sm__throughput.avg.pct_of_peak_sustained_elapsed": {
+      "mean": 74.99333333333334,
+      "min": 74.9,
+      "max": 75.16,
+      "values": [
+        74.92,
+        74.9,
+        75.16
+      ]
+    },
+    "dram__bytes_read.sum.per_second": {
+      "mean": 211232735789.20334,
+      "min": 210831023273.79,
+      "max": 211722445902.2,
+      "values": [
+        210831023273.79,
+        211144738191.62,
+        211722445902.2
+      ]
+    },
+    "dram__bytes_write.sum.per_second": {
+      "mean": 5632030237.913333,
+      "min": 5518525711.67,
+      "max": 5698577775.25,
+      "values": [
+        5678987226.82,
+        5518525711.67,
+        5698577775.25
+      ]
+    },
+    "gpu__dram_throughput.avg.pct_of_peak_sustained_elapsed": {
+      "mean": 31.313333333333333,
+      "min": 31.24,
+      "max": 31.37,
+      "values": [
+        31.33,
+        31.24,
+        31.37
+      ]
+    },
+    "smsp__sass_average_data_bytes_per_sector_mem_global_op_ld.ratio": {
+      "mean": 4.0,
+      "min": 4.0,
+      "max": 4.0,
+      "values": [
+        4.0,
+        4.0,
+        4.0
+      ]
+    },
+    "smsp__thread_inst_executed_per_inst_executed.ratio": {
+      "mean": 32.0,
+      "min": 32.0,
+      "max": 32.0,
+      "values": [
+        32.0,
+        32.0,
+        32.0
+      ]
+    },
+    "smsp__sass_average_branch_targets_threads_uniform.pct": {
+      "mean": 100.0,
+      "min": 100.0,
+      "max": 100.0,
+      "values": [
+        100.0,
+        100.0,
+        100.0
+      ]
+    },
+    "launch__registers_per_thread": {
+      "mean": 38.0,
+      "min": 38.0,
+      "max": 38.0,
+      "values": [
+        38.0,
+        38.0,
+        38.0
+      ]
+    },
+    "launch__registers_per_thread_allocated": {
+      "mean": 40.0,
+      "min": 40.0,
+      "max": 40.0,
+      "values": [
+        40.0,
+        40.0,
+        40.0
+      ]
+    },
+    "launch__shared_mem_per_block_static": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "values": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "launch__shared_mem_per_block_driver": {
+      "mean": 1024.0,
+      "min": 1024.0,
+      "max": 1024.0,
+      "values": [
+        1024.0,
+        1024.0,
+        1024.0
+      ]
+    },
+    "launch__waves_per_multiprocessor": {
+      "mean": 8.14,
+      "min": 8.14,
+      "max": 8.14,
+      "values": [
+        8.14,
+        8.14,
+        8.14
+      ]
+    },
+    "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active": {
+      "mean": 77.09666666666666,
+      "min": 77.05,
+      "max": 77.13,
+      "values": [
+        77.11,
+        77.05,
+        77.13
+      ]
+    },
+    "smsp__average_warp_latency_per_inst_issued.ratio": {
+      "mean": 526.3433333333334,
+      "min": 526.08,
+      "max": 526.53,
+      "values": [
+        526.53,
+        526.42,
+        526.08
+      ]
+    },
+    "smsp__average_warps_issue_stalled_barrier_per_issue_active.ratio": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "values": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "smsp__average_warps_issue_stalled_tex_throttle_per_issue_active.ratio": {
+      "mean": 121.94333333333333,
+      "min": 119.6,
+      "max": 125.31,
+      "values": [
+        120.92,
+        125.31,
+        119.6
+      ]
+    },
+    "smsp__average_warps_issue_stalled_long_scoreboard_per_issue_active.ratio": {
+      "mean": 164.03666666666666,
+      "min": 162.91,
+      "max": 164.88,
+      "values": [
+        164.88,
+        162.91,
+        164.32
+      ]
+    },
+    "smsp__average_warps_issue_stalled_short_scoreboard_per_issue_active.ratio": {
+      "mean": 34.13,
+      "min": 34.12,
+      "max": 34.14,
+      "values": [
+        34.12,
+        34.14,
+        34.13
+      ]
+    },
+    "smsp__issue_active.avg.pct_of_peak_sustained_active": {
+      "mean": 2.17,
+      "min": 2.17,
+      "max": 2.17,
+      "values": [
+        2.17,
+        2.17,
+        2.17
+      ]
+    },
+    "smsp__thread_inst_executed_pred_on_per_inst_executed.ratio": {
+      "mean": 31.98,
+      "min": 31.98,
+      "max": 31.98,
+      "values": [
+        31.98,
+        31.98,
+        31.98
+      ]
+    },
+    "l1tex__t_sector_pipe_lsu_mem_global_op_ld_hit_rate.pct": {
+      "mean": 74.43333333333334,
+      "min": 74.36,
+      "max": 74.53,
+      "values": [
+        74.41,
+        74.53,
+        74.36
+      ]
+    },
+    "l1tex__t_sectors_pipe_lsu_mem_global_op_ld.sum": {
+      "mean": 791878285.3333334,
+      "min": 791093123.0,
+      "max": 792465163.0,
+      "values": [
+        792076570.0,
+        791093123.0,
+        792465163.0
+      ]
+    },
+    "l1tex__t_requests_pipe_lsu_mem_global_op_ld.sum": {
+      "mean": 48000000.0,
+      "min": 48000000.0,
+      "max": 48000000.0,
+      "values": [
+        48000000.0,
+        48000000.0,
+        48000000.0
+      ]
+    },
+    "l1tex__data_bank_conflicts_pipe_lsu_mem_shared.sum": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "values": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "thread_inst_executed_true": {
+      "mean": 8341001536.0,
+      "min": 8341001536.0,
+      "max": 8341001536.0,
+      "values": [
+        8341001536.0,
+        8341001536.0,
+        8341001536.0
+      ]
+    },
+    "dram__bytes_read.sum": {
+      "mean": 3092620117.3333335,
+      "min": 3090404992.0,
+      "max": 3096260224.0,
+      "values": [
+        3090404992.0,
+        3096260224.0,
+        3091195136.0
+      ]
+    },
+    "dram__bytes_write.sum": {
+      "mean": 82456277.33333333,
+      "min": 80924544.0,
+      "max": 83243776.0,
+      "values": [
+        83243776.0,
+        80924544.0,
+        83200512.0
+      ]
+    },
+    "launch__grid_size": {
+      "mean": 3907.0,
+      "min": 3907.0,
+      "max": 3907.0,
+      "values": [
+        3907.0,
+        3907.0,
+        3907.0
+      ]
+    },
+    "launch__block_size": {
+      "mean": 256.0,
+      "min": 256.0,
+      "max": 256.0,
+      "values": [
+        256.0,
+        256.0,
+        256.0
+      ]
+    },
+    "launch__occupancy_limit_blocks": {
+      "mean": 24.0,
+      "min": 24.0,
+      "max": 24.0,
+      "values": [
+        24.0,
+        24.0,
+        24.0
+      ]
+    },
+    "launch__occupancy_limit_registers": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0,
+      "values": [
+        6.0,
+        6.0,
+        6.0
+      ]
+    },
+    "launch__occupancy_limit_shared_mem": {
+      "mean": 16.0,
+      "min": 16.0,
+      "max": 16.0,
+      "values": [
+        16.0,
+        16.0,
+        16.0
+      ]
+    },
+    "launch__occupancy_limit_warps": {
+      "mean": 6.0,
+      "min": 6.0,
+      "max": 6.0,
+      "values": [
+        6.0,
+        6.0,
+        6.0
+      ]
+    },
+    "dram__cycles_elapsed.avg.per_second": {
+      "mean": 10821162557.52,
+      "min": 10798163595.44,
+      "max": 10836953224.73,
+      "values": [
+        10798163595.44,
+        10836953224.73,
+        10828370852.39
+      ]
+    }
+  }
+}

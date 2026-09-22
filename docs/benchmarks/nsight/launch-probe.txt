@@ -1,0 +1,14 @@
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 27764 (E:\Project VectorPulse\out\build-cuda\vectorpulse_cuda_profile.exe)
+mode=naive vectors=10000 dimension=768 warmups=3 measured=5 matrix_bytes=30720000
+==ERROR== ERR_NVGPUCTRPERM - The user does not have permission to access NVIDIA GPU Performance Counters on the target device 0. For instructions on enabling permissions and to get more information see https://developer.nvidia.com/ERR_NVGPUCTRPERM
+iteration=0 kernel_ms=0.790528 total_ms=1.8398
+iteration=1 kernel_ms=0.52 total_ms=1.0658
+iteration=2 kernel_ms=0.473088 total_ms=0.8954
+iteration=3 kernel_ms=0.461696 total_ms=0.8533
+iteration=4 kernel_ms=0.474112 total_ms=0.8592
+iteration=5 kernel_ms=0.455488 total_ms=0.8472
+iteration=6 kernel_ms=0.44544 total_ms=0.8132
+iteration=7 kernel_ms=0.458752 total_ms=0.8419
+checksum=9.54138 max_score_error=0
+==PROF== Disconnected from process 27764

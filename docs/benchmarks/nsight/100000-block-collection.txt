@@ -1,0 +1,17 @@
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 25200 (E:\Project VectorPulse\out\build-cuda\vectorpulse_cuda_profile.exe)
+mode=block vectors=100000 dimension=768 warmups=3 measured=5 matrix_bytes=307200000
+iteration=0 kernel_ms=4.0704 total_ms=6.5346
+iteration=1 kernel_ms=2.13197 total_ms=4.2217
+iteration=2 kernel_ms=2.11411 total_ms=4.0922
+==PROF== Profiling "block_cosine_similarity_kernel" - 0 (1/3): 0%....50%....100% - 34 passes
+iteration=3 kernel_ms=733.127 total_ms=735.043
+==PROF== Profiling "block_cosine_similarity_kernel" - 1 (2/3): 0%....50%....100% - 34 passes
+iteration=4 kernel_ms=333.898 total_ms=335.933
+==PROF== Profiling "block_cosine_similarity_kernel" - 2 (3/3): 0%....50%....100% - 34 passes
+iteration=5 kernel_ms=334.016 total_ms=336.05
+iteration=6 kernel_ms=1.87034 total_ms=4.0917
+iteration=7 kernel_ms=1.86547 total_ms=3.9024
+checksum=11.1254 max_score_error=0
+==PROF== Disconnected from process 25200
+==PROF== Report: E:\Project VectorPulse\docs\benchmarks\nsight\100000-block.ncu-rep

@@ -1,0 +1,20 @@
+Unchanged naive CUDA kernel SHA256 (normalized newlines): b73677c1f8fd51de443f13e4162314ceb2b5863b0377567f8b54ca2a02661da5
+{
+  "src\\avx2_kernel.cpp": "f10ff4e26d80609d9818af5b674f22523f79da8283c6f249957e7832a53ab9d8",
+  "src\\avx2_kernel.h": "63d26d436d59fff6eaa727b12fbe370ac1cd78c86418703a4f789cc20c27e346",
+  "src\\avx2_search_backend.cpp": "e81fa7cfefd95c920d891098318299a07489cc6328c46d842bff0d0628f3b514",
+  "src\\avx2_support.cpp": "b77ebfaec7c88fafc5a212a710eaa09c9eb54f69a9dc72fb505db10b9e7839d7",
+  "src\\multithreaded_avx2_search_backend.cpp": "a1ed40c64ec1a1ea60e63fd2c7b3cfad886ceefb61954bf17a055a98fad48e93",
+  "src\\multithreaded_scalar_search_backend.cpp": "d9a667d2e827412fc95785b839be4abc47df798626c65519e71021764029d398",
+  "src\\scalar_search_backend.cpp": "2bee42cd5fb60b30b23b5105be61a50e2b3118bbc73838d5ab741b6a1cf5cbec",
+  "src\\similarity.cpp": "8848a59f5c8b64c98bf24e80988073cb9fde73aa9a1fc75f7caef94dc6a708dd",
+  "src\\vector_store.cpp": "9ace7c3bfd59471542eef24d8c7533920e74a661c210c21d7220ae5802902d1b",
+  "include\\vectorpulse\\avx2_search_backend.h": "b137e552c922c1548244c99fb7a161ee9d6d0a3bd243ddfbd9446aba0e3ae219",
+  "include\\vectorpulse\\multithreaded_avx2_search_backend.h": "afcc0e4745bdbc831eebc1e87576d7f67be2b33efa93a9cda10f3d8e0501cf3b",
+  "include\\vectorpulse\\multithreaded_scalar_search_backend.h": "4d9caf67f084d3bf6a6ebbed6c99a5113112f3cc358c9931ea0a930e56afc99a",
+  "include\\vectorpulse\\scalar_search_backend.h": "15dcb40ef6388cc12db0be16dbc8b177c4769d34a21eb0b1f2168887ca21fda6",
+  "include\\vectorpulse\\search_backend.h": "4ca6bf2e508600a38bb01574aa8de74ad5825a59985933cbb7ed83c7bf5fd13f",
+  "include\\vectorpulse\\search_result.h": "5b6881107197bad3a241bf4d4bb5ac9ab21a90479b86db717505adc0fa6c1a09",
+  "include\\vectorpulse\\similarity.h": "a5ca40ee646c3bf73e2eb10fdf5a3ad0525d48fd0cfc346b1fea7831009afdac",
+  "include\\vectorpulse\\vector_store.h": "728780636a444b54c0010d0a58fac4d2e22b6fb784b8c1a9fdd877b223de3cc1"
+}

@@ -1,0 +1,217 @@
+Running main() from E:\Project VectorPulse\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = *Cuda*
+[==========] Running 24 tests from 3 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from CudaSupport
+[ RUN      ] CudaSupport.AvailabilityAndUnsupportedConstruction
+[       OK ] CudaSupport.AvailabilityAndUnsupportedConstruction (24 ms)
+[----------] 1 test from CudaSupport (24 ms total)
+
+[----------] 5 tests from CudaBackend
+[ RUN      ] CudaBackend.EmptyStoreValidationAndRetrieval
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(77): Skipped
+
+
+[  SKIPPED ] CudaBackend.EmptyStoreValidationAndRetrieval (0 ms)
+[ RUN      ] CudaBackend.ExactTiesAcrossMultipleBlocks
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(95): Skipped
+
+
+[  SKIPPED ] CudaBackend.ExactTiesAcrossMultipleBlocks (0 ms)
+[ RUN      ] CudaBackend.RejectsNonfiniteInputsWithoutCorruptingStore
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(116): Skipped
+
+
+[  SKIPPED ] CudaBackend.RejectsNonfiniteInputsWithoutCorruptingStore (0 ms)
+[ RUN      ] CudaBackend.ExtremeFiniteInputsRetainReferenceRange
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(127): Skipped
+
+
+[  SKIPPED ] CudaBackend.ExtremeFiniteInputsRetainReferenceRange (0 ms)
+[ RUN      ] CudaBackend.ProfiledSearchAndInsertionAfterSearch
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(140): Skipped
+
+
+[  SKIPPED ] CudaBackend.ProfiledSearchAndInsertionAfterSearch (0 ms)
+[----------] 5 tests from CudaBackend (0 ms total)
+
+[----------] 18 tests from DimensionsAndCounts/CudaComparison
+[ RUN      ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/0
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(44): Skipped
+cudaGetDeviceCount(&count): cudaErrorNoDevice (no CUDA-capable device is detected) at E:\Project VectorPulse\src\cuda_runtime.cu:77
+
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/0 (0 ms)
+[ RUN      ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/1
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(44): Skipped
+cudaGetDeviceCount(&count): cudaErrorNoDevice (no CUDA-capable device is detected) at E:\Project VectorPulse\src\cuda_runtime.cu:77
+
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/1 (0 ms)
+[ RUN      ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/2
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(44): Skipped
+cudaGetDeviceCount(&count): cudaErrorNoDevice (no CUDA-capable device is detected) at E:\Project VectorPulse\src\cuda_runtime.cu:77
+
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/2 (0 ms)
+[ RUN      ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/3
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(44): Skipped
+cudaGetDeviceCount(&count): cudaErrorNoDevice (no CUDA-capable device is detected) at E:\Project VectorPulse\src\cuda_runtime.cu:77
+
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/3 (0 ms)
+[ RUN      ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/4
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(44): Skipped
+cudaGetDeviceCount(&count): cudaErrorNoDevice (no CUDA-capable device is detected) at E:\Project VectorPulse\src\cuda_runtime.cu:77
+
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/4 (0 ms)
+[ RUN      ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/5
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(44): Skipped
+cudaGetDeviceCount(&count): cudaErrorNoDevice (no CUDA-capable device is detected) at E:\Project VectorPulse\src\cuda_runtime.cu:77
+
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/5 (0 ms)
+[ RUN      ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/6
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(44): Skipped
+cudaGetDeviceCount(&count): cudaErrorNoDevice (no CUDA-capable device is detected) at E:\Project VectorPulse\src\cuda_runtime.cu:77
+
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/6 (0 ms)
+[ RUN      ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/7
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(44): Skipped
+cudaGetDeviceCount(&count): cudaErrorNoDevice (no CUDA-capable device is detected) at E:\Project VectorPulse\src\cuda_runtime.cu:77
+
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/7 (0 ms)
+[ RUN      ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/8
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(44): Skipped
+cudaGetDeviceCount(&count): cudaErrorNoDevice (no CUDA-capable device is detected) at E:\Project VectorPulse\src\cuda_runtime.cu:77
+
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/8 (0 ms)
+[ RUN      ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/9
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(44): Skipped
+cudaGetDeviceCount(&count): cudaErrorNoDevice (no CUDA-capable device is detected) at E:\Project VectorPulse\src\cuda_runtime.cu:77
+
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/9 (0 ms)
+[ RUN      ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/10
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(44): Skipped
+cudaGetDeviceCount(&count): cudaErrorNoDevice (no CUDA-capable device is detected) at E:\Project VectorPulse\src\cuda_runtime.cu:77
+
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/10 (0 ms)
+[ RUN      ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/11
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(44): Skipped
+cudaGetDeviceCount(&count): cudaErrorNoDevice (no CUDA-capable device is detected) at E:\Project VectorPulse\src\cuda_runtime.cu:77
+
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/11 (0 ms)
+[ RUN      ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/12
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(44): Skipped
+cudaGetDeviceCount(&count): cudaErrorNoDevice (no CUDA-capable device is detected) at E:\Project VectorPulse\src\cuda_runtime.cu:77
+
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/12 (0 ms)
+[ RUN      ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/13
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(44): Skipped
+cudaGetDeviceCount(&count): cudaErrorNoDevice (no CUDA-capable device is detected) at E:\Project VectorPulse\src\cuda_runtime.cu:77
+
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/13 (0 ms)
+[ RUN      ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/14
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(44): Skipped
+cudaGetDeviceCount(&count): cudaErrorNoDevice (no CUDA-capable device is detected) at E:\Project VectorPulse\src\cuda_runtime.cu:77
+
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/14 (0 ms)
+[ RUN      ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/15
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(44): Skipped
+cudaGetDeviceCount(&count): cudaErrorNoDevice (no CUDA-capable device is detected) at E:\Project VectorPulse\src\cuda_runtime.cu:77
+
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/15 (0 ms)
+[ RUN      ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/16
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(44): Skipped
+cudaGetDeviceCount(&count): cudaErrorNoDevice (no CUDA-capable device is detected) at E:\Project VectorPulse\src\cuda_runtime.cu:77
+
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/16 (0 ms)
+[ RUN      ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/17
+E:\Project VectorPulse\tests\cuda_search_backend_test.cpp(44): Skipped
+cudaGetDeviceCount(&count): cudaErrorNoDevice (no CUDA-capable device is detected) at E:\Project VectorPulse\src\cuda_runtime.cu:77
+
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/17 (0 ms)
+[----------] 18 tests from DimensionsAndCounts/CudaComparison (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 3 test suites ran. (25 ms total)
+[  PASSED  ] 1 test.
+[  SKIPPED ] 23 tests, listed below:
+[  SKIPPED ] CudaBackend.EmptyStoreValidationAndRetrieval
+[  SKIPPED ] CudaBackend.ExactTiesAcrossMultipleBlocks
+[  SKIPPED ] CudaBackend.RejectsNonfiniteInputsWithoutCorruptingStore
+[  SKIPPED ] CudaBackend.ExtremeFiniteInputsRetainReferenceRange
+[  SKIPPED ] CudaBackend.ProfiledSearchAndInsertionAfterSearch
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/0
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/1
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/2
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/3
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/4
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/5
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/6
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/7
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/8
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/9
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/10
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/11
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/12
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/13
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/14
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/15
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/16
+[  SKIPPED ] DimensionsAndCounts/CudaComparison.MatchesScalarAcrossBlocksDimensionsAndK/17
+VectorPulse CPU/CUDA benchmark (input seed 42, order seed 2026)
+hardware_concurrency(): 32
+Vectors: 10
+Dimensions: 3
+Queries: 2
+Top-K: 2
+Warm-up rounds: 1
+Measured repetitions: 1
+CUDA compiled: yes
+CUDA unavailable: cudaGetDeviceCount(&count): cudaErrorNoDevice (no CUDA-capable device is detected) at E:\Project VectorPulse\src\cuda_runtime.cu:77
+Untimed scalar reference complete.
+Warm-up round 1 complete.
+Measured round 1
+MultithreadedScalar[1] mean ms/query: 0.001
+AVX2 mean ms/query: 0.000
+MultithreadedAVX2[1] mean ms/query: 0.001
+Scalar mean ms/query: 0.000
+
+Backend: Scalar
+Measured queries: 2
+Latency ms/query (mean / median / min / max): 0.000 / 0.000 / 0.000 / 0.000
+Round mean ms/query (median / min / max): 0.000 / 0.000 / 0.000
+QPS: 2857142.857
+Speedup vs Scalar: 1.000x
+Score checksum (all measured results): 3.349303722
+ID checksum (all measured results): 1055197829132873191
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: AVX2
+Measured queries: 2
+Latency ms/query (mean / median / min / max): 0.000 / 0.000 / 0.000 / 0.000
+Round mean ms/query (median / min / max): 0.000 / 0.000 / 0.000
+QPS: 2500000.000
+Speedup vs Scalar: 0.875x
+Score checksum (all measured results): 3.349303722
+ID checksum (all measured results): 1055197829132873191
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: MultithreadedScalar[1]
+Measured queries: 2
+Latency ms/query (mean / median / min / max): 0.001 / 0.001 / 0.001 / 0.001
+Round mean ms/query (median / min / max): 0.001 / 0.001 / 0.001
+QPS: 1666666.667
+Speedup vs Scalar: 0.583x
+Score checksum (all measured results): 3.349303722
+ID checksum (all measured results): 1055197829132873191
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Backend: MultithreadedAVX2[1]
+Measured queries: 2
+Latency ms/query (mean / median / min / max): 0.001 / 0.001 / 0.001 / 0.001
+Round mean ms/query (median / min / max): 0.001 / 0.001 / 0.001
+QPS: 2000000.000
+Speedup vs Scalar: 0.700x
+Score checksum (all measured results): 3.349303722
+ID checksum (all measured results): 1055197829132873191
+Correctness: every ID/rank matches scalar; max score error: 0.000000000e+00 (tolerance 1e-6)
+
+Speedup versus single-thread AVX2 (mean latency):
+MultithreadedAVX2[1]: 0.800x

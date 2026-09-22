@@ -1,0 +1,20 @@
+CMake is re-running because E:/Project VectorPulse/build/CMakeFiles/generate.stamp is out-of-date.
+  the file 'E:/Project VectorPulse/CMakeLists.txt'
+  is newer than 'E:/Project VectorPulse/build/CMakeFiles/generate.stamp.depend'
+  result='-1'
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
+-- Configuring done (1.4s)
+-- Generating done (0.3s)
+-- Build files have been written to: E:/Project VectorPulse/build
+MSBuild version 17.14.51+25f168cee for .NET Framework
+
+  gmock.vcxproj -> E:\Project VectorPulse\build\lib\Release\gmock.lib
+  gmock_main.vcxproj -> E:\Project VectorPulse\build\lib\Release\gmock_main.lib
+  gtest.vcxproj -> E:\Project VectorPulse\build\lib\Release\gtest.lib
+  gtest_main.vcxproj -> E:\Project VectorPulse\build\lib\Release\gtest_main.lib
+  multithreaded_avx2_search_backend.cpp
+  vectorpulse.vcxproj -> E:\Project VectorPulse\build\Release\vectorpulse.lib
+  scalar_benchmark.cpp
+  vectorpulse_benchmark.vcxproj -> E:\Project VectorPulse\build\Release\vectorpulse_benchmark.exe
+  multithreaded_avx2_search_backend_test.cpp
+  vectorpulse_tests.vcxproj -> E:\Project VectorPulse\build\Release\vectorpulse_tests.exe
