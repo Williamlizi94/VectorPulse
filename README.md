@@ -5,6 +5,45 @@ database resident on the GPU and offers FP64/FP32 naive and block-parallel kerne
 alongside the four unchanged CPU backends.
 VectorStore and SearchBackend APIs remain unchanged; scalar is still the default.
 
+## Unified VectorIndex API
+
+`VectorIndex` is the C++20 entry point for vector storage and exact cosine Top-K
+search. Include `vectorpulse/vector_index.h` and link `VectorPulse::vectorpulse`.
+It delegates to the existing VectorStore/backends; existing APIs remain available.
+
+```cpp
+#include "vectorpulse/vector_index.h"
+#include <vector>
+
+vectorpulse::VectorIndex index{3}; // Scalar by default.
+index.add("east", {1.0F, 0.0F, 0.0F});
+index.add("north", {0.0F, 1.0F, 0.0F});
+const std::vector<float> query{1.0F, 0.0F, 0.0F};
+auto results = index.search(query, 2); // SearchResult entries: id and score.
+```
+
+`size()` and `dimension()` report index metadata. Results sort by descending
+similarity, then ascending ID for exact ties. Existing validation and K edge-case
+behavior apply. Exclude insertion from concurrent operations.
+
+Select any existing backend through constructor injection, including its existing
+configuration options (include that backend's header):
+
+```cpp
+vectorpulse::VectorIndex cpu{768,
+    std::make_unique<vectorpulse::MultithreadedScalarSearchBackend>(768, 4)};
+// Check CudaSearchBackend::is_supported() before choosing CUDA.
+vectorpulse::VectorIndex gpu{768,
+    std::make_unique<vectorpulse::CudaSearchBackend>(768,
+        vectorpulse::CudaStorageMode::Persistent,
+        vectorpulse::CudaKernel::BlockParallelFP32)};
+```
+
+[examples/basic_search.cpp](examples/basic_search.cpp) is built by default as
+`vectorpulse_basic_search`. Run `./build/Release/vectorpulse_basic_search.exe`
+after the CPU build below (or `./out/build-cuda/vectorpulse_basic_search.exe`
+for the Ninja CUDA build). Set `VECTORPULSE_BUILD_EXAMPLES=OFF` to omit it.
+
 ## Backends and behavior
 
 - ScalarSearchBackend
@@ -73,6 +112,49 @@ the AVX2 kernel alone adds /arch:AVX2.
 VECTORPULSE_ENABLE_AVX2=OFF still disables SIMD; tests and benchmarks can be
 omitted with VECTORPULSE_BUILD_TESTS=OFF / VECTORPULSE_BUILD_BENCHMARKS=OFF.
 For single-config generators, use -DCMAKE_BUILD_TYPE=Release and omit --config/-C.
+
+## Install and use from another CMake project
+
+Build and install a CPU-only library without downloading test dependencies:
+
+```powershell
+cmake -S . -B out/package -DVECTORPULSE_BUILD_TESTS=OFF -DVECTORPULSE_BUILD_BENCHMARKS=OFF -DVECTORPULSE_BUILD_EXAMPLES=OFF -DCMAKE_BUILD_TYPE=Release
+cmake --build out/package --config Release
+cmake --install out/package --config Release --prefix "E:/VectorPulse-install" --component VectorPulse
+```
+
+The install contains the library, public `vectorpulse/*.h` headers, and
+`VectorPulseConfig.cmake`, `VectorPulseConfigVersion.cmake`, and exported targets
+under `lib/cmake/VectorPulse` (or the configured `CMAKE_INSTALL_LIBDIR`). Standard
+GNUInstallDirs options control the library, header and runtime directories.
+The package is relocatable when using relative install directories.
+
+In a separate CMake project:
+
+```cmake
+cmake_minimum_required(VERSION 3.20)
+project(app LANGUAGES CXX)
+find_package(VectorPulse REQUIRED)
+add_executable(app main.cpp)
+target_link_libraries(app PRIVATE VectorPulse::vectorpulse)
+```
+
+Configure it with `-DCMAKE_PREFIX_PATH="E:/VectorPulse-install"`, or set
+`VectorPulse_DIR` to the installed `lib/cmake/VectorPulse` directory. Include
+`<vectorpulse/vector_index.h>` in your source. The imported target supplies
+public include paths, C++20 requirements, and threading dependencies.
+
+CUDA-enabled installs also discover CUDAToolkit for their link dependencies;
+pass `-DCUDAToolkit_ROOT=...` to the consumer if it is outside standard locations.
+Consumers can remain C++-only projects and need no GPU to use CPU backends.
+CPU-only packages do not search for or require CUDA. Use a compatible compiler,
+architecture and runtime configuration for the library and consumer.
+
+When tests are enabled, `VectorPulse.InstalledConsumer` installs the current
+build to a build-local directory, relocates it, and configures/builds/runs
+[tests/consumer](tests/consumer) as a separate project. Build first, then run
+`ctest --test-dir build -C Release --output-on-failure` as usual. Ninja/MSVC
+builds should run CTest from the same developer environment used for building.
 
 ## Use CUDA
 

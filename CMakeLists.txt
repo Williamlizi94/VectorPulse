@@ -2,6 +2,11 @@ cmake_minimum_required(VERSION 3.20)
 
 project(VectorPulse VERSION 0.1.0 LANGUAGES CXX)
 
+include(GNUInstallDirs)
+include(CMakePackageConfigHelpers)
+
+option(VECTORPULSE_BUILD_EXAMPLES "Build VectorPulse examples" ON)
+
 option(VECTORPULSE_BUILD_TESTS "Build VectorPulse unit tests" ON)
 option(VECTORPULSE_BUILD_BENCHMARKS "Build VectorPulse benchmarks" ON)
 option(VECTORPULSE_ENABLE_AVX2 "Build optional AVX2/FMA kernel on x86" ON)
@@ -71,7 +76,7 @@ target_compile_features(vectorpulse PUBLIC cxx_std_20)
 target_include_directories(vectorpulse
     PUBLIC
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-        $<INSTALL_INTERFACE:include>
+        $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
 )
 
 if(MSVC)
@@ -99,6 +104,7 @@ if(VECTORPULSE_BUILD_TESTS)
         tests/cuda_search_backend_test.cpp
         tests/similarity_test.cpp
         tests/vector_store_test.cpp
+        tests/vector_index_test.cpp
     )
     target_link_libraries(vectorpulse_tests PRIVATE VectorPulse::vectorpulse GTest::gtest_main)
     target_compile_features(vectorpulse_tests PRIVATE cxx_std_20)
@@ -130,4 +136,40 @@ if(VECTORPULSE_BUILD_BENCHMARKS)
     add_executable(vectorpulse_cuda_profile benchmarks/cuda_profile.cpp)
     target_link_libraries(vectorpulse_cuda_profile PRIVATE VectorPulse::vectorpulse)
     target_compile_features(vectorpulse_cuda_profile PRIVATE cxx_std_20)
+endif()
+
+if(VECTORPULSE_BUILD_EXAMPLES)
+    add_executable(vectorpulse_basic_search examples/basic_search.cpp)
+    target_link_libraries(vectorpulse_basic_search PRIVATE VectorPulse::vectorpulse)
+endif()
+
+# Export only the library and its public usage requirements, not development tools.
+set_target_properties(vectorpulse PROPERTIES WINDOWS_EXPORT_ALL_SYMBOLS ON)
+install(TARGETS vectorpulse EXPORT VectorPulseTargets
+    ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR} COMPONENT VectorPulse
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR} COMPONENT VectorPulse
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR} COMPONENT VectorPulse)
+install(DIRECTORY include/vectorpulse DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+    COMPONENT VectorPulse FILES_MATCHING PATTERN "*.h")
+
+set(VectorPulse_INSTALL_CMAKEDIR "${CMAKE_INSTALL_LIBDIR}/cmake/VectorPulse")
+configure_package_config_file(cmake/VectorPulseConfig.cmake.in
+    "${CMAKE_CURRENT_BINARY_DIR}/VectorPulseConfig.cmake"
+    INSTALL_DESTINATION "${VectorPulse_INSTALL_CMAKEDIR}")
+write_basic_package_version_file(
+    "${CMAKE_CURRENT_BINARY_DIR}/VectorPulseConfigVersion.cmake"
+    VERSION ${PROJECT_VERSION} COMPATIBILITY SameMajorVersion)
+install(EXPORT VectorPulseTargets NAMESPACE VectorPulse::
+    DESTINATION "${VectorPulse_INSTALL_CMAKEDIR}" COMPONENT VectorPulse)
+install(FILES
+    "${CMAKE_CURRENT_BINARY_DIR}/VectorPulseConfig.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/VectorPulseConfigVersion.cmake"
+    DESTINATION "${VectorPulse_INSTALL_CMAKEDIR}" COMPONENT VectorPulse)
+
+if(VECTORPULSE_BUILD_TESTS AND BUILD_TESTING)
+    configure_file(cmake/RunInstalledConsumer.cmake.in
+        "${CMAKE_CURRENT_BINARY_DIR}/RunInstalledConsumer.cmake" @ONLY)
+    add_test(NAME VectorPulse.InstalledConsumer
+        COMMAND ${CMAKE_COMMAND} "-DTEST_CONFIG=$<CONFIG>"
+            -P "${CMAKE_CURRENT_BINARY_DIR}/RunInstalledConsumer.cmake")
 endif()

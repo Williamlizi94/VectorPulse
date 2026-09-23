@@ -1,0 +1,47 @@
+# Invoked by CTest after building the parent project.
+cmake_minimum_required(VERSION 3.20)
+
+function(run_checked)
+    execute_process(COMMAND ${ARGV} RESULT_VARIABLE result)
+    if(NOT "${result}" STREQUAL "0")
+        message(FATAL_ERROR "Package consumer command failed (${result}): ${ARGV}")
+    endif()
+endfunction()
+
+set(test_root "@CMAKE_CURRENT_BINARY_DIR@/package-test/${TEST_CONFIG}")
+set(prefix "${test_root}/install")
+run_checked("@CMAKE_COMMAND@" --install "@CMAKE_CURRENT_BINARY_DIR@"
+    --prefix "${prefix}" --config "${TEST_CONFIG}" --component VectorPulse)
+
+# Consume a relocated copy, so installed targets cannot depend on the install prefix.
+set(relocated "${test_root}/relocated")
+file(COPY "${prefix}/" DESTINATION "${relocated}")
+set(configure_args
+    -S "@CMAKE_CURRENT_SOURCE_DIR@/tests/consumer"
+    -B "${test_root}/consumer"
+    -G "@CMAKE_GENERATOR@"
+    "-DCMAKE_BUILD_TYPE=${TEST_CONFIG}"
+    "-DCMAKE_CXX_COMPILER=@CMAKE_CXX_COMPILER@"
+    "-DVectorPulse_DIR=${relocated}/@CMAKE_INSTALL_LIBDIR@/cmake/VectorPulse"
+    -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF
+    -DCMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY=OFF)
+if(NOT "@CMAKE_GENERATOR_PLATFORM@" STREQUAL "")
+    list(APPEND configure_args -A "@CMAKE_GENERATOR_PLATFORM@")
+endif()
+if(NOT "@CMAKE_GENERATOR_TOOLSET@" STREQUAL "")
+    list(APPEND configure_args -T "@CMAKE_GENERATOR_TOOLSET@")
+endif()
+if(NOT "@CMAKE_MAKE_PROGRAM@" STREQUAL "")
+    list(APPEND configure_args "-DCMAKE_MAKE_PROGRAM=@CMAKE_MAKE_PROGRAM@")
+endif()
+if(@VECTORPULSE_CUDA_COMPILED@)
+    list(APPEND configure_args "-DCUDAToolkit_ROOT=@CUDAToolkit_LIBRARY_ROOT@")
+endif()
+run_checked("@CMAKE_COMMAND@" ${configure_args})
+run_checked("@CMAKE_COMMAND@" --build "${test_root}/consumer" --config "${TEST_CONFIG}")
+# Include the relocated DLL location for Windows shared-library builds.
+if(WIN32)
+    set(ENV{PATH} "${relocated}/@CMAKE_INSTALL_BINDIR@;$ENV{PATH}")
+endif()
+run_checked("@CMAKE_CTEST_COMMAND@" --test-dir "${test_root}/consumer"
+    -C "${TEST_CONFIG}" --output-on-failure)
