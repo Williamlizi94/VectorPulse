@@ -26,6 +26,10 @@ public:
         std::span<const float> query,
         std::size_t k) const;
 
+    void for_each_vector(const SearchBackend::VectorVisitor& visitor) const {
+        backend_->for_each_vector(visitor);
+    }
+
 private:
     std::size_t dimension_;
     std::unique_ptr<SearchBackend> backend_;

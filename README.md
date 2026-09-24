@@ -44,6 +44,47 @@ vectorpulse::VectorIndex gpu{768,
 after the CPU build below (or `./out/build-cuda/vectorpulse_basic_search.exe`
 for the Ninja CUDA build). Set `VECTORPULSE_BUILD_EXAMPLES=OFF` to omit it.
 
+## Save and load indexes
+
+```cpp
+index.save("index.vp");
+auto restored = vectorpulse::VectorIndex::load("index.vp"); // Scalar by default.
+
+// Optional: choose an existing backend with the saved dimension.
+auto parallel = vectorpulse::VectorIndex::load("index.vp",
+    std::make_unique<vectorpulse::MultithreadedScalarSearchBackend>(3, 4));
+```
+
+The versioned binary format stores dimension, count, raw string IDs and exact
+FP32 vector bits, with little-endian encoding and a CRC32 checksum. It stores no
+GPU state or backend configuration. Load into an empty backend of matching
+dimension to reuse CPU, AVX2 or CUDA settings; CUDA builds its matrix lazily.
+Using the same backend/settings reproduces identical Top-K results and score
+bits. Changing arithmetic backends retains their existing rounding differences.
+
+Malformed, truncated and checksum-corrupted files throw `std::runtime_error`;
+a nonempty or dimension-mismatched load backend throws `std::invalid_argument`.
+Saving overwrites the target, and failed writes may leave a partial file. Exclude
+concurrent insertion while saving. See [the format specification](docs/persistence.md)
+for the binary layout, validation rules and backend compatibility details.
+
+## Python bindings (optional)
+
+Install the existing bindings with `python -m pip install .`, then use
+`from vectorpulse import VectorIndex`. The scikit-build-core package builds the
+existing CMake extension and defaults to CPU-only, with no NumPy runtime
+requirement. Use `python -m pip install ".[numpy]"` to include NumPy.
+
+Enable `VECTORPULSE_BUILD_PYTHON=ON` to build the pybind11 `vectorpulse` module.
+It exposes `VectorIndex(dimension)`, `add`, `search`, `size`, `dimension`, `save`
+and static `load`, using the existing C++ implementation. Lists, tuples and NumPy
+float32 arrays are supported; search returns ordered `{"id": ..., "score": ...}`
+dictionaries. Optional constructor keywords select existing CPU/CUDA backends.
+
+See [Python build instructions and examples](docs/python.md). Python and pybind11
+are required only when this option is enabled; NumPy is optional. The C++ package
+and its `VectorPulse::vectorpulse` target remain usable independently.
+
 ## Backends and behavior
 
 - ScalarSearchBackend
@@ -60,7 +101,7 @@ missing IDs throw std::out_of_range. CUDA additionally rejects NaN/infinity inpu
 and checks returned scores are finite; existing CPU behavior is unchanged.
 
 No GPU Top-K, warp-level optimization, CUDA graphs, multi-GPU support,
-ANN indexes, quantization, networking, disk persistence, Docker, Python bindings, or
+ANN indexes, quantization, networking, Docker, or
 frontend is implemented. No FAISS, cuBLAS, Thrust, or search library implements
 the similarity computation.
 

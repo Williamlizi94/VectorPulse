@@ -3,6 +3,8 @@
 #include "vectorpulse/search_result.h"
 
 #include <cstddef>
+#include <functional>
+#include <stdexcept>
 #include <span>
 #include <string>
 #include <string_view>
@@ -13,6 +15,14 @@ namespace vectorpulse {
 class SearchBackend {
 public:
     virtual ~SearchBackend() = default;
+
+    using VectorVisitor = std::function<void(std::string_view, std::span<const float>)>;
+    // Visits host entries in insertion order. Visitors must not mutate the backend
+    // or retain views beyond the call. Exclude concurrent insertion.
+    // Optional for third-party backends; all built-in backends implement it.
+    virtual void for_each_vector(const VectorVisitor&) const {
+        throw std::runtime_error("backend does not support vector enumeration");
+    }
 
     [[nodiscard]] virtual std::size_t dimension() const noexcept = 0;
     [[nodiscard]] virtual std::size_t size() const noexcept = 0;

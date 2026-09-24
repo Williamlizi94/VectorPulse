@@ -62,6 +62,11 @@ public:
     // Optional profiling API; ordinary SearchBackend/VectorStore API is unchanged.
     [[nodiscard]] CudaProfiledSearch search_profiled(std::span<const float> query,
                                                      std::size_t k) const;
+    void for_each_vector(const VectorVisitor& visitor) const override {
+        for (const auto& entry : entries_) {
+            visitor(entry.id, entry.values);
+        }
+    }
 private:
     struct Entry { std::string id; std::vector<float> values; };
     std::size_t dimension_;

@@ -2,6 +2,7 @@
 
 #include "vectorpulse/vector_store.h"
 
+#include <filesystem>
 #include <utility>
 
 namespace vectorpulse {
@@ -27,6 +28,18 @@ public:
 
     [[nodiscard]] std::size_t size() const noexcept { return store_.size(); }
     [[nodiscard]] std::size_t dimension() const noexcept { return store_.dimension(); }
+
+    // Stores host IDs and exact FP32 bits, never backend/GPU state.
+    // Like search(), save() requires callers to exclude concurrent insertion.
+    // File/format errors throw runtime_error; failed saves may leave a partial file.
+    void save(const std::filesystem::path& path) const;
+
+    // Defaults to scalar. A supplied backend must be empty and match the file's
+    // dimension. Same backend/settings reproduce identical search results;
+    // switching arithmetic backends retains their existing rounding behavior.
+    [[nodiscard]] static VectorIndex load(
+        const std::filesystem::path& path,
+        std::unique_ptr<SearchBackend> backend = nullptr);
 
 private:
     VectorStore store_;

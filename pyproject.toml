@@ -1,0 +1,40 @@
+[build-system]
+requires = ["scikit-build-core>=0.10,<2", "pybind11>=2.13,<4"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "vectorpulse"
+version = "0.2.0"
+description = "C++20 exact vector search with Python bindings"
+readme = "docs/python.md"
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+numpy = ["numpy>=1.23"]
+
+[tool.scikit-build]
+minimum-version = "build-system.requires"
+cmake.version = ">=3.20"
+cmake.build-type = "Release"
+build.targets = ["vectorpulse_python"]
+install.components = ["VectorPulsePython"]
+wheel.packages = []
+sdist.include = [
+    "/CMakeLists.txt", "/pyproject.toml", "/README.md",
+    "/cmake/**", "/include/**", "/src/**", "/python/CMakeLists.txt", "/python/*.cpp",
+    "/docs/python.md", "/docs/persistence.md", "/tests/python/*.py",
+]
+sdist.exclude = [
+    "out/**", "build/**", "build-noavx/**", ".vs/**", "dist/**",
+    "docs/benchmarks/**", "**/__pycache__/**", "**/*.pyc",
+]
+
+[tool.scikit-build.cmake.define]
+BUILD_SHARED_LIBS = "OFF"
+VECTORPULSE_BUILD_PYTHON = "ON"
+VECTORPULSE_BUILD_PYTHON_TESTS = "OFF"
+VECTORPULSE_BUILD_PYTHON_INSTALL_TESTS = "OFF"
+VECTORPULSE_BUILD_TESTS = "OFF"
+VECTORPULSE_BUILD_BENCHMARKS = "OFF"
+VECTORPULSE_BUILD_EXAMPLES = "OFF"
+VECTORPULSE_ENABLE_CUDA = "OFF"

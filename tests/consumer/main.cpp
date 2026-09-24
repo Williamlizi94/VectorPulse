@@ -21,6 +21,16 @@ int main() {
         std::abs(results[1].score - std::sqrt(0.5F)) > 1e-6F) {
         return 1;
     }
+    const auto saved_path = std::filesystem::path{"consumer-roundtrip.vp"};
+    index.save(saved_path);
+    auto loaded = vectorpulse::VectorIndex::load(saved_path,
+        std::make_unique<vectorpulse::MultithreadedScalarSearchBackend>(2, 2));
+    std::filesystem::remove(saved_path);
+    const auto restored = loaded.search(query, 2);
+    if (restored.size() != results.size()) return 1;
+    for (std::size_t i = 0; i < results.size(); ++i) {
+        if (restored[i].id != results[i].id || restored[i].score != results[i].score) return 1;
+    }
     // Reference CUDA symbols even in CPU-only builds to verify transitive linking.
     // Running this consumer never requires a GPU.
     std::cout << "Installed VectorPulse search passed; CUDA compiled: "

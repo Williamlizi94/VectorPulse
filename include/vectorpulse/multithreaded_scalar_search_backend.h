@@ -18,6 +18,11 @@ public:
     [[nodiscard]] const std::vector<float>& get(std::string_view id) const override;
     [[nodiscard]] std::vector<SearchResult> search(std::span<const float> query,
                                                    std::size_t k) const override;
+    void for_each_vector(const VectorVisitor& visitor) const override {
+        for (const auto& entry : entries_) {
+            visitor(entry.id, entry.values);
+        }
+    }
 private:
     struct Entry {
         std::string id;

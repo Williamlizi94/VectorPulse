@@ -1,10 +1,11 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(VectorPulse VERSION 0.1.0 LANGUAGES CXX)
+project(VectorPulse VERSION 0.2.0 LANGUAGES CXX)
 
 include(GNUInstallDirs)
 include(CMakePackageConfigHelpers)
 
+option(VECTORPULSE_BUILD_PYTHON "Build optional pybind11 Python module" OFF)
 option(VECTORPULSE_BUILD_EXAMPLES "Build VectorPulse examples" ON)
 
 option(VECTORPULSE_BUILD_TESTS "Build VectorPulse unit tests" ON)
@@ -21,6 +22,7 @@ add_library(vectorpulse
     src/scalar_search_backend.cpp
     src/similarity.cpp
     src/vector_store.cpp
+    src/vector_index.cpp
 )
 add_library(VectorPulse::vectorpulse ALIAS vectorpulse)
 find_package(Threads REQUIRED)
@@ -105,6 +107,7 @@ if(VECTORPULSE_BUILD_TESTS)
         tests/similarity_test.cpp
         tests/vector_store_test.cpp
         tests/vector_index_test.cpp
+        tests/vector_index_persistence_test.cpp
     )
     target_link_libraries(vectorpulse_tests PRIVATE VectorPulse::vectorpulse GTest::gtest_main)
     target_compile_features(vectorpulse_tests PRIVATE cxx_std_20)
@@ -172,4 +175,13 @@ if(VECTORPULSE_BUILD_TESTS AND BUILD_TESTING)
     add_test(NAME VectorPulse.InstalledConsumer
         COMMAND ${CMAKE_COMMAND} "-DTEST_CONFIG=$<CONFIG>"
             -P "${CMAKE_CURRENT_BINARY_DIR}/RunInstalledConsumer.cmake")
+endif()
+
+if(VECTORPULSE_BUILD_PYTHON)
+    option(VECTORPULSE_BUILD_PYTHON_TESTS "Build Python binding tests" ${VECTORPULSE_BUILD_TESTS})
+    option(VECTORPULSE_BUILD_PYTHON_INSTALL_TESTS "Test pip install in a clean environment (downloads build dependencies)" OFF)
+    if(VECTORPULSE_BUILD_PYTHON_TESTS OR VECTORPULSE_BUILD_PYTHON_INSTALL_TESTS)
+        include(CTest)
+    endif()
+    add_subdirectory(python)
 endif()
