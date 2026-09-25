@@ -1,0 +1,6 @@
+hnswlib=0.8.0,N=113287,D=512,M=16,efConstruction=200,seed=42,threads=1,build_s=35.114912
+efSearch,Recall@10
+40,0.981600
+80,0.995400
+160,0.998600
+320,0.999200

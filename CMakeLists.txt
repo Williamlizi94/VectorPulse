@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(VectorPulse VERSION 0.2.0 LANGUAGES CXX)
+project(VectorPulse VERSION 0.3.0 LANGUAGES CXX)
 
 include(GNUInstallDirs)
 include(CMakePackageConfigHelpers)
@@ -23,6 +23,7 @@ add_library(vectorpulse
     src/similarity.cpp
     src/vector_store.cpp
     src/vector_index.cpp
+    src/hnsw_index.cpp
 )
 add_library(VectorPulse::vectorpulse ALIAS vectorpulse)
 find_package(Threads REQUIRED)
@@ -108,6 +109,7 @@ if(VECTORPULSE_BUILD_TESTS)
         tests/vector_store_test.cpp
         tests/vector_index_test.cpp
         tests/vector_index_persistence_test.cpp
+        tests/hnsw_index_test.cpp
     )
     target_link_libraries(vectorpulse_tests PRIVATE VectorPulse::vectorpulse GTest::gtest_main)
     target_compile_features(vectorpulse_tests PRIVATE cxx_std_20)
@@ -123,14 +125,26 @@ if(VECTORPULSE_BUILD_TESTS)
 endif()
 
 if(VECTORPULSE_BUILD_BENCHMARKS)
+    add_executable(vectorpulse_hnsw_diagnostics benchmarks/hnsw_diagnostics.cpp)
+    target_link_libraries(vectorpulse_hnsw_diagnostics PRIVATE VectorPulse::vectorpulse)
+    add_executable(vectorpulse_hnsw_benchmark benchmarks/hnsw_benchmark.cpp)
+    target_link_libraries(vectorpulse_hnsw_benchmark PRIVATE VectorPulse::vectorpulse)
+    if(WIN32)
+        target_link_libraries(vectorpulse_hnsw_benchmark PRIVATE psapi)
+    endif()
+
     add_executable(vectorpulse_benchmark benchmarks/scalar_benchmark.cpp)
     target_link_libraries(vectorpulse_benchmark PRIVATE VectorPulse::vectorpulse)
     target_compile_features(vectorpulse_benchmark PRIVATE cxx_std_20)
 
     if(MSVC)
         target_compile_options(vectorpulse_benchmark PRIVATE /W4 /permissive-)
+        target_compile_options(vectorpulse_hnsw_benchmark PRIVATE /W4 /permissive-)
+        target_compile_options(vectorpulse_hnsw_diagnostics PRIVATE /W4 /permissive-)
     else()
         target_compile_options(vectorpulse_benchmark PRIVATE -Wall -Wextra -Wpedantic -Wconversion -Wshadow)
+        target_compile_options(vectorpulse_hnsw_benchmark PRIVATE -Wall -Wextra -Wpedantic -Wconversion -Wshadow)
+        target_compile_options(vectorpulse_hnsw_diagnostics PRIVATE -Wall -Wextra -Wpedantic -Wconversion -Wshadow)
     endif()
 endif()
 
@@ -184,4 +198,19 @@ if(VECTORPULSE_BUILD_PYTHON)
         include(CTest)
     endif()
     add_subdirectory(python)
+endif()
+
+if(VECTORPULSE_BUILD_TESTS AND BUILD_TESTING AND VECTORPULSE_BUILD_BENCHMARKS)
+    foreach(dataset random clustered)
+        add_test(NAME VectorPulse.HnswDiagnostics.${dataset}
+            COMMAND vectorpulse_hnsw_diagnostics --vectors 200 --dimension 16 --queries 5
+                --m 16 --ef-construction 100 --dataset ${dataset} --repetitions 1)
+    endforeach()
+    add_test(NAME VectorPulse.HnswBenchmarkSmoke COMMAND vectorpulse_hnsw_benchmark
+        --preset large --vectors 128 --dimension 7 --queries 5 --top-k 5 --m 4 --threads 2
+        --ef-construction 24 --ef-search 5,16,128 --warmups 0 --repetitions 1)
+    add_test(NAME VectorPulse.HnswBenchmarkInvalidThreads COMMAND vectorpulse_hnsw_benchmark --threads 0)
+    add_test(NAME VectorPulse.HnswBenchmarkInvalidPreset COMMAND vectorpulse_hnsw_benchmark --preset unknown)
+    set_tests_properties(VectorPulse.HnswBenchmarkInvalidThreads VectorPulse.HnswBenchmarkInvalidPreset
+        PROPERTIES WILL_FAIL TRUE)
 endif()

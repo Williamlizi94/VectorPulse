@@ -1,4 +1,5 @@
 #include <vectorpulse/vector_index.h>
+#include <vectorpulse/hnsw_index.h>
 #include <vectorpulse/multithreaded_scalar_search_backend.h>
 #include <vectorpulse/cuda_search_backend.h>
 
@@ -30,6 +31,16 @@ int main() {
     if (restored.size() != results.size()) return 1;
     for (std::size_t i = 0; i < results.size(); ++i) {
         if (restored[i].id != results[i].id || restored[i].score != results[i].score) return 1;
+    }
+    vectorpulse::HnswIndex approximate{2, {.M = 4, .efConstruction = 20, .efSearch = 10}};
+    approximate.add("north", {0.0F, 1.0F});
+    approximate.add("east", {1.0F, 0.0F});
+    approximate.add("diagonal", {1.0F, 1.0F});
+    const auto neighbors = approximate.search(query, 2);
+    if (approximate.size() != 3 || approximate.dimension() != 2 ||
+        neighbors.size() != results.size()) return 1;
+    for (std::size_t i = 0; i < results.size(); ++i) {
+        if (neighbors[i].id != results[i].id || neighbors[i].score != results[i].score) return 1;
     }
     // Reference CUDA symbols even in CPU-only builds to verify transitive linking.
     // Running this consumer never requires a GPU.

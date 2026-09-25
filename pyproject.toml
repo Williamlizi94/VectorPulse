@@ -4,7 +4,7 @@ build-backend = "scikit_build_core.build"
 
 [project]
 name = "vectorpulse"
-version = "0.2.0"
+version = "0.3.0"
 description = "C++20 exact vector search with Python bindings"
 readme = "docs/python.md"
 requires-python = ">=3.9"

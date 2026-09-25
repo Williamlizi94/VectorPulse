@@ -1,0 +1,19 @@
+vectorpulse_hnsw_benchmark.exe : CUDA device=NVIDIA GeForce RTX 4080 SUPER memory_bytes=17170956288 driver=13030
+runtime=12090
+At line:9 char:1
++ & out/build-cuda/vectorpulse_hnsw_benchmark.exe --input-prefix out/re ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (CUDA device=NVI...0 runtime=12090:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+HNSW built 10000/113287 elapsed_s=14.6526
+HNSW built 20000/113287 elapsed_s=33.1771
+HNSW built 30000/113287 elapsed_s=53.327
+HNSW built 40000/113287 elapsed_s=74.4762
+HNSW built 50000/113287 elapsed_s=96.6925
+HNSW built 60000/113287 elapsed_s=119.14
+HNSW built 70000/113287 elapsed_s=142.63
+HNSW built 80000/113287 elapsed_s=166.921
+HNSW built 90000/113287 elapsed_s=191.529
+HNSW built 100000/113287 elapsed_s=216.009
+HNSW built 110000/113287 elapsed_s=240.579

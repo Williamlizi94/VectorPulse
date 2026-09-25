@@ -2,7 +2,8 @@
 
 VectorPulse is a C++20 in-memory vector search engine. CUDA now keeps the vector
 database resident on the GPU and offers FP64/FP32 naive and block-parallel kernels,
-alongside the four unchanged CPU backends.
+alongside the four unchanged CPU backends. A separate CPU HNSW index provides
+approximate cosine search.
 VectorStore and SearchBackend APIs remain unchanged; scalar is still the default.
 
 ## Unified VectorIndex API
@@ -85,7 +86,34 @@ See [Python build instructions and examples](docs/python.md). Python and pybind1
 are required only when this option is enabled; NumPy is optional. The C++ package
 and its `VectorPulse::vectorpulse` target remain usable independently.
 
-## Backends and behavior
+## CPU HNSW approximate search
+
+`HnswIndex` provides append-only approximate cosine search with configurable
+`M`, `efConstruction` and `efSearch`. It uses string IDs and returns the same
+`SearchResult` type, ordered by descending score and then ascending ID.
+
+```cpp
+#include <vectorpulse/hnsw_index.h>
+#include <vector>
+
+vectorpulse::HnswIndex index{3, {.M = 16, .efConstruction = 200, .efSearch = 50}};
+index.add("east", {1.0F, 0.0F, 0.0F});
+index.add("north", {0.0F, 1.0F, 0.0F});
+auto results = index.search(std::vector<float>{1.0F, 0.0F, 0.0F}, 1);
+index.set_ef_search(100); // Change query breadth without rebuilding.
+```
+
+The existing `VectorIndex` continues to provide exact search and persistence.
+HNSW currently has a C++ CPU API only. See [API and design](docs/hnsw.md)
+and [measured latency/recall trade-offs](docs/benchmarks/hnsw-results.md).
+Build `vectorpulse_hnsw_benchmark` and run it with `--ef-search 10,20,40,80,160,320`
+to compare the same graph against exact scalar, AVX2, multithreaded AVX2 and
+available CUDA search. Use `--preset large --threads 16` for the shared
+1M-vector / 768-dimension / K=10 configuration with memory reporting.
+See [large-scale benchmark details](docs/benchmarks/hnsw-large.md) and the [100K recall diagnosis](docs/benchmarks/hnsw-diagnosis.md).
+See [real COCO embedding validation and recommended settings](docs/benchmarks/hnsw-real-embeddings.md).
+
+## Exact backends and behavior
 
 - ScalarSearchBackend
 - AVX2SearchBackend (single-threaded AVX2/FMA)
@@ -101,7 +129,7 @@ missing IDs throw std::out_of_range. CUDA additionally rejects NaN/infinity inpu
 and checks returned scores are finite; existing CPU behavior is unchanged.
 
 No GPU Top-K, warp-level optimization, CUDA graphs, multi-GPU support,
-ANN indexes, quantization, networking, Docker, or
+CUDA ANN, quantization, networking, Docker, or
 frontend is implemented. No FAISS, cuBLAS, Thrust, or search library implements
 the similarity computation.
 

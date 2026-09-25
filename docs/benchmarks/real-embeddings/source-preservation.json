@@ -1,0 +1,122 @@
+[
+    {
+        "Path":  "E:\\Project VectorPulse\\src\\avx2_kernel.cpp",
+        "SHA256":  "F10FF4E26D80609D9818AF5B674F22523F79DA8283C6F249957E7832A53AB9D8",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\src\\avx2_search_backend.cpp",
+        "SHA256":  "E81FA7CFEFD95C920D891098318299A07489CC6328C46D842BFF0D0628F3B514",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\src\\avx2_support.cpp",
+        "SHA256":  "B77EBFAEC7C88FAFC5A212A710EAA09C9EB54F69A9DC72FB505DB10B9E7839D7",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\src\\cuda_runtime_stub.cpp",
+        "SHA256":  "6112412BCBF0BDF3B9D6DCEE42F2523FCCF195CDBFF9AAE1DD98D357C383DD0C",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\src\\cuda_search_backend.cpp",
+        "SHA256":  "463DF548C6F7642436021F192D5CBDC12D8C5F455B16DD1970A0A2EAED82C3C3",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\src\\hnsw_index.cpp",
+        "SHA256":  "1F8C3C3B208470843DA1202A230E4CEA10B52D5BCE9C173F2EB265D95CCC5F51",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\src\\multithreaded_avx2_search_backend.cpp",
+        "SHA256":  "A1ED40C64EC1A1EA60E63FD2C7B3CFAD886CEEFB61954BF17A055A98FAD48E93",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\src\\multithreaded_scalar_search_backend.cpp",
+        "SHA256":  "D9A667D2E827412FC95785B839BE4ABC47DF798626C65519E71021764029D398",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\src\\scalar_search_backend.cpp",
+        "SHA256":  "2BEE42CD5FB60B30B23B5105BE61A50E2B3118BBC73838D5AB741B6A1CF5CBEC",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\src\\similarity.cpp",
+        "SHA256":  "8848A59F5C8B64C98BF24E80988073CB9FDE73AA9A1FC75F7CAEF94DC6A708DD",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\src\\vector_index.cpp",
+        "SHA256":  "F7414D49C02ACCA9AA1568DA2050B9883CCF1270F563D8C9F2D888B0BA00C515",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\src\\vector_store.cpp",
+        "SHA256":  "9ACE7C3BFD59471542EEF24D8C7533920E74A661C210C21D7220AE5802902D1B",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\src\\cuda_runtime.cu",
+        "SHA256":  "F1C8F7F42856252E4529ECB1FA7651313C5E84B67F97CD567AE1693773533A65",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\include\\vectorpulse\\avx2_search_backend.h",
+        "SHA256":  "34887DD558502E235E4584C88AA21243779FE819AE2A5184B2833041889535B4",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\include\\vectorpulse\\cuda_search_backend.h",
+        "SHA256":  "6E2055E73B0C43B11BD342D3E9419BF6F8AB14CB62A2BF3715835B733F49C684",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\include\\vectorpulse\\hnsw_index.h",
+        "SHA256":  "38BF1E7770DEE2EA2A37AF8B8B11C9AFBD23B885ED35FE279B619E9733804852",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\include\\vectorpulse\\multithreaded_avx2_search_backend.h",
+        "SHA256":  "CB046C7E824B75CC40E16D778848CED8CFF7115FD120A47F7FC191F11EFAC54A",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\include\\vectorpulse\\multithreaded_scalar_search_backend.h",
+        "SHA256":  "7264E885AE7BDB2CC0DE60E6A9916BBAE3134C8142AEB4345E22F6288BC130FA",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\include\\vectorpulse\\scalar_search_backend.h",
+        "SHA256":  "18778FE7FBD8F8654851F0DE6217E111EAAC4F22B2A700F38466DD0B421A7EF3",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\include\\vectorpulse\\search_backend.h",
+        "SHA256":  "D447D3D99AB9275885387D406A074B4D4FA1A85F0A839D7DA25C35120E0EFD89",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\include\\vectorpulse\\search_result.h",
+        "SHA256":  "5B6881107197BAD3A241BF4D4BB5AC9AB21A90479B86DB717505ADC0FA6C1A09",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\include\\vectorpulse\\similarity.h",
+        "SHA256":  "A5CA40EE646C3BF73E2EB10FDF5A3AD0525D48FD0CFC346B1FEA7831009AFDAC",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\include\\vectorpulse\\vector_index.h",
+        "SHA256":  "58B9B7BEBBDCB9B044AB0F343D10C62120D02C4FB677419A548D9B15801E28E4",
+        "Unchanged":  true
+    },
+    {
+        "Path":  "E:\\Project VectorPulse\\include\\vectorpulse\\vector_store.h",
+        "SHA256":  "048527925B4F699C10C074F882D88EE0FEB1FD326F6707913BC9BF9911097FC5",
+        "Unchanged":  true
+    }
+]

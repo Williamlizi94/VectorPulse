@@ -1,0 +1,4 @@
+PASS real-input smoke and full-breadth exact IDs/order/scores
+PASS rejected truncated input
+PASS rejected oversized input
+PASS rejected nonfinite input

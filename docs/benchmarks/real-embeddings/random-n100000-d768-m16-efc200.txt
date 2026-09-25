@@ -1,0 +1,13 @@
+CONFIG,dataset=random,N=100000,D=768,K=10,M=16,efConstruction=200,queries=100,repeats=3,seed=42,data_hash=6827155802004628109,query_hash=15517060934725072771
+TRUTH,mean_ms=71.444430,mean_top1=0.158661,mean_top10=0.134138,mean_top1_top10_gap=0.024523,same_cluster_fraction=-1.000000
+LAYER,0,nodes=100000,edges=2610096,min_degree=17,max_degree=32,mean_degree=26.100960,reachable=100000
+LAYER,1,nodes=6366,edges=101856,min_degree=16,max_degree=16,mean_degree=16.000000,reachable=6366
+LAYER,2,nodes=419,edges=6704,min_degree=16,max_degree=16,mean_degree=16.000000,reachable=419
+LAYER,3,nodes=16,edges=240,min_degree=15,max_degree=15,mean_degree=15.000000,reachable=16
+GRAPH,base_reachable_without_adjacent_ids=100000,reciprocal_fraction=0.870142
+FULL_BREADTH,queries=3,recall=1
+dataset,N,D,M,efConstruction,efSearch,build_ms,mean_ms,p95_ms,QPS,Recall@10
+random,100000,768,16,200,40,926808.095500,1.722847,2.516300,580.434595,0.034000
+random,100000,768,16,200,80,926808.095500,3.027437,3.980600,330.312406,0.064000
+random,100000,768,16,200,160,926808.095500,5.868907,7.227000,170.389468,0.125000
+random,100000,768,16,200,320,926808.095500,10.501121,12.176300,95.227932,0.218000

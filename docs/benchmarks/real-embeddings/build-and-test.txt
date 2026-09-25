@@ -1,0 +1,12 @@
+-- VectorPulse CUDA compiled: ON
+-- Configuring done (1.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: E:/Project VectorPulse/out/build-cuda
+[1/8] Linking CXX executable vectorpulse_cuda_profile.exe
+[2/8] Linking CXX executable vectorpulse_benchmark.exe
+[3/8] Linking CXX executable vectorpulse_basic_search.exe
+[4/8] Linking CXX shared module python\Release\vectorpulse.cp312-win_amd64.pyd
+[5/8] Building CXX object CMakeFiles\vectorpulse_hnsw_diagnostics.dir\benchmarks\hnsw_diagnostics.cpp.obj
+[6/8] Linking CXX executable vectorpulse_hnsw_diagnostics.exe
+[7/8] Building CXX object CMakeFiles\vectorpulse_tests.dir\tests\hnsw_index_test.cpp.obj
+[8/8] Linking CXX executable vectorpulse_tests.exe
